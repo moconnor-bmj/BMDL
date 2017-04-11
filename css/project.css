@@ -253,6 +253,10 @@
     font-size: 11px;
   }
 }
+.bt-1 {
+  border-top: 1px solid #757575;
+}
+
 .border-l {
   border-left: 10px solid #c50084;
 }
@@ -267,6 +271,10 @@ body {
 
 h1, h2, h3 {
   font-family: InterFace;
+}
+
+.btn-lg {
+  padding: 1rem;
 }
 
 .doc-jumbotron {
