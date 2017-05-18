@@ -37,10 +37,10 @@
 <loc>components/collapse/</loc>
 </url>
 <url>
-<loc>bp-utilities/colors/</loc>
+<loc>utilities/colors/</loc>
 </url>
 <url>
-<loc>utilities/colors/</loc>
+<loc>bp-utilities/colors/</loc>
 </url>
 <url>
 <loc>utilities/display-property/</loc>
@@ -74,6 +74,9 @@
 </url>
 <url>
 <loc>layout/media-object/</loc>
+</url>
+<url>
+<loc>bp-components/messaging/</loc>
 </url>
 <url>
 <loc>components/modal/</loc>
