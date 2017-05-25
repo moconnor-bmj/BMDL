@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
-  <title>Popovers &middot; BMDL</title>
+  <title>BP Popovers Tooltips &middot; BMDL</title>
   <!-- css -->
   <!-- add material font (roboto) and material icon as needed -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
@@ -65,7 +65,7 @@
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navs/index.html">Navs</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navbar/index.html">Navbar</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/pagination/index.html">Pagination</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm active" href="../../../gh-pages/components/popovers/index.html">Popovers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/popovers/index.html">Popovers</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/progress/index.html">Progress</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/scrollspy/index.html">Scrollspy</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/tooltips/index.html">Tooltips</a>
@@ -95,8 +95,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-md-10 col-xl-10 offset-sm-1 offset-md-1 offset-xl-1">
-          <h1 class="typography-display-3">Popovers</h1>
-          <p class="font-weight-light typography-title">Documentation and examples for adding Bootstrap popovers to your site.</p>
+          <h1 class="typography-display-3">BP Popovers Tooltips</h1>
+          <p class="font-weight-light typography-title">Documentation and examples for adding custom BMDL popovers &amp; tooltips with CSS and JavaScript.</p>
         </div>
       </div>
     </div>
@@ -107,15 +107,19 @@
         <!--<div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">-->
         <div class="col-sm-12 col-md-12">
           <div class="bd-content mb-xl">
-            <p>Add small overlay content, like those found in iOS, to any element for housing secondary information.</p>
+            <p><strong>Popovers</strong>: Add small overlay content, like those found in iOS, to any element for housing secondary information.
+              <strong>Tooltips</strong>: Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
             <h2 id="contents">Contents</h2>
             <ul id="markdown-toc">
               <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-              <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+              <li><a href="#overview-popovers" id="markdown-toc-overview-popovers">Overview: Popovers</a></li>
               <li><a href="#example-enable-popovers-everywhere" id="markdown-toc-example-enable-popovers-everywhere">Example: Enable popovers everywhere</a></li>
               <li><a href="#example-using-the--option" id="markdown-toc-example-using-the--option">Example: Using the <code class="highlighter-rouge">container</code> option</a></li>
               <li><a href="#static-popover" id="markdown-toc-static-popover">Static popover</a></li>
-              <li><a href="#live-demo" id="markdown-toc-live-demo">Live demo</a>
+              <li><a href="#demo-drug-database" id="markdown-toc-demo-drug-database">Demo: Drug Database</a></li>
+              <li><a href="#demo-evidence-score" id="markdown-toc-demo-evidence-score">Demo: Evidence score</a></li>
+              <li><a href="#demo-references-popovers" id="markdown-toc-demo-references-popovers">Demo: References popovers</a></li>
+              <li><a href="#demo-cochrane-answers" id="markdown-toc-demo-cochrane-answers">Demo: Cochrane answers</a>
                 <ul>
                   <li><a href="#four-directions" id="markdown-toc-four-directions">Four directions</a></li>
                   <li><a href="#dismiss-on-next-click" id="markdown-toc-dismiss-on-next-click">Dismiss on next click</a></li>
@@ -137,7 +141,7 @@
                 </ul>
               </li>
             </ul>
-            <h2 id="overview">Overview</h2>
+            <h2 id="overview-popovers">Overview: Popovers</h2>
             <p>Things to know when using the popover plugin:</p>
             <ul>
               <li>Popovers rely on the 3rd party library <a href="http://tether.io/">Tether</a> for positioning. You must include <a href="https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js">tether.min.js</a> before bootstrap.js in order for popovers to work!</li>
@@ -191,11 +195,26 @@
               </div>
               <div class="clearfix"></div>
             </div>
-            <h2 id="live-demo">Live demo</h2>
+            <h2 id="demo-drug-database">Demo: Drug Database</h2>
             <div class="bd-example" data-example-id="">
-              <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+              <button id="drugDBPop" type="button" class="btn btn-link" data-trigger="focus" data-toggle="popover">Click to toggle drug database popover</button>
             </div>
-            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-danger"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span> <span class="na">title=</span><span class="s">"Popover title"</span> <span class="na">data-content=</span><span class="s">"And here's some amazing content. It's very engaging. Right?"</span><span class="nt">&gt;</span>Click to toggle popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"drugDBPop"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>Click to toggle drug database popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
+            <h2 id="demo-evidence-score">Demo: Evidence score</h2>
+            <div class="bd-example" data-example-id="">
+              <button type="button" id="evidencePop" class="btn btn-link" data-trigger="focus" data-toggle="popover">Click to toggle drug database popover</button>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"evidencePop"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>Click to toggle drug database popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
+            <h2 id="demo-references-popovers">Demo: References popovers</h2>
+            <div class="bd-example" data-example-id="">
+              <button type="button" id="referencePop" class="btn btn-link" data-trigger="focus" data-toggle="popover">Click to toggle reference link popover</button>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"referencePop"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>Click to toggle reference link popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
+            <h2 id="demo-cochrane-answers">Demo: Cochrane answers</h2>
+            <div class="bd-example" data-example-id="">
+              <button type="button" id="CochranePop" class="btn btn-link" data-trigger="focus" data-toggle="popover">Click to toggle drug Cochrane popover</button>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"CochranePop"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>Click to toggle drug Cochrane popover<span class="nt">&lt;/button&gt;</span></code></pre></div>
             <h3 id="four-directions">Four directions</h3>
             <div class="bd-example popover-demo">
               <div class="bd-example-popovers">
