@@ -14,6 +14,8 @@ The Bootstrap collapse plugin allows you to toggle content on your pages with a 
 
 ## Calculators Search
 
+Please search for calculators begging with 'a' :-)
+
 {% example html %}
 <div id="the-basics" class="calculators">
   <input class="typeahead form-control" type="text" placeholder="Search for calculators">
@@ -83,7 +85,7 @@ The Bootstrap collapse plugin allows you to toggle content on your pages with a 
     </div>
     <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
       <div class="card-block ml-5">
-         <p><a href="#">CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk</a>
+         <p class="mt-0"><a href="#">CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk</a>
           Calculates stroke risk for patients with atrial fibrillation, possibly better than the CHADS2 score.</p>
           <p><a href="#">CHADS₂ Score for Atrial Fibrillation Stroke Risk</a>
           Estimates stroke risk in patients with atrial fibrillation.</p>
