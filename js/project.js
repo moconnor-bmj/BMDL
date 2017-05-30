@@ -45,7 +45,5 @@ $(function() {
       .find('~ label, ~ span:nth-of-type(n+3)')
       .removeClass('not-empty');
   });
-  
-  console.log('Hello from console!');
 
 });

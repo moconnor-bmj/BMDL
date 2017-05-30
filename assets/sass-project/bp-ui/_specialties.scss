@@ -1,0 +1,46 @@
+.specialties {
+  ul {
+    li {
+      font-size: $font-size-subheading;
+      line-height: 2;
+      list-style-type:  none;
+    }
+  }
+  .card {
+    .card-block {
+      .nav-link::before {
+        color: $palette-pink-500;
+        height: 5px;
+        }
+        .nav-pills {
+          border-bottom: 1px solid $palette-grey-300;
+          font-weight: bold;
+          padding-left: 1.5rem;
+          .nav-link {
+            color: $black;
+            margin: .25rem 0;
+            &.active, &:hover {
+              color: $palette-pink-500;
+            }
+          }
+        }
+        h2 {
+          border-bottom: 1px solid $palette-grey-300;
+          margin: 0 2.5rem;
+        }
+    }
+  }
+  .breadcrumb {
+    min-height: 2.5rem;
+    padding: 0;
+  }
+  .breadcrumb-item {
+    color: $palette-blue-500;
+    &:hover {
+      color: $palette-pink-500;
+    }
+    span {
+      color: $black;
+    }
+  }
+}
