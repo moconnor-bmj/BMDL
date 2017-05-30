@@ -417,6 +417,21 @@ h1, h2, h3 {
   padding: 1rem;
 }
 
+.calculators .card-header a:before {
+  /* symbol for "opening" panels */
+  font-family: 'Material Icons';
+  /* essential for enabling glyphicon */
+  content: "\E5CC";
+  /* adjust as needed, taken from bootstrap.css */
+  position: relative;
+  top: 3px;
+}
+.calculators .card-header a.collapsed:before {
+  /* symbol for "collapsed" panels */
+  content: "\E5CF";
+  /* adjust as needed, taken from bootstrap.css */
+}
+
 .treatment-table {
   font-size: 1rem;
 }
@@ -656,40 +671,108 @@ span.viewAll span.chevron.bottom::before {
   margin-bottom: 1.5rem;
 }
 
-.specialties ul li {
+.specialties ul li, .calculators ul li {
   font-size: 1rem;
   line-height: 2;
   list-style-type: none;
 }
-.specialties .card .card-block .nav-link::before {
+.specialties .card .card-block .nav-link::before, .calculators .card .card-block .nav-link::before {
   color: #c50084;
   height: 5px;
 }
-.specialties .card .card-block .nav-pills {
+.specialties .card .card-block .nav-pills, .calculators .card .card-block .nav-pills {
   border-bottom: 1px solid #e0e0e0;
   font-weight: bold;
   padding-left: 1.5rem;
 }
-.specialties .card .card-block .nav-pills .nav-link {
+.specialties .card .card-block .nav-pills .nav-link, .calculators .card .card-block .nav-pills .nav-link {
   color: #000000;
   margin: .25rem 0;
 }
-.specialties .card .card-block .nav-pills .nav-link.active, .specialties .card .card-block .nav-pills .nav-link:hover {
+.specialties .card .card-block .nav-pills .nav-link.active, .specialties .card .card-block .nav-pills .nav-link:hover, .calculators .card .card-block .nav-pills .nav-link.active, .calculators .card .card-block .nav-pills .nav-link:hover {
   color: #c50084;
 }
-.specialties .card .card-block h2 {
+.specialties .card .card-block h2, .calculators .card .card-block h2 {
   border-bottom: 1px solid #e0e0e0;
   margin: 0 2.5rem;
 }
-.specialties .breadcrumb {
+.specialties .breadcrumb, .calculators .breadcrumb {
   min-height: 2.5rem;
   padding: 0;
 }
-.specialties .breadcrumb-item {
+.specialties .breadcrumb-item, .calculators .breadcrumb-item {
   color: #2a6ebb;
 }
-.specialties .breadcrumb-item:hover {
+.specialties .breadcrumb-item:hover, .calculators .breadcrumb-item:hover {
   color: #c50084;
+}
+.specialties .breadcrumb-item span, .calculators .breadcrumb-item span {
+  color: #000000;
+}
+
+.calculators .card-header h5 a {
+  color: #000000;
+  font-size: 1.125rem;
+}
+.calculators .card-header h5 a:hover {
+  color: #c50084;
+}
+.calculators .card .card-block p {
+  margin: 1rem 0;
+}
+.calculators .card .card-block a {
+  display: block;
+}
+.calculators .card .card-block a.accordion-toggle {
+  color: #000000;
+}
+.calculators .card .card-block h2 {
+  margin: 0;
+}
+.calculators .typeahead {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  width: 50rem;
+  height: 50px;
+}
+.calculators .typeahead:focus {
+  border: 2px solid #0097cf;
+}
+.calculators .tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.calculators .tt-hint {
+  color: #999;
+}
+.calculators .tt-menu {
+  width: 422px;
+  margin: 12px 0;
+  padding: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.calculators .tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.calculators .tt-suggestion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #0097cf;
+}
+.calculators .tt-suggestion.tt-cursor {
+  color: #fff;
+  background-color: #0097cf;
+}
+.calculators .tt-suggestion p {
+  margin: 0;
 }
 
 .doc-jumbotron {
