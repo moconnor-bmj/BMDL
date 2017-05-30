@@ -13,6 +13,14 @@
   <!-- additional css for documentation -->
   <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
   <link href="../../../css/project.min.css" rel="stylesheet">
+  <!-- Javascript -->
+  <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  <!--<script type='text/javascript' src="../../../js/css3-mediaqueries.js"></script>  -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <link href="../../../css/bootstrap-ie8.css" rel="stylesheet">
+    <script type='text/javascript' src="//cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+<![endif]-->
 </head>
 <body class="doc-body">
   <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
@@ -33,7 +41,7 @@
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-popovers-tooltips/index.html">BP Popovers Tooltips</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-collapse/index.html">BP Collapse</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
         </div>
         <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
         <div class="collapse " id="doc_navdrawer_bp-utilities">
@@ -194,7 +202,7 @@
                                     <button type="button" id="CochranePop" class="btn btn-link refLink" data-trigger="focus" data-toggle="popover">[ <img class="cochraneInline" src="../../../css/images/cochrane-logo.svg" /> ]</button> [26] A primary goal of care is treatment of blood pressure. Joint National Commission (JNC 8) and American Diabetes Association (ADA) guidelines recommend a treatment goal of &lt;140/90 mmHg. [2] [40]&lt;/a&gt;</li>
                                   <li>Combination therapy is often required to reach BP goals. Antihypertensive therapy may be initiated with a thiazide diuretic, a calcium-channel blocker, an ACE inhibitor, or an angiotensin-II receptor antagonist. Antihypertensive drugs for black people may be initiated with a thiazide diuretic or a calcium-channel blocker. [40] ACE inhibitors may reduce mortality and cardiovascular events more than angiotensin-II receptor antagonists. [28] Combining an ACE inhibitor and an angiotensin-II receptor antagonist is not recommended due to increased risk of adverse events. [41] However, all people with chronic kidney disease (CKD) should receive an ACE inhibitor or an angiotensin-II receptor antagonist as part of their regimen. [40]
                                     <button type="button" id="evidencePop" class="btn btn-link refLink" data-trigger="focus" data-toggle="popover">[A Evidence]</button> CKD is defined as (a) age &lt;70 years with GFR &lt;60 mL/minute/1.73 m^2, or (b) people of any age with albuminuria &gt;30 mg albumin/g of creatinine at any level of GFR.</li>
-                                  <li>Beta-blockers are not contraindicated in people with diabetes but are less-preferred antihypertensive agents [40] and may mask symptoms of hypoglycaemia.</li>
+                                  <li>Beta-blockers are not contraindicated in people with diabetes but are less-preferred antihypertensive agents [40]&lt;/a&gt; and may mask symptoms of hypoglycaemia.</li>
                                   <li>ACE inhibitors may increase risk for hypoglycaemia in conjunction with insulin or insulin secretagogue (sulfonylurea or meglitinide).
                                     <button type="button" id="referencePop" class="btn btn-link refLink" data-trigger="focus" data-toggle="popover">[42]</button>
                                   </li>
@@ -205,29 +213,29 @@
                                     <p>
                                       <button id="drugDBPop" type="button" class="btn btn-link" data-trigger="focus" data-toggle="popover">hydrochlorothiazide</button>: 12.5 to 25 mg/day orally once daily initially, increase gradually according to response, maximum 50 mg/day as a single dose or in 2 divided doses</p>
                                     <p class="small-or">or</p>
-                                    <p>chlortalidone: 12.5 mg orally once daily initially, increase gradually according to response, maximum 50 mg/day</p>
+                                    <p><a href="#" class="disabled">chlortalidone</a>: 12.5 mg orally once daily initially, increase gradually according to response, maximum 50 mg/day</p>
                                     <p class="and-or">-- AND / OR --</p>
-                                    <p>lisinopril: 10 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day</p>
+                                    <p><a href="#" class="disabled">lisinopril</a>: 10 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>enalapril: 5 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day as a single dose or in 2 divided doses</p>
+                                    <p><a href="#" class="disabled">enalapril</a>: 5 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day as a single dose or in 2 divided doses</p>
                                     <p class="small-or">or</p>
-                                    <p>captopril: 25 mg orally twice daily initially, increase gradually according to response, maximum 200 mg/day</p>
+                                    <p><a href="#" class="disabled">captopril</a>: 25 mg orally twice daily initially, increase gradually according to response, maximum 200 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>candesartan: 4 mg orally once daily initially, increase gradually according to response, maximum 32 mg/day</p>
+                                    <p><a href="#" class="disabled">candesartan</a>: 4 mg orally once daily initially, increase gradually according to response, maximum 32 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>irbesartan: 75 mg orally once daily initially, increase gradually according to response, maximum 300 mg/day</p>
+                                    <p><a href="#" class="disabled">irbesartan</a>: 75 mg orally once daily initially, increase gradually according to response, maximum 300 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>losartan: 50 mg orally once daily initially, increase gradually according to response, maximum 100 mg/day as a single dose or in 2 divided doses</p>
+                                    <p><a href="#" class="disabled">losartan</a>: 50 mg orally once daily initially, increase gradually according to response, maximum 100 mg/day as a single dose or in 2 divided doses</p>
                                     <p class="small-or">or</p>
-                                    <p>valsartan: 40-80 mg orally once daily initially, increase gradually according to response, maximum 320 mg/day</p>
+                                    <p><a href="#" class="disabled">valsartan</a>: 40-80 mg orally once daily initially, increase gradually according to response, maximum 320 mg/day</p>
                                     <p class="and-or">-- AND / OR --</p>
-                                    <p>amlodipine: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day</p>
+                                    <p><a href="#" class="disabled">amlodipine</a>: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>felodipine: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day</p>
+                                    <p><a href="#" class="disabled">felodipine</a>: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>nifedipine: 30-60 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 90 mg/day</p>
+                                    <p><a href="#" class="disabled">nifedipine</a>: 30-60 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 90 mg/day</p>
                                     <p class="small-or">or</p>
-                                    <p>diltiazem: 120-180 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 480 mg/day</p>
+                                    <p><a href="#" class="disabled">diltiazem</a>: 120-180 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 480 mg/day</p>
                                   </div>
                                 </div>
                               </div>
@@ -341,7 +349,7 @@
                     <span class="nt">&lt;ul&gt;</span>
                       <span class="nt">&lt;li&gt;</span>Adults with type 2 diabetes are twice as likely to die of stroke or myocardial infarction (MI) compared with those without diabetes, and they are more than 40 times more likely to die of macrovascular than microvascular complications of diabetes. [25] <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"CochranePop"</span> <span class="na">class=</span><span class="s">"btn btn-link refLink"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>[ <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"cochraneInline"</span> <span class="na">src=</span><span class="s">"../../../css/images/cochrane-logo.svg"</span> <span class="nt">/&gt;</span> ]<span class="nt">&lt;/button&gt;</span> [26] A primary goal of care is treatment of blood pressure. Joint National Commission (JNC 8) and American Diabetes Association (ADA) guidelines recommend a treatment goal of <span class="nt">&lt;140</span><span class="err">/</span><span class="na">90</span> <span class="na">mmHg</span><span class="err">.</span> <span class="err">[</span><span class="na">2</span><span class="err">]</span> <span class="err">[</span><span class="na">40</span><span class="err">]&lt;/</span><span class="na">a</span><span class="nt">&gt;&lt;/li&gt;</span>
                       <span class="nt">&lt;li&gt;</span>Combination therapy is often required to reach BP goals. Antihypertensive therapy may be initiated with a thiazide diuretic, a calcium-channel blocker, an ACE inhibitor, or an angiotensin-II receptor antagonist. Antihypertensive drugs for black people may be initiated with a thiazide diuretic or a calcium-channel blocker. [40] ACE inhibitors may reduce mortality and cardiovascular events more than angiotensin-II receptor antagonists. [28] Combining an ACE inhibitor and an angiotensin-II receptor antagonist is not recommended due to increased risk of adverse events. [41] However, all people with chronic kidney disease (CKD) should receive an ACE inhibitor or an angiotensin-II receptor antagonist as part of their regimen. [40] <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"evidencePop"</span> <span class="na">class=</span><span class="s">"btn btn-link refLink"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>[A Evidence]<span class="nt">&lt;/button&gt;</span> CKD is defined as (a) age <span class="nt">&lt;70</span> <span class="na">years</span> <span class="na">with</span> <span class="na">GFR</span> <span class="err">&lt;</span><span class="na">60</span> <span class="na">mL</span><span class="err">/</span><span class="na">minute</span><span class="err">/</span><span class="na">1</span><span class="err">.</span><span class="na">73</span> <span class="na">m</span><span class="err">^</span><span class="na">2</span><span class="err">,</span> <span class="na">or</span> <span class="err">(</span><span class="na">b</span><span class="err">)</span> <span class="na">people</span> <span class="na">of</span> <span class="na">any</span> <span class="na">age</span> <span class="na">with</span> <span class="na">albuminuria</span> <span class="nt">&gt;</span>30 mg albumin/g of creatinine at any level of GFR.<span class="nt">&lt;/li&gt;</span>
-                      <span class="nt">&lt;li&gt;</span>Beta-blockers are not contraindicated in people with diabetes but are less-preferred antihypertensive agents [40] and may mask symptoms of hypoglycaemia.<span class="nt">&lt;/li&gt;</span>
+                      <span class="nt">&lt;li&gt;</span>Beta-blockers are not contraindicated in people with diabetes but are less-preferred antihypertensive agents [40]<span class="nt">&lt;/a&gt;</span> and may mask symptoms of hypoglycaemia.<span class="nt">&lt;/li&gt;</span>
                       <span class="nt">&lt;li&gt;</span>ACE inhibitors may increase risk for hypoglycaemia in conjunction with insulin or insulin secretagogue (sulfonylurea or meglitinide). <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"referencePop"</span> <span class="na">class=</span><span class="s">"btn btn-link refLink"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>[42]<span class="nt">&lt;/button&gt;&lt;/li&gt;</span>
                     <span class="nt">&lt;/ul&gt;</span>
                     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treatment-wrap"</span><span class="nt">&gt;</span>
@@ -349,29 +357,29 @@
                       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"treatment-box"</span><span class="nt">&gt;</span>
                         <span class="nt">&lt;p&gt;&lt;button</span> <span class="na">id=</span><span class="s">"drugDBPop"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">data-trigger=</span><span class="s">"focus"</span> <span class="na">data-toggle=</span><span class="s">"popover"</span><span class="nt">&gt;</span>hydrochlorothiazide<span class="nt">&lt;/button&gt;</span>: 12.5 to 25 mg/day orally once daily initially, increase gradually according to response, maximum 50 mg/day as a single dose or in 2 divided doses<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>chlortalidone: 12.5 mg orally once daily initially, increase gradually according to response, maximum 50 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>chlortalidone<span class="nt">&lt;/a&gt;</span>: 12.5 mg orally once daily initially, increase gradually according to response, maximum 50 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"and-or"</span><span class="nt">&gt;</span>-- AND / OR --<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>lisinopril: 10 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>lisinopril<span class="nt">&lt;/a&gt;</span>: 10 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>enalapril: 5 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day as a single dose or in 2 divided doses<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>enalapril<span class="nt">&lt;/a&gt;</span>: 5 mg orally once daily initially, increase gradually according to response, maximum 40 mg/day as a single dose or in 2 divided doses<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>captopril: 25 mg orally twice daily initially, increase gradually according to response, maximum 200 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>captopril<span class="nt">&lt;/a&gt;</span>: 25 mg orally twice daily initially, increase gradually according to response, maximum 200 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>candesartan: 4 mg orally once daily initially, increase gradually according to response, maximum 32 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>candesartan<span class="nt">&lt;/a&gt;</span>: 4 mg orally once daily initially, increase gradually according to response, maximum 32 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>irbesartan: 75 mg orally once daily initially, increase gradually according to response, maximum 300 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>irbesartan<span class="nt">&lt;/a&gt;</span>: 75 mg orally once daily initially, increase gradually according to response, maximum 300 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>losartan: 50 mg orally once daily initially, increase gradually according to response, maximum 100 mg/day as a single dose or in 2 divided doses<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>losartan<span class="nt">&lt;/a&gt;</span>: 50 mg orally once daily initially, increase gradually according to response, maximum 100 mg/day as a single dose or in 2 divided doses<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>valsartan: 40-80 mg orally once daily initially, increase gradually according to response, maximum 320 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>valsartan<span class="nt">&lt;/a&gt;</span>: 40-80 mg orally once daily initially, increase gradually according to response, maximum 320 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"and-or"</span><span class="nt">&gt;</span>-- AND / OR --<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>amlodipine: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>amlodipine<span class="nt">&lt;/a&gt;</span>: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>felodipine: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>felodipine<span class="nt">&lt;/a&gt;</span>: 2.5 mg orally once daily initially, increase gradually according to response, maximum 10 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>nifedipine: 30-60 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 90 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>nifedipine<span class="nt">&lt;/a&gt;</span>: 30-60 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 90 mg/day<span class="nt">&lt;/p&gt;</span>
                         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small-or"</span><span class="nt">&gt;</span>or<span class="nt">&lt;/p&gt;</span>
-                        <span class="nt">&lt;p&gt;</span>diltiazem: 120-180 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 480 mg/day<span class="nt">&lt;/p&gt;</span>
+                        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"disabled"</span><span class="nt">&gt;</span>diltiazem<span class="nt">&lt;/a&gt;</span>: 120-180 mg orally (extended-release) once daily initially, increase gradually according to response, maximum 480 mg/day<span class="nt">&lt;/p&gt;</span>
                       <span class="nt">&lt;/div&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                   <span class="nt">&lt;/div&gt;</span>
@@ -564,14 +572,14 @@
   <script src="../../../js/project.min.js"></script>
   <!-- additional js for form validation *******(Make page sepcific) -->
   <script src="../../../js/form-validation-md.min.js"></script>
-  <!-- Popover initialisation, Setting & Content - so no XSS attacks!!-->
-  <script type="text/javascript">
+  <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
+  <script>
   $(document).ready(function()
   {
     $("button#drugDBPop").popover(
     {
-      placement: 'top',
       html: true,
+      container: 'body',
       title: 'Drug database <a href="#" class="close" data-dismiss="alert">&times;</a>',
       content: '<ul><li><a href="#">AHFS DI Essentials<a/></li><li><a href="#">BNF</a></li> <li><a href="#">Martindale</a></li><li><a href="#">Micromedex<a/></li></ul><p class="text-right"><a href="#" class="text-uppercase">Set a default formulary</a></p>'
     });
@@ -579,15 +587,10 @@
     {
       $(this).parents(".popover").popover('hide');
     });
-  });
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function()
-  {
     $("button#evidencePop").popover(
     {
-      placement: 'top',
       html: true,
+      container: 'body',
       title: 'Evidence score <a href="#" class="close" data-dismiss="alert">&times;</a>',
       content: '<p>Glycaemic control: there is good-quality evidence that insulin plus metformin reduces HbA1c levels at 4 to 6 months more effectively than insulin alone, but with more gastrointestinal side effects.</p><div class="evidence-level"><h4>Evidence level A</h4><p>Systematic reviews (SRs) or randomized controlled trials (RCTs) of >200 participants.</p></div><p class="text-right"><a href="#" class="text-uppercase">more from bmj clinical evidence</a></p>'
     });
@@ -595,15 +598,10 @@
     {
       $(this).parents(".popover").popover('hide');
     });
-  });
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function()
-  {
     $("button#referencePop").popover(
     {
-      placement: 'top',
       html: true,
+      container: 'body',
       title: 'Reference <a href="#" class="close" data-dismiss="alert">&times;</a>',
       content: '<p><strong>44. </strong>Koegelenberg CF, Noor F, Bateman ED, et al. Efficacy of varenicline combined with nicotine replacement therapy vs varenicline alone for smoking cessation: a randomized clinical trial. JAMA. 2014;312:155-161.</p><p><a rel="external" class="web-link" target="_blank" href="#">Abstract <span class="material-icons material-icons-inline">open_in_new</span></a></p><p><a href="#">View all references</a></p>'
     });
@@ -611,17 +609,12 @@
     {
       $(this).parents(".popover").popover('hide');
     });
-  });
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function()
-  {
     $("button#CochranePop").popover(
     {
-      placement: 'top',
       html: true,
+      container: 'body',
       title: ' <a href="#" class="close" data-dismiss="alert">&times;</a>',
-      content: '<img src="../../../css/images/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
+      content: '<img src="http://resources.bmj.com/repository/images/bp/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
     });
     $(document).on("click", ".popover .close", function()
     {
@@ -629,13 +622,5 @@
     });
   });
   </script>
-  <!--Prevent default behaviour - jumps on anchor click
-<script>
-$("a.popLink")
-    .popover()
-    .click(function(e) {
-        e.preventDefault();
-     });
- </script>-->
 </body>
 </html>
