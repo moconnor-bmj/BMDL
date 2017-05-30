@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Browse Specialties
-description: Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+description: An A to Z Browser with Tabs.
 group: bp components
 ---
 
