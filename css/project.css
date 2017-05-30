@@ -656,42 +656,6 @@ span.viewAll span.chevron.bottom::before {
   margin-bottom: 1.5rem;
 }
 
-.specialties ul li {
-  font-size: 1rem;
-  line-height: 2;
-  list-style-type: none;
-}
-.specialties .card .card-block .nav-link::before {
-  color: #c50084;
-  height: 5px;
-}
-.specialties .card .card-block .nav-pills {
-  border-bottom: 1px solid #e0e0e0;
-  font-weight: bold;
-  padding-left: 1.5rem;
-}
-.specialties .card .card-block .nav-pills .nav-link {
-  color: #000000;
-  margin: .25rem 0;
-}
-.specialties .card .card-block .nav-pills .nav-link.active, .specialties .card .card-block .nav-pills .nav-link:hover {
-  color: #c50084;
-}
-.specialties .card .card-block h2 {
-  border-bottom: 1px solid #e0e0e0;
-  margin: 0 2.5rem;
-}
-.specialties .breadcrumb {
-  min-height: 2.5rem;
-  padding: 0;
-}
-.specialties .breadcrumb-item {
-  color: #2a6ebb;
-}
-.specialties .breadcrumb-item:hover {
-  color: #c50084;
-}
-
 .doc-jumbotron {
   background-position: 50% 50%;
   background-repeat: no-repeat;
