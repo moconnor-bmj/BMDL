@@ -1,8 +1,8 @@
 ---
 layout: docs
-title: BP Specialties
+title: Browse Specialties
 description: Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
-group: components
+group: bp components
 ---
 
 The Bootstrap collapse plugin allows you to toggle content on your pages with a few classes thanks to some helpful JavaScript.
