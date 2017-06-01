@@ -759,6 +759,61 @@ span.viewAll span.chevron.bottom::before {
     width: 26.25rem;
   }
 }
+.alert {
+  border: 1px solid;
+  padding: 0;
+}
+.alert .alert-icon {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding: 1rem;
+}
+.alert .alert-icon .material-icons {
+  color: #ffffff;
+}
+.alert .alert-message {
+  background-color: #ffffff;
+  margin-left: 3.5rem;
+  padding: 1rem;
+}
+
+.alert-success {
+  border-color: #69be28;
+}
+.alert-success .alert-icon {
+  background-color: #69be28;
+}
+
+.alert-info {
+  border-color: #7d5cc6;
+  color: rgba(0, 0, 0, 0.87);
+}
+.alert-info .alert-icon {
+  background-color: #7d5cc6;
+}
+
+.alert-warning {
+  border-color: #e37222;
+}
+.alert-warning .alert-icon {
+  background-color: #e37222;
+}
+
+.alert-danger {
+  border-color: #cd202c;
+  color: rgba(0, 0, 0, 0.87);
+}
+.alert-danger .alert-icon {
+  background-color: #cd202c;
+}
+
+.alert-dismissible .close {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+
 .doc-jumbotron {
   background-position: 50% 50%;
   background-repeat: no-repeat;
