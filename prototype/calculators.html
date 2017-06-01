@@ -76,20 +76,17 @@
     </div>
   </div>    
   
-  <div class="container specialties">
+  <div class="container calculators">
     <div class="row">
       <div class="col-md-12">
         <nav class="breadcrumb mt-2">
           <a class="breadcrumb-item" href="#">Home</a>
-          <a class="breadcrumb-item" href="#">Specialties</a>
-          <span class="breadcrumb-item ">Cardiovascular disorders</span>
+          <span class="breadcrumb-item ">Calculators</span>
         </nav>
-        <h1 style="color: #757575;" class="mb-3"><span class="material-icons" style="font-size: 24px;">&#xE317;</span> Cardiovascular disorders</h1>
+        <h1 style="color: #757575;" class="mb-3">Calculators</h1>
       </div>
     </div>
-  </div>
 
-  <div class="container specialties">
     <!--TABS-->
     <div class="card d-inline-block mb-3">
     <div class="card-block p-0">
@@ -98,89 +95,118 @@
           <a class="nav-link active" data-toggle="tab" href="#atoz" role="tab">A - Z</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#emergencies" role="tab">By specialty</a>
+          <a class="nav-link" data-toggle="tab" href="#bySpecialty" role="tab">By Specialty</a>
         </li>
       </ul>
     </div>
   </div>
-  <!--A to Z-->
+  <!--Tab Content-->
   <div class="tab-content">
     <div class="tab-pane active" id="atoz" role="tabpanel">
-      <div class="card">
-        <div id="the-basics" class="calculators">
-          <input class="typeahead form-control" type="text" placeholder="Search for calculators">
+        <div class="card">
+          <div class="card-block">
+            <form action="#">
+              <div class="form-search search-only"> 
+                <input id="myInput" onkeyup="searchCalc()" class="form-control search-query pl-3" placeholder="Search for calculators" type="text">
+                <span class="material-icons">&#xE8B6;</span>
+              </div>
+            </form>
+            <div id="atoz-list">
+              <h2>A</h2> 
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AAGradient.htm">A-a Gradient</a> 
+                Calculates difference between alveolar and arterial oxygen concentration.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=ABCD2.htm">ABCD2 Score to Predict Stroke Risk after TIA</a>
+                Estimates the risk of stroke following transient ischemic attack.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AbsEocount.htm">Absolute Eosinophil Count</a>
+                Assesses number of eosinophils (e.g., in people with allergic or autoimmune conditions, or parasite infections).</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AbsLymphocyteCnt.htm">Absolute Lymphocyte Count</a>
+                Estimates number of lymphocytes and predicts CD4 count.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AbsNeutrophileCnt.htm">Absolute Neutrophil Count</a> 
+                Measures number of neutrophils (used to asses neutropenia or neutrophipa).</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AbsReticCnt.htm">Absolute Reticulocyte Count</a>
+                Measures reticulocytes (used to assess anemia).</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=ACR_EULAR.htm">ACR/EULAR Rheumatoid Arthritis Diagnostic Criteria (2010)</a>
+                Diagnostic criteria for rheumatoid arthritis.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=CHF_BNP.htm">Acute Heart Failure Prediction Based on NT-proBNP and Cpnical Features</a>
+                Estimates risk of acute heart failure. </p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AlcoholScreen.htm ">Alcohol Consumption Screening AUDIT Questionnaire</a> 
+                Screening tool to identify alcohol use disorders.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AmikacinDosing.htm">Amikacin Dosing q24hr (also Kanamycin and Streptomycin)</a>
+                Calculates dose based on patient's weight and renal factors.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AminoGlycCl.htm">Aminoglycoside Clearance Estimate</a>
+                Estimates rate of aminoglycoside clearance.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGap.htm">Anion Gap</a>
+                Aids in identifying causes of metabopc acidosis.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaGradient.htm">Anion Gap Delta Delta Gradient Multicalc</a> 
+                Aids in identifying acid-base disorders.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaRatio.htm">Anion Gap Delta Delta Ratio Multicalc</a>
+                Aids in identifying acid-base disorders.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapHypoAlb.htm">Anion Gap in Hypoalbumin States</a>
+                Calculation of anion gap (to identify acid-base disorders) taking hypoalbuminemia into account. </p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=ApacheScore.htm">APACHE II scoring system</a>
+                Estimates ICU mortapty.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=ApgarScore.htm">Apgar score</a>
+                Assesses neonates 1 and 5 minutes after birth.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=ArterialBloodGas.htm">Arterial Blood Gas Interpretation TreeCalc</a>
+                Analysis of arterial blood gas results.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADSVASc.htm">Atrial Fibrillation CHA(2)DS(2)-VASc Score for Stroke Risk</a>
+                Estimates risk of stroke in patients with atrial fibrillation.</p>
+              <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADS2.htm">Atrial fibrillation CHADS(2) score for stroke risk</a>
+                Estimates risk of stroke in patients with atrial fibrillation.</p>
+            </div>
+          </div> <!-- /card-block-->
+        </div> <!-- /card -->
+      </div> <!-- Tab Pane A to Z end-->
+      <div class="tab-pane" id="bySpecialty" role="tabpanel">
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Anesthesia</a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Anthropometrics</a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  Cardiology
+                </a>
+              </h5>
+            </div>
+              <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-block ml-5">
+                  <p class="mt-0"><a href="#">CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk</a>
+                    Calculates stroke risk for patients with atrial fibrillation, possibly better than the CHADS2 score.</p>
+                    <p><a href="#">CHADS₂ Score for Atrial Fibrillation Stroke Risk</a>
+                    Estimates stroke risk in patients with atrial fibrillation.</p>
+                    <p><a href="#">Cardiac Anesthesia Risk Evaluation Score (CARE)</a>
+                    Predicts mortality and morbidity after cardiac surgery.</p>
+                </div>
+              </div>
+          </div>
         </div>
-        <div class="card-block p-0">
-          <ul class="nav nav-pills w-100 mb-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">A</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">B</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">C</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">D</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">E</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">F</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">G</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">H</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">I</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">J</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">K</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">L</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> ... </a>
-            </li>
-          </ul>
-          <h2>A</h2>
-          <ul class="mt-2">
-            <li><a href="#">Allergy and immunology</a></li>
-            <li><a href="#">Cardiothoracic surgery</a></li>
-            <li><a href="#">Cardiovascular disorders</a></li>
-            <li><a href="#">Critical care medicine</a></li>
-            <li><a href="#">Dermatology</a></li>
-            <li><a href="#">Ear, nose and throat</a></li>
-            <li><a href="#">Emergency medicine</a></li>
-            <li><a href="#">Endocrinology and metabolic disorders</a></li>
-            <li><a href="#">Gastroenterology and hepatology</a></li>
-            <li><a href="#">General surgery</a></li>
-          </ul>
-        <h2>B</h2>
-          <ul>
-            <li><a href="#">Bradycardia</a></li>
-          </ul>
-        </div>
-      </div>
+      </div> <!--- Tabe Pane BySpecialties end -->
     </div>
-    <div class="tab-pane active" id="emergencies" role="tabpanel">
-      Emergencies coming soon
-    </div>
-  </div>
-
-</div><!-- /.container -->
-
   
-
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
@@ -192,11 +218,8 @@
 
     <!-- additional js for documentation -->
     <script src="../js/project.min.js"></script>
-      <!-- TypeAhead JQuery Plugin-->
-  <script src="../../js/typeahead.bundle.js"></script>
-  <!-- TypeAhead for calculators -->
-  <script src="../../js/calculators.js"></script>
-
-
+   
+    <!-- Filter for calculators search -->
+    <script src="../js/calc.js"></script>
 </body>
 </html>

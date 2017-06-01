@@ -12,31 +12,86 @@ The Bootstrap collapse plugin allows you to toggle content on your pages with a 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Calculators Search
-
-Please search for calculators begging with 'a' :-)
-
-{% example html %}
-<div id="the-basics" class="calculators">
-  <input class="typeahead form-control" type="text" placeholder="Search for calculators">
-</div>
-{% endexample %}
-
 ## Calculators Tabs
 
-{% example html %}
+2 x Tabs as titled
 
+{% example html %}
 <div class="calculators">
-  <div class="card d-inline-block">
+  <div class="card d-inline-block mb-3">
     <div class="card-block p-0">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">A - Z</a>
+          <a class="nav-link active" data-toggle="tab" href="#atoz" role="tab">A - Z</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">By Specialty</a>
+          <a class="nav-link" data-toggle="tab" href="#bySpecialty" role="tab">By Specialty</a>
         </li>
       </ul>
+    </div>
+  </div>
+</div>
+{% endexample %}
+
+## Calculators Search
+
+Included 'A' only for illustration. Search for a calculator begining with 'A' to filter the search results.
+
+{% example html %}
+<div class="calculators">
+  <form action="#">
+    <div class="form-search search-only"> 
+      <input id="myInput" onkeyup="searchCalc()" class="form-control search-query pl-3" placeholder="Search for calculators" type="text">
+      <span class="material-icons">&#xE8B6;</span>
+    </div>
+  </form>
+</div>
+<div class="calculators">
+  <div class="card">
+    <div class="card-block">
+      <div id="atoz-list">
+        <h2>A</h2> 
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AAGradient.htm">A-a Gradient</a> 
+          Calculates difference between alveolar and arterial oxygen concentration.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=ABCD2.htm">ABCD2 Score to Predict Stroke Risk after TIA</a>
+          Estimates the risk of stroke following transient ischemic attack.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AbsEocount.htm">Absolute Eosinophil Count</a>
+          Assesses number of eosinophils (e.g., in people with allergic or autoimmune conditions, or parasite infections).</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AbsLymphocyteCnt.htm">Absolute Lymphocyte Count</a>
+          Estimates number of lymphocytes and predicts CD4 count.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AbsNeutrophileCnt.htm">Absolute Neutrophil Count</a> 
+          Measures number of neutrophils (used to asses neutropenia or neutrophipa).</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AbsReticCnt.htm">Absolute Reticulocyte Count</a>
+          Measures reticulocytes (used to assess anemia).</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=ACR_EULAR.htm">ACR/EULAR Rheumatoid Arthritis Diagnostic Criteria (2010)</a>
+          Diagnostic criteria for rheumatoid arthritis.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=CHF_BNP.htm">Acute Heart Failure Prediction Based on NT-proBNP and Cpnical Features</a>
+          Estimates risk of acute heart failure. </p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AlcoholScreen.htm ">Alcohol Consumption Screening AUDIT Questionnaire</a> 
+          Screening tool to identify alcohol use disorders.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AmikacinDosing.htm">Amikacin Dosing q24hr (also Kanamycin and Streptomycin)</a>
+          Calculates dose based on patient's weight and renal factors.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AminoGlycCl.htm">Aminoglycoside Clearance Estimate</a>
+          Estimates rate of aminoglycoside clearance.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGap.htm">Anion Gap</a>
+          Aids in identifying causes of metabopc acidosis.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaGradient.htm">Anion Gap Delta Delta Gradient Multicalc</a> 
+          Aids in identifying acid-base disorders.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaRatio.htm">Anion Gap Delta Delta Ratio Multicalc</a>
+          Aids in identifying acid-base disorders.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapHypoAlb.htm">Anion Gap in Hypoalbumin States</a>
+          Calculation of anion gap (to identify acid-base disorders) taking hypoalbuminemia into account. </p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=ApacheScore.htm">APACHE II scoring system</a>
+          Estimates ICU mortapty.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=ApgarScore.htm">Apgar score</a>
+          Assesses neonates 1 and 5 minutes after birth.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=ArterialBloodGas.htm">Arterial Blood Gas Interpretation TreeCalc</a>
+          Analysis of arterial blood gas results.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADSVASc.htm">Atrial Fibrillation CHA(2)DS(2)-VASc Score for Stroke Risk</a>
+          Estimates risk of stroke in patients with atrial fibrillation.</p>
+        <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADS2.htm">Atrial fibrillation CHADS(2) score for stroke risk</a>
+          Estimates risk of stroke in patients with atrial fibrillation.</p>
+      </div>
     </div>
   </div>
 </div>
@@ -49,8 +104,8 @@ Please search for calculators begging with 'a' :-)
 <div id="accordion" class="calculators" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
-      <h5 class="mb-0">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+      <h5>
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           Anesthesia
         </a>
       </h5>
@@ -63,7 +118,7 @@ Please search for calculators begging with 'a' :-)
   </div>
   <div class="card">
     <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
+      <h5>
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           Anthropometrics
         </a>
@@ -77,8 +132,8 @@ Please search for calculators begging with 'a' :-)
   </div>
   <div class="card">
     <div class="card-header" role="tab" id="headingThree">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+      <h5>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           Cardiology
         </a>
       </h5>
@@ -92,58 +147,6 @@ Please search for calculators begging with 'a' :-)
           <p><a href="#">Cardiac Anesthesia Risk Evaluation Score (CARE)</a>
           Predicts mortality and morbidity after cardiac surgery.</p>
       </div>
-    </div>
-  </div>
-</div>
-
-{% endexample %}
-
-## Browse Calculators by A to Z
-
-Title and description of calculator
-
-{% example html %}
-<div class="calculators">
-  <div class="card">
-    <div class="card-block">
-    <h2>A</h2>
-      <p><a href="#">A-a O₂ Gradient</a>
-      Assesses for degree of shunting and V/Q mismatch.</p>
-      <p><a href="#">ABC Score for Massive Transfusion</a>
-      Predicts need for massive transfusion in trauma patients</p>
-      <p><a href="#">ABC/2 Formula for Intracerebral Hemorrhage Volume</a>
-      Predicts volume of intracranial hemorrhage from CT measurements.</p>
-      <p><a href="#">ABCD² Score for TIA</a>
-      Estimates the risk of stroke after a after a suspected transient ischemic attack (TIA).</p>
-      <p><a href="#">ACC/AHA Heart Failure Staging</a>
-      Describes stages of heart failure and provides recommendations for therapy by stage.</p>
-      <p><a href="#">ACR-EULAR Gout Classification Criteria</a>
-      Provides formal diagnostic criteria for gout.</p>
-      <p><a href="#">ADAPT Protocol for Cardiac Event Risk</a>
-      Assesses chest pain patients at 2-hours for risk of cardiac event.</p>
-      <p><a href="#">AIMS65 Score for Upper GI Bleeding Mortality</a>
-      Determines risk of in-hospital mortality from upper GI bleeding.</p>
-      <p><a href="#">APACHE II Score</a>
-      Estimates ICU mortality.</p>
-    <h2>C</h2>
-      <p><a href="#">A-a O₂ Gradient</a>
-      Assesses for degree of shunting and V/Q mismatch.</p>
-      <p><a href="#">ABC Score for Massive Transfusion</a>
-      Predicts need for massive transfusion in trauma patients</p>
-      <p><a href="#">ABC/2 Formula for Intracerebral Hemorrhage Volume</a>
-      Predicts volume of intracranial hemorrhage from CT measurements.</p>
-      <p><a href="#">ABCD² Score for TIA</a>
-      Estimates the risk of stroke after a after a suspected transient ischemic attack (TIA).</p>
-      <p><a href="#">ACC/AHA Heart Failure Staging</a>
-      Describes stages of heart failure and provides recommendations for therapy by stage.</p>
-      <p><a href="#">ACR-EULAR Gout Classification Criteria</a>
-      Provides formal diagnostic criteria for gout.</p>
-      <p><a href="#">ADAPT Protocol for Cardiac Event Risk</a>
-      Assesses chest pain patients at 2-hours for risk of cardiac event.</p>
-      <p><a href="#">AIMS65 Score for Upper GI Bleeding Mortality</a>
-      Determines risk of in-hospital mortality from upper GI bleeding.</p>
-      <p><a href="#">APACHE II Score</a>
-      Estimates ICU mortality.</p>
     </div>
   </div>
 </div>
