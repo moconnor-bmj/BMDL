@@ -393,6 +393,10 @@ pre {
   margin: 1rem;
 }
 
+.bd-example {
+  background-color: #eee;
+}
+
 .bt-1 {
   border-top: 1px solid #757575;
 }
@@ -417,7 +421,7 @@ h1, h2, h3 {
   padding: 1rem;
 }
 
-.calculators .card-header a:before {
+.card-header a:before {
   /* symbol for "opening" panels */
   font-family: 'Material Icons';
   /* essential for enabling glyphicon */
@@ -426,7 +430,8 @@ h1, h2, h3 {
   position: relative;
   top: 3px;
 }
-.calculators .card-header a.collapsed:before {
+
+.card-header a.collapsed:before {
   /* symbol for "collapsed" panels */
   content: "\E5CF";
   /* adjust as needed, taken from bootstrap.css */
@@ -567,8 +572,18 @@ h1, h2, h3 {
   background-color: #ffffff;
   font-weight: bold;
 }
+.treatment-table .panel-group#nested .panel-heading h4 a :before {
+  font-family: 'Material Icons';
+  content: "\E5CC";
+  position: relative;
+  top: 3px;
+  left: 63px;
+}
 .treatment-table .panel-group#nested .panel-heading h4 a.collapsed {
   background-color: #fff;
+}
+.treatment-table .panel-group#nested .panel-heading h4 a.collapsed :before {
+  content: "\E5CF";
 }
 .treatment-table .panel-group#nested .panel-body {
   margin: 0 1rem 2rem 1rem;
@@ -710,6 +725,44 @@ span.viewAll span.chevron.bottom::before {
   color: #000000;
 }
 
+.calculators ul li {
+  font-size: 1rem;
+  line-height: 2;
+  list-style-type: none;
+}
+.calculators .card .card-block .nav-link::before {
+  color: #c50084;
+  height: 5px;
+}
+.calculators .card .card-block .nav-pills {
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: bold;
+  padding-left: 1.5rem;
+}
+.calculators .card .card-block .nav-pills .nav-link {
+  color: #000000;
+  margin: .25rem 0;
+}
+.calculators .card .card-block .nav-pills .nav-link.active, .calculators .card .card-block .nav-pills .nav-link:hover {
+  color: #c50084;
+}
+.calculators .card .card-block h2 {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 2.5rem;
+}
+.calculators .breadcrumb {
+  min-height: 2.5rem;
+  padding: 0;
+}
+.calculators .breadcrumb-item {
+  color: #2a6ebb;
+}
+.calculators .breadcrumb-item:hover {
+  color: #c50084;
+}
+.calculators .breadcrumb-item span {
+  color: #000000;
+}
 .calculators .nav-tabs .nav-link {
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -812,6 +865,144 @@ span.viewAll span.chevron.bottom::before {
   position: relative;
   top: 1rem;
   right: 1rem;
+}
+
+.diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
+  padding: 0;
+}
+.diffDiagnosis table, .histExam table, .diagGuidelines table {
+  margin-bottom: 0;
+}
+.diffDiagnosis table thead th, .histExam table thead th, .diagGuidelines table thead th {
+  background-color: #01579b;
+  color: #fff;
+  font-size: 1rem;
+  height: 2rem;
+  padding: .5rem 0 0 1.5rem;
+  text-transform: uppercase;
+  width: 25%;
+}
+.diffDiagnosis table ul, .histExam table ul, .diagGuidelines table ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.diffDiagnosis table ul li, .histExam table ul li, .diagGuidelines table ul li {
+  padding: 0 0 1rem 0;
+}
+.diffDiagnosis table ul li:before, .histExam table ul li:before, .diagGuidelines table ul li:before {
+  color: #c50084;
+  content: "\2022";
+  padding-right: .8725rem;
+  vertical-align: top;
+}
+.diffDiagnosis figure, .histExam figure, .diagGuidelines figure {
+  display: table;
+  width: 1px;
+  /* This can be any width, so long as it's narrower than any image */
+}
+.diffDiagnosis img, .histExam img, .diagGuidelines img {
+  display: table-row;
+}
+.diffDiagnosis figcaption, .histExam figcaption, .diagGuidelines figcaption {
+  background-color: #eee;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  padding: 16px;
+}
+.diffDiagnosis figcaption span, .histExam figcaption span, .diagGuidelines figcaption span {
+  display: block;
+  font-style: italic;
+  font-size: 0.875rem;
+  padding-top: 5px;
+}
+
+.diffDiagnosis table#fourCol td, .diffDiagnosis table#fourCol th, .diffDiagnosis table#twoCol td, .diffDiagnosis table#twoCol th {
+  border-top: none;
+}
+.diffDiagnosis table#fourCol tr:nth-child(even) td, .diffDiagnosis table#twoCol tr:nth-child(even) td {
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+.diffDiagnosis table#fourCol tr:nth-child(odd), .diffDiagnosis table#twoCol tr:nth-child(odd) {
+  background-color: #ecf0f5;
+}
+.diffDiagnosis table#fourCol tr:nth-child(odd) td, .diffDiagnosis table#twoCol tr:nth-child(odd) td {
+  color: #2a6ebb;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.diffDiagnosis table#fourCol tr:last-child td, .diffDiagnosis table#twoCol tr:last-child td {
+  border-bottom: none;
+}
+.diffDiagnosis table#threeCol {
+  font-size: 1rem;
+}
+.diffDiagnosis table#threeCol thead th:first-child {
+  width: 10%;
+}
+.diffDiagnosis table#threeCol thead th:nth-child(2) {
+  width: 45%;
+}
+.diffDiagnosis table#threeCol thead th:nth-child(3) {
+  width: 45%;
+}
+.diffDiagnosis table#threeCol td {
+  font-size: 1rem;
+}
+.diffDiagnosis table#threeCol td:first-child {
+  background-color: #ecf0f5;
+  color: #2a6ebb;
+  font-weight: bold;
+}
+
+.histExam table#oneColLeft td, .histExam table#oneColLeft th, .histExam table#oneColRight td, .histExam table#oneColRight th {
+  border-top: none;
+}
+.histExam table#oneColLeft tr:nth-child(even) td, .histExam table#oneColRight tr:nth-child(even) td {
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+.histExam table#oneColLeft tr:nth-child(odd), .histExam table#oneColRight tr:nth-child(odd) {
+  background-color: #ecf0f5;
+}
+.histExam table#oneColLeft tr:nth-child(odd) td, .histExam table#oneColRight tr:nth-child(odd) td {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.histExam table#oneColLeft tr:last-child td, .histExam table#oneColRight tr:last-child td {
+  border-bottom: none;
+}
+.histExam table#oneColRight thead th {
+  background-color: #c50084;
+}
+.histExam table#oneColRight tr:nth-child(odd) {
+  background-color: #f8e0f0;
+}
+
+.diagGuidelines table#oneCol td, .diagGuidelines table#oneCol th {
+  border-top: none;
+}
+.diagGuidelines table#oneCol td .pubDate {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2.5;
+  margin-right: 10px;
+  width: 12%;
+}
+.diagGuidelines table#oneCol tr:nth-child(even) td {
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+.diagGuidelines table#oneCol tr:nth-child(odd) {
+  background-color: #ecf0f5;
+}
+.diagGuidelines table#oneCol tr:nth-child(odd) td {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.diagGuidelines table#oneCol tr:last-child td {
+  border-bottom: none;
 }
 
 .doc-jumbotron {

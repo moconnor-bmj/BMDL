@@ -13,7 +13,9 @@ ul#markdown-toc {
     margin: 1rem;
   }
 
-
+.bd-example { // for Comp. Library preview
+    background-color: #eee;
+}
 
 //Access
   .bt-1 {
@@ -44,8 +46,7 @@ ul#markdown-toc {
       padding: 1rem;
   }
 
-// Default Accordion / Collapse Icons behaviour
-.calculators {
+  // Default Accordion / Collapse Icons behaviour
   .card-header a:before {
     /* symbol for "opening" panels */
     font-family: 'Material Icons';  /* essential for enabling glyphicon */
@@ -56,5 +57,4 @@ ul#markdown-toc {
 .card-header a.collapsed:before {
     /* symbol for "collapsed" panels */
     content: "\E5CF";    /* adjust as needed, taken from bootstrap.css */
-}
 }

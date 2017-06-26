@@ -151,8 +151,18 @@
         a {
           background-color: $white;
           font-weight: bold;
+          :before {
+            font-family: 'Material Icons';
+            content: "\E5CC";
+            position: relative;
+            top: 3px;
+            left: 63px;
+          }
           &.collapsed {
             background-color: #fff;
+            :before {
+              content: "\E5CF";
+            }
           }
         }
     }

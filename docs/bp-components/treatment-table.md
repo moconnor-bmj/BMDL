@@ -49,7 +49,7 @@ Extend the default collapse behavior to create an accordion.
 		<div class="panel-group" id="accordion">
 			<div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title"><a class="" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" aria-expanded="true">non-pregnant: at initial diagnosis  <span class="viewAll hidden-sm-down">View all <span class="chevron bottom pl-3 pr-3"></span></span></a></h4>
+          <h4 class="panel-title"><a class="" data-parent="#accordion" data-toggle="collapse" href="#collapseOne" aria-expanded="true">non-pregnant: at initial diagnosis  <span class="viewAll hidden-sm-down">View all </span></a></h4>
         </div>
         <!--/.panel-heading -->
         <div class="panel-collapse collapse show" id="collapseOne" aria-expanded="true">
@@ -58,7 +58,8 @@ Extend the default collapse behavior to create an accordion.
             <div class="panel-group" id="nested">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseOne" class="collapsed" aria-expanded="false"><span class="txLine" >1st line<span class="chevron bottom"></span></span>BP control</a></h4>
+                  <span class="txLine" >1st line</span>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseOne" class="collapsed" aria-expanded="false">BP control</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse in" id="nested-collapseOne" aria-expanded="false">
@@ -107,7 +108,7 @@ Extend the default collapse behavior to create an accordion.
               <!-- /.panel -->
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseTwo" class="collapsed" aria-expanded="false"><span class="txLine" >plus<span class="chevron bottom"></span></span>lipid control</a></h4>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseTwo" class="collapsed" aria-expanded="false"><span class="txLine" >plus</span>lipid control</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse" id="nested-collapseTwo" aria-expanded="false">
@@ -121,7 +122,7 @@ Extend the default collapse behavior to create an accordion.
               <!-- /.panel -->
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseThree" class="collapsed" aria-expanded="false"><span class="txLine" >plus<span class="chevron bottom"></span></span>lifestyle changes</a></h4>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseThree" class="collapsed" aria-expanded="false"><span class="txLine" >plus</span>lifestyle changes</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse" id="nested-collapseThree" aria-expanded="false">
@@ -135,7 +136,7 @@ Extend the default collapse behavior to create an accordion.
               <!-- /.panel -->
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseFour" class="collapsed" aria-expanded="false"><span class="txLine" >plus<span class="chevron bottom"></span></span>smoking cessation changes</a></h4>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseFour" class="collapsed" aria-expanded="false"><span class="txLine" >plus</span>smoking cessation changes</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse" id="nested-collapseFour" aria-expanded="false">
@@ -149,7 +150,7 @@ Extend the default collapse behavior to create an accordion.
               <!-- /.panel -->
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseFive" class="collapsed" aria-expanded="false"><span class="txLine" >plus<span class="chevron bottom"></span></span>stratified glycaemic management</a></h4>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseFive" class="collapsed" aria-expanded="false"><span class="txLine" >plus</span>stratified glycaemic management</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse" id="nested-collapseFive" aria-expanded="false">
@@ -163,7 +164,7 @@ Extend the default collapse behavior to create an accordion.
               <!-- /.panel -->
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseSix" class="collapsed" aria-expanded="false"><span class="txLine" >adjunct<span class="chevron bottom"></span></span>antiplatelet therapy</a></h4>
+                  <h4 class="panel-title"><a data-parent="#nested" data-toggle="collapse" href="#nested-collapseSix" class="collapsed" aria-expanded="false"><span class="txLine" >adjunct</span>antiplatelet therapy</a></h4>
                 </div>
                 <!--/.panel-heading -->
                 <div class="panel-collapse collapse" id="nested-collapseSix" aria-expanded="false">
