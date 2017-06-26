@@ -1972,7 +1972,7 @@ p {
 
 @font-face {
   font-family: "interFace";
-  src: url("fonts/if_std_bd-webfont.eot?") format("eot"), url("fonts/if_std_bd-webfont.woff2") format("woff2"), url("fonts/if_std_bd-webfont.woff") format("woff"), url("fonts/if_std_bd-webfont.ttf") format("truetype"), url("fonts/if_std_bd-webfont.svg#interFace") format("svg");
+  src: url("fonts/if_std_rg-webfont.eot?") format("eot"), url("fonts/if_std_rg-webfont.woff2") format("woff2"), url("fonts/if_std_rg-webfont.woff") format("woff"), url("fonts/if_std_rg-webfont.ttf") format("truetype"), url("fonts/if_std_rg-webfont.svg#interFace") format("svg");
 }
 .blockquote {
   border-left: 0.3125rem solid #2a6ebb;
@@ -7221,7 +7221,7 @@ a.chip-warning:hover {
   background-color: #a30054;
   content: "";
   display: block;
-  height: 2px;
+  height: 5px;
   opacity: 0;
   position: absolute;
   right: 0;
@@ -7309,7 +7309,7 @@ a.chip-warning:hover {
 }
 .nav-tabs-material .nav-tabs-indicator {
   background-color: #a30054;
-  height: 2px;
+  height: 5px;
   display: none;
   position: absolute;
   bottom: 0;

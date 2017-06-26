@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Topic Tables &middot; BMDL</title>
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add material css | replace bootstrap.css -->
+  <link href="../../../css/material.min.css" rel="stylesheet">
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="../../../css/project.min.css" rel="stylesheet">
+  <!-- Javascript -->
+  <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  <!--<script type='text/javascript' src="../../../js/css3-mediaqueries.js"></script>  -->
+  <!-- HTML5 shiv, Respond.js & rem to px polyfill for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="../../../js/html5shiv.js"></script>
+  <script src="../../../js/respond.js"></script>
+  <script src="../../../js/rem.min.js"></script>
+<![endif]-->
+</head>
+</head>
+<body class="doc-body">
+  <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
+    <button aria-controls="doc_navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler hidden-lg-up" data-target="#doc_navdrawer" data-toggle="navdrawer" data-type="permanent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand hidden-lg-up" href="../../../index.html">BMDL</a>
+  </div>
+  <div class="navdrawer navdrawer-permanent doc-navdrawer" id="doc_navdrawer">
+    <div class="navdrawer-content">
+      <div class="navdrawer-header">
+        <a class="navbar-brand px-0" href="../../../index.html">BMDL</a>
+      </div>
+      <nav class="navdrawer-nav">
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-components">BP Components</a>
+        <div class="collapse " id="doc_navdrawer_bp-components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/access/index.html">Access</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/topic-tables/index.html">Topic tables</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-popovers-tooltips/index.html">BP Popovers Tooltips</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-calculators/index.html">BP Calculators</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
+        <div class="collapse " id="doc_navdrawer_bp-utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/typography-kitchen-sink/index.html">Typography kitchen sink</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_layout">Layout</a>
+        <div class="collapse " id="doc_navdrawer_layout">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/grid-system/index.html">Grid system</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/media-object/index.html">Media object</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/responsive-utilities/index.html">Responsive utilities</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_components">Components</a>
+        <div class="collapse " id="doc_navdrawer_components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/alerts/index.html">Alerts</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/badges/index.html">Badges</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/breadcrumb/index.html">Breadcrumb</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/buttons/index.html">Buttons</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/button-group/index.html">Button group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/cards/index.html">Cards</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/carousel/index.html">Carousel</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/collapse/index.html">Collapse</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/dropdowns/index.html">Dropdowns</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/forms/index.html">Forms</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/input-group/index.html">Input group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/jumbotron/index.html">Jumbotron</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/list-group/index.html">List group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/modal/index.html">Modal</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navs/index.html">Navs</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navbar/index.html">Navbar</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/pagination/index.html">Pagination</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/popovers/index.html">Popovers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/progress/index.html">Progress</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/scrollspy/index.html">Scrollspy</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/tooltips/index.html">Tooltips</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_utilities">Utilities</a>
+        <div class="collapse " id="doc_navdrawer_utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/borders/index.html">Borders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/clearfix/index.html">Clearfix</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/close-icon/index.html">Close icon</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/flexbox/index.html">Flexbox</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/display-property/index.html">Display property</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/image-replacement/index.html">Image replacement</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/invisible-content/index.html">Invisible content</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/position/index.html">Position</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/responsive-helpers/index.html">Responsive helpers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/screenreaders/index.html">Screenreaders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/sizing/index.html">Sizing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/spacing/index.html">Spacing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/typography/index.html">Typography</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/vertical-alignment/index.html">Vertical alignment</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid mb-xl doc-jumbotron" id="doc_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-10 col-xl-10 offset-sm-1 offset-md-1 offset-xl-1">
+          <h1 class="typography-display-3">Topic Tables</h1>
+          <p class="font-weight-light typography-title">A Topic template component</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main">
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">-->
+        <div class="col-sm-12 col-md-12">
+          <div class="bd-content mb-xl">
+            <p>Tables form part of the topic templates and come in various forms.</p>
+            <h2 id="snippets">Snippets</h2>
+            <ul id="markdown-toc">
+              <li><a href="#snippets" id="markdown-toc-snippets">Snippets</a></li>
+              <li><a href="#differential-diagnosis" id="markdown-toc-differential-diagnosis">Differential Diagnosis</a></li>
+            </ul>
+            <div class="bd-callout bd-callout-warning">
+              <h3 id="coding-standards---please-read">Coding Standards - Please read</h3>
+              <ul>
+                <li>Feel free to reuse the code snippets below</li>
+                <li>All code is WCAG 2.0 Level AA compliant, valid and semantic (as of 04/2017).</li>
+                <li>If you amend the code, please ensure that it remain thus.</li>
+              </ul>
+            </div>
+            <h2 id="differential-diagnosis">Differential Diagnosis</h2>
+            <p>Toggle a working Registration modal demo by clicking the button below. It will slide down and fade in from the top of the page.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="diffDiagnosis">
+                <h2>Differential diagnosis</h2>
+                <div class="card d-inline-block mb-3">
+                  <div class="card-block p-0">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#common" role="tab">Common / Uncommon</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#category" role="tab">Category</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="common" role="tabpanel">
+                    <h3>Common</h3>
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="table-responsive">
+                          <table id="fourCol" class="table">
+                            <thead>
+                              <tr>
+                                <th>History</th>
+                                <th>Exam</th>
+                                <th>1st Investigation</th>
+                                <th>Other Investigations</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="4"><span class="material-icons text-danger" style="font-size: 1.5rem;">&#xE32A;</span> Insomnia disorder</td>
+                              </tr>
+                              <tr>
+                                <td data-title="History">
+                                  <p>difficulty in initiating sleep, waking frequently, poor concentration, depressed mood</p>
+                                </td>
+                                <td data-title="Exam">
+                                  <p>decreased alertness, red and puffy eyes, absence of physical signs suggesting organic illness</p>
+                                </td>
+                                <td data-title="1st Investigation">
+                                  <ul>
+                                    <li><strong>none:</strong> diagnosis based on histry and clinical examination</li>
+                                  </ul>
+                                </td>
+                                <td data-title="Other Investigations"> </td>
+                              </tr>
+                              <tr>
+                                <td colspan="4">Depression</td>
+                              </tr>
+                              <tr>
+                                <td data-title="History">
+                                  <p>depressed mood, sadness, emotional distress, anxiety, irritability, anhedonia, feeling hopeless, loss of self-esteem, sleep problems, appetite troubles, weight loss or gain, loss of energy, poor concentration, suicidal ideation, symptoms of psychosis or mania</p>
+                                </td>
+                                <td data-title="Exam">
+                                  <p>Apsychomotor slowing, agitation, blunted affect</p>
+                                </td>
+                                <td data-title="1st Investigation">
+                                  <ul>
+                                    <li><strong>2-item screening tool (PHQ-2):</strong> positive if 1 answer is yes</li>
+                                    <li><strong>PHQ-9 screening tool: PHQ-9 score: 5 to 9:</strong> mild depression; 10 to 14: moderate depression; 15 to 19: moderately severe depression; ≥20: severe depression</li>
+                                  </ul>
+                                </td>
+                                <td data-title="Other Investigations"> </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="category" role="tabpanel">
+                    <h2>Coming soon ...</h2>
+                  </div>
+                </div>
+              </div>
+              <!-- /diffDiag -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"diffDiagnosis"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Differential diagnosis<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card d-inline-block mb-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block p-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#common"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Common / Uncommon<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#category"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Category<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane active"</span> <span class="na">id=</span><span class="s">"common"</span> <span class="na">role=</span><span class="s">"tabpanel"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Common<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"fourCol"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;th&gt;</span>History<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Exam<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>1st Investigation<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Other Investigations<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/thead&gt;</span>
+          <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">"material-icons text-danger"</span> <span class="na">style=</span><span class="s">"font-size: 1.5rem;"</span><span class="nt">&gt;</span><span class="ni">&amp;#xE32A;</span><span class="nt">&lt;/span&gt;</span> Insomnia disorder<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"History"</span><span class="nt">&gt;&lt;p&gt;</span>difficulty in initiating sleep, waking frequently, poor concentration, depressed mood<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Exam"</span><span class="nt">&gt;&lt;p&gt;</span>decreased alertness, red and puffy eyes, absence of physical signs suggesting organic illness<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"1st Investigation"</span><span class="nt">&gt;&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;strong&gt;</span>none:<span class="nt">&lt;/strong&gt;</span> diagnosis based on histry and clinical examination<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Other Investigations"</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"4"</span><span class="nt">&gt;</span>Depression<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"History"</span><span class="nt">&gt;&lt;p&gt;</span>depressed mood, sadness, emotional distress, anxiety, irritability, anhedonia, feeling hopeless, loss of self-esteem, sleep problems, appetite troubles, weight loss or gain, loss of energy, poor concentration, suicidal ideation, symptoms of psychosis or mania<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Exam"</span><span class="nt">&gt;&lt;p&gt;</span>Apsychomotor slowing, agitation, blunted affect<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"1st Investigation"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;strong&gt;</span>2-item screening tool (PHQ-2):<span class="nt">&lt;/strong&gt;</span> positive if 1 answer is yes<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;&lt;strong&gt;</span>PHQ-9 screening tool: PHQ-9 score: 5 to 9:<span class="nt">&lt;/strong&gt;</span> mild depression; 10 to 14: moderate depression; 15 to 19: moderately severe depression; ≥20: severe depression<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Other Investigations"</span><span class="nt">&gt;</span> <span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tab-pane"</span> <span class="na">id=</span><span class="s">"category"</span> <span class="na">role=</span><span class="s">"tabpanel"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2&gt;</span>Coming soon ...<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /diffDiag --&gt;</span></code></pre></div>
+            <div class="bd-example" data-example-id="">
+              <div class="diffDiagnosis">
+                <h2>Differential diagnosis</h2>
+                <div class="card">
+                  <div class="card-block">
+                    <div class="table-responsive">
+                      <table id="threeCol" class="table">
+                        <thead>
+                          <tr>
+                            <th>Conditions</th>
+                            <th>Signs / Symptoms</th>
+                            <th>Investigations</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-title="Conditions">Asthma</td>
+                            <td data-title="Signs / Symptoms">
+                              <ul>
+                                <li>Onset of asthma is usually in early life. A personal or family hx of allergy, rhinitis, and eczema is often present. There is daily variability in symptoms, and patients have overt wheezing that usually rapidly responds to bronchodilators. Cough variant asthma mimics many features of COPD.</li>
+                              </ul>
+                            </td>
+                            <td data-title="Investigations">
+                              <ul>
+                                <li>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.</li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-title="Conditions">Gastro-oesophageal reflux disease</td>
+                            <td data-title="Signs / Symptoms">
+                              <ul>
+                                <li>Patients with GORD often have dyspepsia and frequent belching, and can have a chronic cough that worsens at night when supine.</li>
+                              </ul>
+                            </td>
+                            <td data-title="Investigations">
+                              <ul>
+                                <li>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.</li>
+                              </ul>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-title="Conditions">Lung cancer</td>
+                            <td data-title="Signs / Symptoms">
+                              <ul>
+                                <li>Patients with GORD often have dyspepsia and frequent belching, and can have a chronic cough that worsens at night when supine.</li>
+                              </ul>
+                            </td>
+                            <td data-title="Investigations">
+                              <ul>
+                                <li>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.</li>
+                              </ul>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /diffDiag -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"diffDiagnosis"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Differential diagnosis<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"threeCol"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Conditions<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Signs / Symptoms<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Investigations<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/thead&gt;</span>
+          <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Conditions"</span><span class="nt">&gt;</span>Asthma<span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Signs / Symptoms"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Onset of asthma is usually in early life. A personal or family hx of allergy, rhinitis, and eczema is often present. There is daily variability in symptoms, and patients have overt wheezing that usually rapidly responds to bronchodilators. Cough variant asthma mimics many features of COPD.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Investigations"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;&lt;li&gt;</span>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Conditions"</span><span class="nt">&gt;</span>Gastro-oesophageal reflux disease<span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Signs / Symptoms"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Patients with GORD often have dyspepsia and frequent belching, and can have a chronic cough that worsens at night when supine.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Investigations"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;&lt;li&gt;</span>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Conditions"</span><span class="nt">&gt;</span>Lung cancer<span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Signs / Symptoms"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;ul&gt;&lt;li&gt;</span>Patients with GORD often have dyspepsia and frequent belching, and can have a chronic cough that worsens at night when supine.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Investigations"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;ul&gt;&lt;li&gt;</span>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /diffDiag --&gt;</span></code></pre></div>
+            <div class="bd-example" data-example-id="">
+              <div class="diffDiagnosis">
+                <h2>Diagnostic investigations</h2>
+                <h3>1st investigations to order</h3>
+                <div class="card">
+                  <div class="card-block">
+                    <div class="table-responsive">
+                      <table id="twoCol" class="table">
+                        <thead>
+                          <tr>
+                            <th>Test</th>
+                            <th>Result</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="2">spirometry</td>
+                          </tr>
+                          <tr>
+                            <td data-title="Test">
+                              <p>COPD is classified based on the patient's FEV1 and its percentage of the predicted FEV1. In cases where FVC may be hard to measure, FEV6 (forced expiratory volume at 6 seconds) can be used. <a href="#" class="refLink">[Evidence A]</a></p>
+                            </td>
+                            <td data-title="Result">FEV1/FVC ratio &lt;0.70; total absence of reversibility is neither required nor the most typical result</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">CXR</td>
+                          </tr>
+                          <tr>
+                            <td data-title="Test">
+                              <p>Seldom diagnostic, but useful in ruling out other pathologies. <a href="#" class="refLink">[2]</a></p>
+                              <p>Increased anteroposterior ratio, flattened diaphragm, increased intercostal spaces, and hyperlucent lungs may be seen.</p>
+                              <figure class="figure">
+                                <img src="/css/images/diff_diag_img.jpg" alt="chest x-ray" />
+                                <figcaption class="figure-caption">COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
+                                  <span>From the collection of Manoochehr Abadian Sharifabad, MD</span></figcaption>
+                              </figure>
+                              <p>May also demonstrate complications of COPD, such as pneumonia and pneumothorax.</p>
+                            </td>
+                            <td data-title="Result">hyperinflation</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">FBC</td>
+                          </tr>
+                          <tr>
+                            <td data-title="Test">
+                              <p>This test may be considered to assess severity of an exacerbation and may show polycythaemia (haematocrit &gt;55%), anaemia, and leucocytosis. <a href="#" class="refLink">[49]</a> <a href="#">[Cochrane]</a></p>
+                            </td>
+                            <td data-title="Result">raised haematocrit, possible increased WBC count</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt3">
+                  <div class="card-block">
+                    <div class="table-responsive">
+                      <!-- Two Column  -->
+                      <table id="threeCol" class="table">
+                        <thead>
+                          <tr>
+                            <th>Conditions</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td data-title="Conditions">COPD</td>
+                            <td data-title="Description">
+                              <p>Suspected in patients with a history of smoking, occupational/environmental risk factors, or a personal or family history of chronic lung disease. Presents with progressive shortness of breath, wheeze, cough, and sputum production. Treatment includes smoking cessation, bronchodilators, and corticosteroids. Long-term oxygen therapy improves survival in severe COPD.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td data-title="Conditions">Acute COPD exacerbation</td>
+                            <td data-title="Description">
+                              <p>Acute exacerbations of COPD range from very mild to severe and life-threatening, and are commonly triggered by bacterial or viral pathogens, pollutants, or changes in temperature and humidity. They present with an acute-onset, sustained worsening of the patient's respiratory symptoms, lung function, functional status, and quality of life. <a href="#" class="refLink">[4]</a> <a href="#" class="refLink">[5]</a> <a href="#" class="refLink">[6]</a></p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /diffDiag -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"diffDiagnosis"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Diagnostic investigations<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>1st investigations to order<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"twoCol"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Test<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Result<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/thead&gt;</span>
+          <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>spirometry<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Test"</span><span class="nt">&gt;&lt;p&gt;</span>COPD is classified based on the patient's FEV1 and its percentage of the predicted FEV1. In cases where FVC may be hard to measure, FEV6 (forced expiratory volume at 6 seconds) can be used. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[Evidence A]<span class="nt">&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Result"</span><span class="nt">&gt;</span>FEV1/FVC ratio <span class="nt">&lt;0</span><span class="err">.</span><span class="na">70</span><span class="err">;</span> <span class="na">total</span> <span class="na">absence</span> <span class="na">of</span> <span class="na">reversibility</span> <span class="na">is</span> <span class="na">neither</span> <span class="na">required</span> <span class="na">nor</span> <span class="na">the</span> <span class="na">most</span> <span class="na">typical</span> <span class="na">result</span><span class="err">&lt;/</span><span class="na">td</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>CXR<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Test"</span><span class="nt">&gt;&lt;p&gt;</span>Seldom diagnostic, but useful in ruling out other pathologies. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[2]<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;p&gt;</span>Increased anteroposterior ratio, flattened diaphragm, increased intercostal spaces, and hyperlucent lungs may be seen.<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"figure"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/css/images/diff_diag_img.jpg"</span> <span class="na">alt=</span><span class="s">"chest x-ray"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"figure-caption"</span><span class="nt">&gt;</span>COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
+                <span class="nt">&lt;span&gt;</span>From the collection of Manoochehr Abadian Sharifabad, MD<span class="nt">&lt;/span&gt;&lt;/figcaption&gt;</span>
+              <span class="nt">&lt;/figure&gt;</span>
+              <span class="nt">&lt;p&gt;</span>May also demonstrate complications of COPD, such as pneumonia and pneumothorax.<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Result"</span><span class="nt">&gt;</span>hyperinflation<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">colspan=</span><span class="s">"2"</span><span class="nt">&gt;</span>FBC<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Test"</span><span class="nt">&gt;&lt;p&gt;</span>This test may be considered to assess severity of an exacerbation and may show polycythaemia (haematocrit &gt;55%), anaemia, and leucocytosis. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[49]<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>[Cochrane]<span class="nt">&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Result"</span><span class="nt">&gt;</span>raised haematocrit, possible increased WBC count<span class="nt">&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mt3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- Two Column  --&gt;</span>
+        <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"threeCol"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;thead&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Conditions<span class="nt">&lt;/th&gt;</span>
+              <span class="nt">&lt;th&gt;</span>Description<span class="nt">&lt;/th&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/thead&gt;</span>
+          <span class="nt">&lt;tbody&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Conditions"</span><span class="nt">&gt;</span>COPD<span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Description"</span><span class="nt">&gt;&lt;p&gt;</span>Suspected in patients with a history of smoking, occupational/environmental risk factors, or a personal or family history of chronic lung disease. Presents with progressive shortness of breath, wheeze, cough, and sputum production. Treatment includes smoking cessation, bronchodilators, and corticosteroids. Long-term oxygen therapy improves survival in severe COPD.<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+            <span class="nt">&lt;tr&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Conditions"</span><span class="nt">&gt;</span>Acute COPD exacerbation<span class="nt">&lt;/td&gt;</span>
+              <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Description"</span><span class="nt">&gt;&lt;p&gt;</span>Acute exacerbations of COPD range from very mild to severe and life-threatening, and are commonly triggered by bacterial or viral pathogens, pollutants, or changes in temperature and humidity. They present with an acute-onset, sustained worsening of the patient's respiratory symptoms, lung function, functional status, and quality of life. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[4]<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[5]<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"refLink"</span><span class="nt">&gt;</span>[6]<span class="nt">&lt;/a&gt;&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="nt">&lt;/tr&gt;</span>
+          <span class="nt">&lt;/tbody&gt;</span>
+        <span class="nt">&lt;/table&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /diffDiag --&gt;</span></code></pre></div>
+            <div class="bd-example" data-example-id="">
+              <div class="histExam">
+                <h2>History &amp; examination</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>Key diagnostic factors</h3>
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="table-responsive">
+                          <table id="oneColLeft" class="table">
+                            <thead>
+                              <tr>
+                                <th>Common</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>presence of risk factors (e.g., smoking)</td>
+                              </tr>
+                              <tr>
+                                <td data-title="Common">
+                                  <p>The main risk factor is smoking. Other key risk factors include advancing age and genetic factors.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>cough</td>
+                              </tr>
+                              <tr>
+                                <td data-title="Common">
+                                  <p>Usually the initial symptom of COPD.</p>
+                                  <p>Frequently a morning cough, but becomes constant as disease progresses.</p>
+                                  <p>Usually productive, and sputum quality may change with exacerbations or superimposed infection..</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /table-responsive -->
+                      </div>
+                      <!-- /card-block -->
+                    </div>
+                    <!-- /card -->
+                  </div>
+                  <!-- /col-md-6 -->
+                  <div class="col-md-6">
+                    <h3>Risk factors</h3>
+                    <div class="card">
+                      <div class="card-block">
+                        <div class="table-responsive">
+                          <table id="oneColRight" class="table">
+                            <thead>
+                              <tr>
+                                <th>Strong</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>cigarette smoking</td>
+                              </tr>
+                              <tr>
+                                <td data-title="Test">
+                                  <ul>
+                                    <li>Most important risk factor. It causes 40% to 70% of cases of COPD. [12]</li>
+                                    <li>Elicits an inflammatory response and causes cilia dysfunction and oxidative injury</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>advanced age</td>
+                              </tr>
+                              <tr>
+                                <td data-title="Test">
+                                  <ul>
+                                    <li>The effect of age may be related to a longer period of cigarette smoking as well as the normal age-related loss of FEV1.</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /table-responsive -->
+                      </div>
+                      <!-- /card-block -->
+                    </div>
+                    <!-- /card -->
+                  </div>
+                  <!-- /col-md-6 -->
+                </div>
+                <!-- /row -->
+              </div>
+              <!-- /histExam -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"histExam"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>History <span class="ni">&amp;amp;</span> examination<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Key diagnostic factors<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"oneColLeft"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;thead&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;th&gt;</span>Common<span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/thead&gt;</span>
+              <span class="nt">&lt;tbody&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>presence of risk factors (e.g., smoking)<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Common"</span><span class="nt">&gt;&lt;p&gt;</span>The main risk factor is smoking. Other key risk factors include advancing age and genetic factors.<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>cough<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Common"</span><span class="nt">&gt;&lt;p&gt;</span>Usually the initial symptom of COPD.<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>Frequently a morning cough, but becomes constant as disease progresses.<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;p&gt;</span>Usually productive, and sputum quality may change with exacerbations or superimposed infection..<span class="nt">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/tbody&gt;</span>
+            <span class="nt">&lt;/table&gt;</span>
+          <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /table-responsive --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /card-block --&gt;</span>
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /card --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /col-md-6 --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Risk factors<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"oneColRight"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;thead&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;th&gt;</span>Strong<span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/thead&gt;</span>
+              <span class="nt">&lt;tbody&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>cigarette smoking<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Test"</span><span class="nt">&gt;&lt;ul&gt;&lt;li&gt;</span>Most important risk factor. It causes 40% to 70% of cases of COPD. [12]<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>Elicits an inflammatory response and causes cilia dysfunction and oxidative injury<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;</span>advanced age<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td</span> <span class="na">data-title=</span><span class="s">"Test"</span><span class="nt">&gt;&lt;ul&gt;&lt;li&gt;</span>The effect of age may be related to a longer period of cigarette smoking as well as the normal age-related loss of FEV1.<span class="nt">&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/tbody&gt;</span>
+            <span class="nt">&lt;/table&gt;</span>
+          <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /table-responsive --&gt;</span>
+        <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /card-block --&gt;</span>
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /card --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /col-md-6 --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /row --&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /histExam --&gt;</span></code></pre></div>
+            <div class="bd-example" data-example-id="">
+              <div class="diagGuidelines">
+                <h2>Diagnostic guidelines</h2>
+                <div class="card">
+                  <div class="card-block">
+                    <div class="table-responsive">
+                      <table id="oneCol" class="table">
+                        <thead>
+                          <tr>
+                            <th>Europe</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#">Chronic obstructive pulmonary disease in over 16s: diagnosis and management <span class="material-icons material-icons-inline">open_in_new</span></a></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="pubDate">Published by:</div> National Institiute for Health and Care Excellence
+                              <br />
+                              <div class="pubDate">Last published:</div> 2010</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+              </div>
+              <!-- /diagGuidelines -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"diagGuidelines"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Diagnostic guidelines<span class="nt">&lt;/h2&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;table</span> <span class="na">id=</span><span class="s">"oneCol"</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;thead&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;th&gt;</span>Europe<span class="nt">&lt;/th&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/thead&gt;</span>
+              <span class="nt">&lt;tbody&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Chronic obstructive pulmonary disease in over 16s: diagnosis and management <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons material-icons-inline"</span><span class="nt">&gt;</span>open_in_new<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+                <span class="nt">&lt;tr&gt;</span>
+                  <span class="nt">&lt;td&gt;&lt;div</span> <span class="na">class=</span><span class="s">"pubDate"</span><span class="nt">&gt;</span>Published by:<span class="nt">&lt;/div&gt;</span>	  National Institiute for Health and Care Excellence<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pubDate"</span><span class="nt">&gt;</span>Last published:<span class="nt">&lt;/div&gt;</span>	  2010<span class="nt">&lt;/td&gt;</span>
+                <span class="nt">&lt;/tr&gt;</span>
+              <span class="nt">&lt;/tbody&gt;</span>
+            <span class="nt">&lt;/table&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /card --&gt;</span>
+<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- /diagGuidelines --&gt;</span></code></pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <!-- add material js on top of bootstrap.js -->
+  <script src="../../../js/material.min.js"></script>
+  <!-- additional js for documentation -->
+  <script src="../../../js/project.min.js"></script>
+  <!-- additional js for form validation *******(Make page sepcific) -->
+  <script src="../../../js/form-validation-md.min.js"></script>
+  <!-- Calculators filter-->
+  <script src="../../../js/calc.js"></script>
+  <!-- Calculators filter-->
+  <script src="../../../js/flexibility.js"></script>
+  <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
+  <script>
+  $(document).ready(function()
+  {
+    $("button#drugDBPop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Drug database <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<ul><li><a href="#">AHFS DI Essentials<a/></li><li><a href="#">BNF</a></li> <li><a href="#">Martindale</a></li><li><a href="#">Micromedex<a/></li></ul><p class="text-right"><a href="#" class="text-uppercase">Set a default formulary</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#evidencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Evidence score <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p>Glycaemic control: there is good-quality evidence that insulin plus metformin reduces HbA1c levels at 4 to 6 months more effectively than insulin alone, but with more gastrointestinal side effects.</p><div class="evidence-level"><h4>Evidence level A</h4><p>Systematic reviews (SRs) or randomized controlled trials (RCTs) of >200 participants.</p></div><p class="text-right"><a href="#" class="text-uppercase">more from bmj clinical evidence</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#referencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Reference <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p><strong>44. </strong>Koegelenberg CF, Noor F, Bateman ED, et al. Efficacy of varenicline combined with nicotine replacement therapy vs varenicline alone for smoking cessation: a randomized clinical trial. JAMA. 2014;312:155-161.</p><p><a rel="external" class="web-link" target="_blank" href="#">Abstract <span class="material-icons material-icons-inline">open_in_new</span></a></p><p><a href="#">View all references</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#CochranePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: ' <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<img src="http://resources.bmj.com/repository/images/bp/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+  });
+  </script>
+</body>
+</html>
