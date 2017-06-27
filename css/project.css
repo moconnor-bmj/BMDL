@@ -906,6 +906,7 @@ span.viewAll span.chevron.bottom::before {
   color: #2a6ebb;
 }
 .diffDiagnosis table img.cochraneInline, .histExam table img.cochraneInline, .diagGuidelines table img.cochraneInline {
+  display: inline-block;
   padding: 0 .1rem;
   width: 5.5rem;
 }
