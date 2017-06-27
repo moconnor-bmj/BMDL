@@ -896,6 +896,19 @@ span.viewAll span.chevron.bottom::before {
   padding-right: .8725rem;
   vertical-align: top;
 }
+.diffDiagnosis table a, .diffDiagnosis table button, .histExam table a, .histExam table button, .diagGuidelines table a, .diagGuidelines table button {
+  font-size: 1rem;
+}
+.diffDiagnosis table a.refLink, .diffDiagnosis table button.refLink, .histExam table a.refLink, .histExam table button.refLink, .diagGuidelines table a.refLink, .diagGuidelines table button.refLink {
+  color: #c50084;
+}
+.diffDiagnosis table a:hover, .diffDiagnosis table button:hover, .histExam table a:hover, .histExam table button:hover, .diagGuidelines table a:hover, .diagGuidelines table button:hover {
+  color: #2a6ebb;
+}
+.diffDiagnosis table img.cochraneInline, .histExam table img.cochraneInline, .diagGuidelines table img.cochraneInline {
+  padding: 0 .1rem;
+  width: 5.5rem;
+}
 .diffDiagnosis figure, .histExam figure, .diagGuidelines figure {
   display: table;
   width: 1px;
