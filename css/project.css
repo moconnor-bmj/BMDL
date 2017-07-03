@@ -936,6 +936,11 @@ span.viewAll span.chevron.bottom::before {
   font-size: 0.875rem;
   padding: 5px 0 0 0;
 }
+.diffDiagnosis h4 {
+  display: inline;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
 .diffDiagnosis a, .diffDiagnosis button {
   font-size: 1rem;
 }
