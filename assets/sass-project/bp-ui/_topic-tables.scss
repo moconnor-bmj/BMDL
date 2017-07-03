@@ -1,5 +1,92 @@
 // Topic Pages :: Tables
 ///////////////////////////////////////////////
+.diffDiagnosis {
+    .rowHead {
+        background-color: #2a6ebb;
+        color: #fff;
+        font-size: 1rem;
+        padding: 2px;
+        text-transform: uppercase;
+        }
+    .rowCondition {
+        background-color: #ecf0f5;
+        color: #2a6ebb;
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding: .725rem 1rem;
+        }
+    .rowDetails {
+        border-bottom: 1px solid #ddd;
+        p, ul {
+            font-size: 1rem;
+            padding: 1rem 0 0 1rem;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            margin-bottom: 1rem;
+            li {
+                &:before {
+                color: $palette-pink-500;
+                content: "\2022";
+                padding-right: .8725rem;
+                vertical-align: top;
+                }
+            }
+        }
+        span {
+            color: #AEAEAE;
+            display: block;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 5px;         
+            padding: 1rem 0 0 1rem;
+        }
+        .conTitle {
+            background-color: #ecf0f5;
+            color: #2a6ebb;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+    figure { //Images with captions
+            display: table;
+            padding-left: 1rem;
+            width: 1px; /* This can be any width, so long as it's narrower than any image */
+            }
+    img {
+        display: table-row;
+    }
+    figcaption {
+        background-color: #eee;
+        color: $black-primary;
+        font-size: $font-size-subheading;
+        padding: 16px;
+        span {
+            display: block;
+            font-style: italic;
+            font-size: $font-size-body-1;
+            padding-top: 5px;
+        }
+    }
+    a, button {
+        font-size: 1rem;
+        &.refLink {
+            color: $palette-pink-500;
+            }
+        &:hover {
+            color: $palette-blue-500;
+            }
+    }
+    img.cochraneInline {
+        display: inline-block;
+        padding: 0 .1rem;
+        width: 5.5rem;
+    }
+}
+
+
 
 // Tables - All Topic Tables
 .diffDiagnosis, .histExam, .diagGuidelines {
@@ -31,26 +118,40 @@
                 }
             }
         }
+        a, button {
+            font-size: 1rem;
+            &.refLink {
+                color: $palette-pink-500;
+                }
+            &:hover {
+                color: $palette-blue-500;
+                }
+        }
+        img.cochraneInline {
+            display: inline-block;
+            padding: 0 .1rem;
+            width: 5.5rem;
+        }
     }
         figure { //Images with captions
             display: table;
             width: 1px; /* This can be any width, so long as it's narrower than any image */
             }
-            img {
-                display: table-row;
+        img {
+            display: table-row;
+        }
+        figcaption {
+            background-color: #eee;
+            color: $black-primary;
+            font-size: $font-size-subheading;
+            padding: 16px;
+            span {
+                display: block;
+                font-style: italic;
+                font-size: $font-size-body-1;
+                padding-top: 5px;
             }
-            figcaption {
-                background-color: #eee;
-                color: $black-primary;
-                font-size: $font-size-subheading;
-                padding: 16px;
-                span {
-                    display: block;
-                    font-style: italic;
-                    font-size: $font-size-body-1;
-                    padding-top: 5px;
-                }
-            }
+        }
 }
 
 // Differential Diagnosis (assessment);
@@ -170,4 +271,21 @@
             }
         }
     }
+}
+
+// Responsive styles for <768 using JQuery Basic Table
+
+@media (max-width: 767px) {
+    .diffDiagnosis {
+        table#fourCol {
+            td {
+                height: auto;
+                min-height: 70px;
+            }
+            ul {
+                padding-left: 10px;
+            }
+
+        }
+    } 
 }

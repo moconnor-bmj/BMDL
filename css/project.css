@@ -867,6 +867,89 @@ span.viewAll span.chevron.bottom::before {
   right: 1rem;
 }
 
+.diffDiagnosis .rowHead {
+  background-color: #2a6ebb;
+  color: #fff;
+  font-size: 1rem;
+  padding: 2px;
+  text-transform: uppercase;
+}
+.diffDiagnosis .rowCondition {
+  background-color: #ecf0f5;
+  color: #2a6ebb;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: .725rem 1rem;
+}
+.diffDiagnosis .rowDetails {
+  border-bottom: 1px solid #ddd;
+}
+.diffDiagnosis .rowDetails p, .diffDiagnosis .rowDetails ul {
+  font-size: 1rem;
+  padding: 1rem 0 0 1rem;
+}
+.diffDiagnosis .rowDetails ul {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.diffDiagnosis .rowDetails ul li:before {
+  color: #c50084;
+  content: "\2022";
+  padding-right: .8725rem;
+  vertical-align: top;
+}
+.diffDiagnosis .rowDetails span {
+  color: #AEAEAE;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 5px;
+  padding: 1rem 0 0 1rem;
+}
+.diffDiagnosis .rowDetails .conTitle {
+  background-color: #ecf0f5;
+  color: #2a6ebb;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.diffDiagnosis figure {
+  display: table;
+  padding-left: 1rem;
+  width: 1px;
+  /* This can be any width, so long as it's narrower than any image */
+}
+.diffDiagnosis img {
+  display: table-row;
+}
+.diffDiagnosis figcaption {
+  background-color: #eee;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  padding: 16px;
+}
+.diffDiagnosis figcaption span {
+  display: block;
+  font-style: italic;
+  font-size: 0.875rem;
+  padding-top: 5px;
+}
+.diffDiagnosis a, .diffDiagnosis button {
+  font-size: 1rem;
+}
+.diffDiagnosis a.refLink, .diffDiagnosis button.refLink {
+  color: #c50084;
+}
+.diffDiagnosis a:hover, .diffDiagnosis button:hover {
+  color: #2a6ebb;
+}
+.diffDiagnosis img.cochraneInline {
+  display: inline-block;
+  padding: 0 .1rem;
+  width: 5.5rem;
+}
+
 .diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
   padding: 0;
 }
@@ -895,6 +978,20 @@ span.viewAll span.chevron.bottom::before {
   content: "\2022";
   padding-right: .8725rem;
   vertical-align: top;
+}
+.diffDiagnosis table a, .diffDiagnosis table button, .histExam table a, .histExam table button, .diagGuidelines table a, .diagGuidelines table button {
+  font-size: 1rem;
+}
+.diffDiagnosis table a.refLink, .diffDiagnosis table button.refLink, .histExam table a.refLink, .histExam table button.refLink, .diagGuidelines table a.refLink, .diagGuidelines table button.refLink {
+  color: #c50084;
+}
+.diffDiagnosis table a:hover, .diffDiagnosis table button:hover, .histExam table a:hover, .histExam table button:hover, .diagGuidelines table a:hover, .diagGuidelines table button:hover {
+  color: #2a6ebb;
+}
+.diffDiagnosis table img.cochraneInline, .histExam table img.cochraneInline, .diagGuidelines table img.cochraneInline {
+  display: inline-block;
+  padding: 0 .1rem;
+  width: 5.5rem;
 }
 .diffDiagnosis figure, .histExam figure, .diagGuidelines figure {
   display: table;
@@ -1005,6 +1102,15 @@ span.viewAll span.chevron.bottom::before {
   border-bottom: none;
 }
 
+@media (max-width: 767px) {
+  .diffDiagnosis table#fourCol td {
+    height: auto;
+    min-height: 70px;
+  }
+  .diffDiagnosis table#fourCol ul {
+    padding-left: 10px;
+  }
+}
 .doc-jumbotron {
   background-position: 50% 50%;
   background-repeat: no-repeat;

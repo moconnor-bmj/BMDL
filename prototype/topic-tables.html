@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+  <title>BMJ</title>
+
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- add material css | replace bootstrap.css -->
+  <link href="../css/material.min.css" rel="stylesheet">
+
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="../css/project.min.css" rel="stylesheet">
+  <link href="../css/basictable.css" rel="stylesheet">
+  <!-- <link href="../css/jquery.stackedrows.css" rel="stylesheet">-->
+  
+</head>
+<body style="background-color: #f5f5f5;">
+  <div class="status" style="background-color: #1f5189; color: #fff; height: 30px; ">
+    <div class="container">
+      <div class="row">
+        <ul class="nav justify-content-center pb-2">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="serp.html">Serp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="reg-modal.html">Registration (Modal)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="reg-inline.html">Registration (Inline)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white disabled" href="#">Browse</a>
+          </li>
+      </div>
+    </div>
+  </div>
+
+    <div class="jumbotron jumbotron-fluid doc-jumbotron p-0" id="doc_index_jumbotron" style="-webkit-box-shadow: 5px 5px 5px 0px rgba(221,221,221,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(221,221,221,1);box-shadow: 5px 5px 5px 0px rgba(221,221,221,1);">
+    <div class="container p-4">
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand pl-0" href="#"><img src="../css/images/logo_temp.png" class="img-fluid"></a>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+      </nav>
+    </div>
+  </div>
+
+  <div class="modal fade" id="doc_modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Download</h2>
+        </div>
+        <div class="modal-body">
+          <p>Material v4.0.0-alpha.6 is available for download in several ways, including some of the favourite package managers.</p>
+          <h3 class="mt-lg typography-subheading">Material CSS and JS</h3>
+          <p><a href="https://github.com/moconnor-bmj/material/releases" target="_blank"><small class="align-text-top"><i class="material-icons">cloud_download</i></small> Download</a> Material's ready-to-use code to easily drop into any project. Includes compiled and minified versions of CSS and JS plugins.</p>
+          <h3 class="mt-lg typography-subheading">Package Managers</h3>
+          <p>Pull in Material's source files into nearly any project with some of the most popular package managers.</p>
+            <pre class="p-md">
+            <code>bower install daemonite-material#4.0.0-alpha.6</code>
+            </pre>
+            <pre class="p-md">
+            <code>npm install daemonite-material@4.0.0-alpha.6</code>
+            </pre>
+        </div>
+      </div>
+    </div>
+  </div>    
+  
+  <div class="container diffDiagnosis" style="margin-top: 50px;">
+  <h2>Differential diagnosis</h2>
+  <div class="card d-inline-block mb-3">
+    <div class="card-block p-0">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#common" role="tab">Common / Uncommon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#category" role="tab">Category</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="common" role="tabpanel">
+      <h3>Common</h3>
+    <div class="card">
+    <div class="card-block">
+      <div class="table-responsive">
+        <table id="fourCol" class="table">
+          <thead>
+            <tr>
+              <th>History</th>
+              <th>Exam</th>
+              <th>1st Investigation</th>
+              <th>Other Investigations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4"><span class="material-icons text-danger" style="font-size: 1.5rem;">&#xE32A;</span> Insomnia disorder</td>
+            </tr>
+            <tr>
+              <td>difficulty in initiating sleep, waking frequently, poor concentration, depressed mood</td>
+              <td>decreased alertness, red and puffy eyes, absence of physical signs suggesting organic illness</td>
+              <td><ul>
+                  <li><strong>none:</strong> diagnosis based on histry and clinical examination</li></ul></td>
+              <td data-title="Other Investigations"> </td>
+            </tr>
+            <tr>
+              <td colspan="4">Depression</td>
+            </tr>
+            <tr>
+              <td>depressed mood, sadness, emotional distress, anxiety, irritability, anhedonia, feeling hopeless, loss of self-esteem, sleep problems, appetite troubles, weight loss or gain, loss of energy, poor concentration, suicidal ideation, symptoms of psychosis or mania</td>
+              <td>Apsychomotor slowing, agitation, blunted affect</td>
+              <td>
+                <ul>
+                  <li><strong>2-item screening tool (PHQ-2):</strong> positive if 1 answer is yes</li>
+                  <li><strong>PHQ-9 screening tool: PHQ-9 score: 5 to 9:</strong> mild depression; 10 to 14: moderate depression; 15 to 19: moderately severe depression; ≥20: severe depression</li></ul></td>
+              <td data-title="Other Investigations"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="tab-pane" id="category" role="tabpanel">
+      <h2>Coming soon ...</h2>
+    </div>
+</div> <!-- /diffDiag -->
+</div> 
+  
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- JQuery Basic Table -->
+    <script src="../js/jquery.basictable.min.js"></script>
+    <!-- JQuery Basic Table 
+		<script src="../js/jquery.stackedrows.js"></script>-->
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+    <!-- add material js on top of bootstrap.js -->
+    <script src="../js/material.min.js"></script>
+
+    <!-- additional js for documentation -->
+    <script src="../js/project.min.js"></script>
+   
+    <!-- Filter for calculators search -->
+    <script src="../js/calc.js"></script>
+    
+    <!-- JQuery Basic Table -->
+    <script type="text/javascript">
+      $('#fourCol').basictable({
+    breakpoint: 767,
+});
+    </script>
+    
+<!--     <script>
+        $('#fourCol').stackedRows({
+				firstRowHeader : true
+			});
+    </script> -->
+    
+
+</body>
+</html>
