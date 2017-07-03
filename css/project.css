@@ -929,11 +929,12 @@ span.viewAll span.chevron.bottom::before {
   font-size: 1rem;
   padding: 16px;
 }
-.diffDiagnosis figcaption span {
+.diffDiagnosis figcaption span.imgCredit {
   display: block;
+  color: rgba(0, 0, 0, 0.87);
   font-style: italic;
   font-size: 0.875rem;
-  padding-top: 5px;
+  padding: 5px 0 0 0;
 }
 .diffDiagnosis a, .diffDiagnosis button {
   font-size: 1rem;
@@ -950,6 +951,11 @@ span.viewAll span.chevron.bottom::before {
   width: 5.5rem;
 }
 
+@media (max-width: 767px) {
+  .diffDiagnosis .rowDetails p, .diffDiagnosis .rowDetails ul {
+    padding: .5rem 0 0 1rem;
+  }
+}
 .diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
   padding: 0;
 }

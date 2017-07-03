@@ -63,11 +63,12 @@
         color: $black-primary;
         font-size: $font-size-subheading;
         padding: 16px;
-        span {
+        span.imgCredit {
             display: block;
+            color: $black-primary;
             font-style: italic;
             font-size: $font-size-body-1;
-            padding-top: 5px;
+            padding: 5px 0 0 0;
         }
     }
     a, button {
@@ -83,6 +84,15 @@
         display: inline-block;
         padding: 0 .1rem;
         width: 5.5rem;
+    }
+}
+
+// Styles for < 768 responsive descriptions
+@media (max-width: 767px) {
+    .diffDiagnosis .rowDetails {
+        p, ul {
+            padding: .5rem 0 0 1rem;
+            }
     }
 }
 

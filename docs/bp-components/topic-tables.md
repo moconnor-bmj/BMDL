@@ -143,7 +143,7 @@ Toggle a working Registration modal demo by clicking the button below. It will s
               <figure class="figure">
                 <img src="/css/images/diff_diag_img.jpg" alt="chest x-ray">
                 <figcaption class="figure-caption">COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
-                <span>From the collection of Manoochehr Abadian Sharifabad, MD</span></figcaption>
+                <span class="imgCredit">From the collection of Manoochehr Abadian Sharifabad, MD</span></figcaption>
               </figure>
               <p>May also demonstrate complications of COPD, such as pneumonia and pneumothorax.</p></div>
           <div class="col-md-4"><span class="hidden-md-up">Result</span><p>hyperinflation</p></div>
