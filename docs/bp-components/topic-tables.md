@@ -48,7 +48,7 @@ Toggle a working Registration modal demo by clicking the button below. It will s
         <div class="row">
           <div class="col-md-12">
             <div class="row rowHead hidden-sm-down">
-              <div class="col-md-3">History</div>
+              <div class="col-md-3 ">History</div>
               <div class="col-md-3">Exam</div>
               <div class="col-md-3">1st investigation</div>
               <div class="col-md-3">Other investigations</div>
@@ -96,7 +96,7 @@ Toggle a working Registration modal demo by clicking the button below. It will s
           <div class="col-md-5">Investigations</div>
         </div>
         <div class="row rowDetails">
-          <div class="col-md-2 conTitle"><h4>Asthma</h4></div>
+          <div class="col-md-2 conTitle brdTop"><h4>Asthma</h4></div>
           <div class="col-md-5"><span class="hidden-md-up">Signs / Symptoms</span> <ul><li>Onset of asthma is usually in early life. A personal or family hx of allergy, rhinitis, and eczema is often present. There is daily variability in symptoms, and patients have overt wheezing that usually rapidly responds to bronchodilators. Cough variant asthma mimics many features of COPD.</li></ul>		</div>
           <div class="col-md-5"><span class="hidden-md-up">Investigations</span> <ul><li>PFTs show reversibility with bronchodilators and no decrease in diffusing capacity of the lung for carbon monoxide (DLCO). Sputum or blood eosinophilia is suggestive of asthma.</li></ul>		</div>
         </div>
@@ -141,7 +141,7 @@ Toggle a working Registration modal demo by clicking the button below. It will s
           <div class="col-md-8"><span class="hidden-md-up">Test</span><p>Seldom diagnostic, but useful in ruling out other pathologies. <a href="#" class="refLink">[2]</a></p>
               <p>Increased anteroposterior ratio, flattened diaphragm, increased intercostal spaces, and hyperlucent lungs may be seen.</p>
               <figure class="figure">
-                <img src="/css/images/diff_diag_img.jpg" alt="chest x-ray">
+                <img src="../../../css/images/diff_diag_img.jpg" alt="chest x-ray">
                 <figcaption class="figure-caption">COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
                 <span class="imgCredit">From the collection of Manoochehr Abadian Sharifabad, MD</span></figcaption>
               </figure>
@@ -185,72 +185,62 @@ Toggle a working Registration modal demo by clicking the button below. It will s
 ## History &amp; examination
 {% example html %}
 <div class="histExam">
-<h2>History &amp; examination</h2>
-  <div class="row">
-    <div class="col-md-6">
-    <h3>Key diagnostic factors</h3>
-      <div class="card">
-        <div class="card-block">
-          <div class="table-responsive">
-            <table id="oneColLeft" class="table">
-              <thead>
-                <tr>
-                  <th>Common</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>presence of risk factors (e.g., smoking)</td>
-                </tr>
-                <tr>
-                  <td data-title="Common"><p>The main risk factor is smoking. Other key risk factors include advancing age and genetic factors.</p></td>
-                </tr>
-                <tr>
-                  <td>cough</td>
-                </tr>
-                <tr>
-                  <td data-title="Common"><p>Usually the initial symptom of COPD.</p>
-                  <p>Frequently a morning cough, but becomes constant as disease progresses.</p>
-                  <p>Usually productive, and sputum quality may change with exacerbations or superimposed infection..</p></td>
-                </tr>
-              </tbody>
-            </table>
-          </div><!-- /table-responsive -->
-        </div><!-- /card-block -->
-      </div><!-- /card -->
-    </div><!-- /col-md-6 -->
-    <div class="col-md-6">
-    <h3>Risk factors</h3>
-      <div class="card">
-        <div class="card-block">
-          <div class="table-responsive">
-            <table id="oneColRight" class="table">
-              <thead>
-                <tr>
-                  <th>Strong</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>cigarette smoking</td>
-                </tr>
-                <tr>
-                  <td data-title="Test"><ul><li>Most important risk factor. It causes 40% to 70% of cases of COPD. [12]</li>
-                  <li>Elicits an inflammatory response and causes cilia dysfunction and oxidative injury</li></ul></td>
-                </tr>
-                <tr>
-                  <td>advanced age</td>
-                </tr>
-                <tr>
-                  <td data-title="Test"><ul><li>The effect of age may be related to a longer period of cigarette smoking as well as the normal age-related loss of FEV1.</li></ul></td>
-                </tr>
-              </tbody>
-            </table>
-          </div><!-- /table-responsive -->
-        </div><!-- /card-block -->
-      </div><!-- /card -->
-    </div><!-- /col-md-6 -->
-  </div><!-- /row -->
+  <div class="card">
+    <div class="card-block">
+      <div class="container common">
+        <div class="row rowHead">
+          <div class="col-md-12">COMMON</div>
+        </div>
+        <div class="row rowCondition">
+          <div class="col-md-12"><h4>presence of risk factors (e.g., smoking)</h4></div>
+        </div>
+        <div class="row rowDetails">
+          <div class="col-md-12"><p>The main risk factor is smoking. Other key risk factors include advancing age and genetic factors.</p></div>
+        </div>
+        <div class="row rowCondition">
+          <div class="col-md-12"><h4>cough</h4></div>
+        </div>
+        <div class="row rowDetails">
+          <div class="col-md-12"><p>Usually the initial symptom of COPD.</p>
+          <p>Frequently a morning cough, but becomes constant as disease progresses.</p>
+          <p>Usually productive, and sputum quality may change with exacerbations or superimposed infection</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!-- /histExam -->
+
+<div class="histExam">
+  <div class="card mt-4">
+    <div class="card-block">
+      <div class="container strong">
+        <div class="row rowHead">
+          <div class="col-md-12">STRONG</div>
+        </div>
+        <div class="row rowCondition">
+          <div class="col-md-12"><h4>cigarette smoking</h4></div>
+        </div>
+        <div class="row rowDetails">
+          <div class="col-md-12">
+            <ul>
+              <li>Most important risk factor. It causes 40% to 70% of cases of COPD. [12]</li>
+              <li>Elicits an inflammatory response and causes cilia dysfunction and oxidative injury</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row rowCondition">
+          <div class="col-md-12"><h4>advanced age</h4></div>
+        </div>
+        <div class="row rowDetails">
+          <div class="col-md-12">
+            <ul>
+              <li>The effect of age may be related to a longer period of cigarette smoking as well as the normal age-related loss of FEV1.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div> <!-- /histExam -->
 {% endexample %}
 
@@ -260,25 +250,19 @@ Toggle a working Registration modal demo by clicking the button below. It will s
   <h2>Diagnostic guidelines</h2>
       <div class="card">
         <div class="card-block">
-          <div class="table-responsive">
-            <table id="oneCol" class="table">
-              <thead>
-                <tr>
-                  <th>Europe</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="#">Chronic obstructive pulmonary disease in over 16s: diagnosis and management <span class="material-icons material-icons-inline">open_in_new</span></a></td>
-                </tr>
-                <tr>
-                  <td><div class="pubDate">Published by:</div>	  National Institiute for Health and Care Excellence<br />
-                  <div class="pubDate">Last published:</div>	  2010</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div><!-- /card -->
+          <div class="container">
+              <div class="row rowHead">
+                <div class="col-md-12">EUROPE</div>
+              </div>
+              <div class="row rowCondition">
+                <div class="col-md-12"><p><a href="#">Chronic obstructive pulmonary disease in over 16s: diagnosis and management <span class="material-icons material-icons-inline">open_in_new</span></a></p></div>
+              </div>
+              <div class="row rowDetails">
+                <div class="col-md-12"><p><span>Published by:</span> National Institiute for Health and Care Excellence</p>
+                <p><span>Last published:</span> 2010</p></div>
+              </div>
+          </div><!-- /container -->
+        </div><!-- /card-block -->
+    </div><!-- /card -->
 </div> <!-- /diagGuidelines -->
 {% endexample %}

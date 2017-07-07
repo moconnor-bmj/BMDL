@@ -1,25 +1,31 @@
 // Topic Pages :: Tables
 ///////////////////////////////////////////////
-.diffDiagnosis {
+.diffDiagnosis, .histExam, .diagGuidelines {
     .rowHead {
-        background-color: #2a6ebb;
-        color: #fff;
-        font-size: 1rem;
+        background-color: $palette-light-blue-900;
+        color: $white;
+        font-size: $font-size-body-1;
         padding: 2px;
         text-transform: uppercase;
         }
+    .rowHead > div {
+            padding-left: 1.75rem;
+            }
     .rowCondition {
-        background-color: #ecf0f5;
-        color: #2a6ebb;
+        background-color: $palette-blue-050;
+        color: $palette-blue-500;
         font-size: 1.125rem;
         font-weight: 700;
-        padding: .725rem 1rem;
+        padding: .75rem 1rem;
         }
     .rowDetails {
         border-bottom: 1px solid #ddd;
         p, ul {
             font-size: 1rem;
             padding: 1rem 0 0 1rem;
+        }
+        p + p {
+            padding: 0 0 0 1rem;
         }
         ul {
             list-style-type: none;
@@ -35,10 +41,10 @@
             }
         }
         span {
-            color: #AEAEAE;
+            color: $black-primary;
             display: block;
-            font-size: 14px;
-            font-style: italic;
+            font-size: $font-size-body-1;
+            font-weight: bold;
             margin-bottom: 5px;         
             padding: 1rem 0 0 1rem;
         }
@@ -73,8 +79,10 @@
     }
     h4 {
         display: inline;
+        font-family: InterFace;
         font-size: 1.125rem;
         font-weight: bold;
+            word-break: break-word;
     }
     a, button {
         font-size: 1rem;
@@ -92,12 +100,50 @@
     }
 }
 
+.histExam {
+    .strong {
+        .rowHead {
+            background-color: $palette-pink-600;
+        }
+        .rowCondition {
+            background-color: $palette-pink-050;
+            color: $black-primary;
+        }
+    }
+}
+
+.diagGuidelines {
+    .rowCondition {
+        padding: .75rem 0 0 1rem;
+    }
+    .rowDetails {
+        span {
+            display: inline-block;
+            font-size: $font-size-subheading;
+            padding: 0 0 0 1rem;
+            margin-bottom: 0; 
+            width: 150px;
+        }
+    }
+}
+
 // Styles for < 768 responsive descriptions
 @media (max-width: 767px) {
-    .diffDiagnosis .rowDetails {
-        p, ul {
-            padding: .5rem 0 0 1rem;
-            }
+    .diffDiagnosis {
+        .rowDetails {
+            // p, ul {
+            //     padding: .5rem 0 0 1rem;
+            //     }
+        }
+        .rowCondition {
+            border-top: 2px solid $palette-light-blue-900;
+        }
+        .rowCondition ~ .rowCondition {
+            border: none;
+        }
+        .brdTop {
+            border-top: 2px solid $palette-light-blue-900;
+        }
     }
 }
 

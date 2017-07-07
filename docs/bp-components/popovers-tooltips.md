@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: BP Popovers Tooltips
+title: Popovers Tooltips
 description: Documentation and examples for adding custom BMDL popovers &amp; tooltips with CSS and JavaScript.
 group: components
 ---

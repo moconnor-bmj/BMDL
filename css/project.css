@@ -394,7 +394,7 @@ pre {
 }
 
 .bd-example {
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 .bt-1 {
@@ -867,98 +867,131 @@ span.viewAll span.chevron.bottom::before {
   right: 1rem;
 }
 
-.diffDiagnosis .rowHead {
-  background-color: #2a6ebb;
-  color: #fff;
-  font-size: 1rem;
+.diffDiagnosis .rowHead, .histExam .rowHead, .diagGuidelines .rowHead {
+  background-color: #01579b;
+  color: #ffffff;
+  font-size: 0.875rem;
   padding: 2px;
   text-transform: uppercase;
 }
-.diffDiagnosis .rowCondition {
-  background-color: #ecf0f5;
+.diffDiagnosis .rowHead > div, .histExam .rowHead > div, .diagGuidelines .rowHead > div {
+  padding-left: 1.75rem;
+}
+.diffDiagnosis .rowCondition, .histExam .rowCondition, .diagGuidelines .rowCondition {
+  background-color: #e5eef7;
   color: #2a6ebb;
   font-size: 1.125rem;
   font-weight: 700;
-  padding: .725rem 1rem;
+  padding: .75rem 1rem;
 }
-.diffDiagnosis .rowDetails {
+.diffDiagnosis .rowDetails, .histExam .rowDetails, .diagGuidelines .rowDetails {
   border-bottom: 1px solid #ddd;
 }
-.diffDiagnosis .rowDetails p, .diffDiagnosis .rowDetails ul {
+.diffDiagnosis .rowDetails p, .diffDiagnosis .rowDetails ul, .histExam .rowDetails p, .histExam .rowDetails ul, .diagGuidelines .rowDetails p, .diagGuidelines .rowDetails ul {
   font-size: 1rem;
   padding: 1rem 0 0 1rem;
 }
-.diffDiagnosis .rowDetails ul {
+.diffDiagnosis .rowDetails p + p, .histExam .rowDetails p + p, .diagGuidelines .rowDetails p + p {
+  padding: 0 0 0 1rem;
+}
+.diffDiagnosis .rowDetails ul, .histExam .rowDetails ul, .diagGuidelines .rowDetails ul {
   list-style-type: none;
   margin: 0;
   margin-bottom: 1rem;
 }
-.diffDiagnosis .rowDetails ul li:before {
+.diffDiagnosis .rowDetails ul li:before, .histExam .rowDetails ul li:before, .diagGuidelines .rowDetails ul li:before {
   color: #c50084;
   content: "\2022";
   padding-right: .8725rem;
   vertical-align: top;
 }
-.diffDiagnosis .rowDetails span {
-  color: #AEAEAE;
+.diffDiagnosis .rowDetails span, .histExam .rowDetails span, .diagGuidelines .rowDetails span {
+  color: rgba(0, 0, 0, 0.87);
   display: block;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 0.875rem;
+  font-weight: bold;
   margin-bottom: 5px;
   padding: 1rem 0 0 1rem;
 }
-.diffDiagnosis .rowDetails .conTitle {
+.diffDiagnosis .rowDetails .conTitle, .histExam .rowDetails .conTitle, .diagGuidelines .rowDetails .conTitle {
   background-color: #ecf0f5;
   color: #2a6ebb;
   font-weight: 700;
   font-size: 1rem;
   padding: 1rem;
 }
-.diffDiagnosis figure {
+.diffDiagnosis figure, .histExam figure, .diagGuidelines figure {
   display: table;
   padding-left: 1rem;
   width: 1px;
   /* This can be any width, so long as it's narrower than any image */
 }
-.diffDiagnosis img {
+.diffDiagnosis img, .histExam img, .diagGuidelines img {
   display: table-row;
 }
-.diffDiagnosis figcaption {
+.diffDiagnosis figcaption, .histExam figcaption, .diagGuidelines figcaption {
   background-color: #eee;
   color: rgba(0, 0, 0, 0.87);
   font-size: 1rem;
   padding: 16px;
 }
-.diffDiagnosis figcaption span.imgCredit {
+.diffDiagnosis figcaption span.imgCredit, .histExam figcaption span.imgCredit, .diagGuidelines figcaption span.imgCredit {
   display: block;
   color: rgba(0, 0, 0, 0.87);
   font-style: italic;
   font-size: 0.875rem;
   padding: 5px 0 0 0;
 }
-.diffDiagnosis h4 {
+.diffDiagnosis h4, .histExam h4, .diagGuidelines h4 {
   display: inline;
+  font-family: InterFace;
   font-size: 1.125rem;
   font-weight: bold;
+  word-break: break-word;
 }
-.diffDiagnosis a, .diffDiagnosis button {
+.diffDiagnosis a, .diffDiagnosis button, .histExam a, .histExam button, .diagGuidelines a, .diagGuidelines button {
   font-size: 1rem;
 }
-.diffDiagnosis a.refLink, .diffDiagnosis button.refLink {
+.diffDiagnosis a.refLink, .diffDiagnosis button.refLink, .histExam a.refLink, .histExam button.refLink, .diagGuidelines a.refLink, .diagGuidelines button.refLink {
   color: #c50084;
 }
-.diffDiagnosis a:hover, .diffDiagnosis button:hover {
+.diffDiagnosis a:hover, .diffDiagnosis button:hover, .histExam a:hover, .histExam button:hover, .diagGuidelines a:hover, .diagGuidelines button:hover {
   color: #2a6ebb;
 }
-.diffDiagnosis img.cochraneInline {
+.diffDiagnosis img.cochraneInline, .histExam img.cochraneInline, .diagGuidelines img.cochraneInline {
   display: inline-block;
   padding: 0 .1rem;
   width: 5.5rem;
 }
 
+.histExam .strong .rowHead {
+  background-color: #bf007c;
+}
+.histExam .strong .rowCondition {
+  background-color: #f8e0f0;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.diagGuidelines .rowCondition {
+  padding: .75rem 0 0 1rem;
+}
+.diagGuidelines .rowDetails span {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 0 0 1rem;
+  margin-bottom: 0;
+  width: 150px;
+}
+
 @media (max-width: 767px) {
-  .diffDiagnosis .rowDetails p, .diffDiagnosis .rowDetails ul {
-    padding: .5rem 0 0 1rem;
+  .diffDiagnosis .rowCondition {
+    border-top: 2px solid #01579b;
+  }
+  .diffDiagnosis .rowCondition ~ .rowCondition {
+    border: none;
+  }
+  .diffDiagnosis .brdTop {
+    border-top: 2px solid #01579b;
   }
 }
 .diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
@@ -1120,6 +1153,238 @@ span.viewAll span.chevron.bottom::before {
   }
   .diffDiagnosis table#fourCol ul {
     padding-left: 10px;
+  }
+}
+.og-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.og-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+.og-grid li > a {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+.og-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+.og-grid li.og-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #ddd;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+  position: absolute;
+  background: #424242;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.og-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.og-close::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+}
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+}
+.og-close:hover::before, .og-close:hover::after {
+  background: #333;
+}
+
+.og-fullimg,
+.og-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.og-fullimg {
+  text-align: center;
+}
+.og-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.og-details {
+  padding: 0 40px 0 20px;
+}
+.og-details h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 10px;
+  padding: 0 0 10px;
+}
+.og-details p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.og-details a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  margin: 30px 0 0;
+  outline: none;
+}
+.og-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+.og-details a:hover {
+  border-color: #fafafa;
+}
+
+.og-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  -webkit-box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+          box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -o-animation: loader 0.5s infinite ease-in-out both;
+     animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+            box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+            box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@-o-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+  33% {
+    background: #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+            box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+  }
+  66% {
+    background: #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+            box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+  }
+}
+@media screen and (max-width: 830px) {
+  .og-expander h3 {
+    font-size: 32px;
+  }
+
+  .og-expander p {
+    font-size: 13px;
+  }
+
+  .og-expander a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .og-fullimg {
+    display: none;
+  }
+
+  .og-details {
+    float: none;
+    width: 100%;
   }
 }
 .doc-jumbotron {

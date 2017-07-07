@@ -31,33 +31,22 @@ Card titles are used by adding `.card-title` to a `<h*>` tag. In the same way, l
 
 Subtitles are used by adding a `.card-subtitle` to a `<h*>` tag. If the `.card-title` and the `.card-subtitle` items are placed in a `.card-block` item, the card title and subtitle are aligned nicely.
 
-  <div class="container serp"> <!--- container -->
+  {% example html %}
+        <div class="container serp"> <!--- container -->
     <div class="row">
       <div class="col-md-8">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" href="#">All</a>
+            <a class="nav-link active" data-toggle="tab" href="#all" role="tab">All</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Multimedia</a>
+            <a class="nav-link" data-toggle="tab" href="#multimedia" role="tab">Images &amp; Video</a>
           </li>
         </ul>
       </div>
     </div><!--- /row -->
   </div> <!--- /container -->
-
-  {% highlight html %}
-      <div class="col-md-8 serp">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">All</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Multimedia</a>
-          </li>
-        </ul>
-      </div>
-  {% endhighlight %}
+  {% endexample %}
 
 ## Results List
 Cards are used for our search results. 

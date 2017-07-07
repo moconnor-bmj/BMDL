@@ -1,14 +1,15 @@
 - title: BP Components
   pages:
     - title: Access
+    - title: Browse Specialties
+    - title: Calculators
+    - title: Messaging
+    - title: Multimedia
+    - title: Popovers Tooltips
     - title: SERP
     - title: Treatment table
     - title: Topic tables
-    - title: BP Popovers Tooltips
-    - title: Browse Specialties
-    - title: BP Calculators
-    - title: Messaging
-
+    
 - title: BP Utilities
   pages:
     - title: Colors
