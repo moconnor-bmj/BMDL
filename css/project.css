@@ -942,11 +942,12 @@ span.viewAll span.chevron.bottom::before {
   font-size: 0.875rem;
   padding: 5px 0 0 0;
 }
-.diffDiagnosis h4, .histExam h4, .diagGuidelines h4 {
+.diffDiagnosis h3, .histExam h3, .diagGuidelines h3 {
   display: inline;
   font-family: InterFace;
   font-size: 1.125rem;
   font-weight: bold;
+  line-height: 1;
   word-break: break-word;
 }
 .diffDiagnosis a, .diffDiagnosis button, .histExam a, .histExam button, .diagGuidelines a, .diagGuidelines button {
@@ -992,6 +993,18 @@ span.viewAll span.chevron.bottom::before {
   }
   .diffDiagnosis .brdTop {
     border-top: 2px solid #01579b;
+  }
+
+  .diffDiagnosis figure,
+  .diagGuidelines figure,
+  .histExam figure {
+    width: auto !important;
+  }
+
+  .diffDiagnosis img,
+  .diagGuidelines img,
+  .histExam img {
+    width: 100%;
   }
 }
 .diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
@@ -1146,15 +1159,6 @@ span.viewAll span.chevron.bottom::before {
   border-bottom: none;
 }
 
-@media (max-width: 767px) {
-  .diffDiagnosis table#fourCol td {
-    height: auto;
-    min-height: 70px;
-  }
-  .diffDiagnosis table#fourCol ul {
-    padding-left: 10px;
-  }
-}
 .inline figure {
   display: table;
   padding-left: 1rem;
@@ -1174,27 +1178,15 @@ span.viewAll span.chevron.bottom::before {
   font-size: 0.875rem;
   padding: 5px 0 0 0;
 }
-.inline .caption {
-  width: 100%;
-  position: absolute;
-  background: #000;
-  background: -webkit-linear-gradient(bottom, #000 40%, transparent 100%) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(bottom, #000 40%, transparent 100%) repeat scroll 0 0 transparent;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #000), to(transparent)) repeat scroll 0 0 transparent;
-  background: linear-gradient(to top, #000 40%, transparent 100%) repeat scroll 0 0 transparent;
-}
-.inline .caption h4 {
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-}
-.inline .thumbnail {
-  border: 0 none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  margin: 0;
-  padding: 0;
-}
 
+@media (max-width: 767px) {
+  .inline figure {
+    width: auto;
+  }
+  .inline img {
+    width: 100%;
+  }
+}
 .og-grid {
   list-style: none;
   padding: 20px 0;

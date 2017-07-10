@@ -77,12 +77,13 @@
             padding: 5px 0 0 0;
         }
     }
-    h4 {
+    h3 {
         display: inline;
         font-family: InterFace;
         font-size: 1.125rem;
         font-weight: bold;
-            word-break: break-word;
+        line-height: 1;
+        word-break: break-word;
     }
     a, button {
         font-size: 1rem;
@@ -139,6 +140,16 @@
         .brdTop {
             border-top: 2px solid $palette-light-blue-900;
         }
+    }
+    .diffDiagnosis figure,
+    .diagGuidelines figure,
+    .histExam figure {
+        width: auto !important;
+    }
+    .diffDiagnosis img,
+    .diagGuidelines img, 
+    .histExam img {
+      width: 100%;
     }
 }
 
@@ -327,21 +338,4 @@
             }
         }
     }
-}
-
-// Responsive styles for <768 using JQuery Basic Table
-
-@media (max-width: 767px) {
-    .diffDiagnosis {
-        table#fourCol {
-            td {
-                height: auto;
-                min-height: 70px;
-            }
-            ul {
-                padding-left: 10px;
-            }
-
-        }
-    } 
 }

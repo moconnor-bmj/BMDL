@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: BP Calculators
+title: Calculators
 description: Various calculators. Browsable accoring to specialty.
 group: bp components
 ---
