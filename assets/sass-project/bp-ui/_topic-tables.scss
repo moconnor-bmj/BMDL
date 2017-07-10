@@ -130,11 +130,6 @@
 // Styles for < 768 responsive descriptions
 @media (max-width: 767px) {
     .diffDiagnosis {
-        .rowDetails {
-            // p, ul {
-            //     padding: .5rem 0 0 1rem;
-            //     }
-        }
         .rowCondition {
             border-top: 2px solid $palette-light-blue-900;
         }
