@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculators &middot; BMDL</title>
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add material css | replace bootstrap.css -->
+  <link href="../../../css/material.min.css" rel="stylesheet">
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="../../../css/project.min.css" rel="stylesheet">
+  <!-- Javascript -->
+  <script type='text/javascript' src="../../../js/multimedia/modernizr.custom.js"></script>
+</head>
+</head>
+<body class="doc-body">
+  <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
+    <button aria-controls="doc_navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler hidden-lg-up" data-target="#doc_navdrawer" data-toggle="navdrawer" data-type="permanent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand hidden-lg-up" href="../../../index.html">BMDL</a>
+  </div>
+  <div class="navdrawer navdrawer-permanent doc-navdrawer" id="doc_navdrawer">
+    <div class="navdrawer-content">
+      <div class="navdrawer-header">
+        <a class="navbar-brand px-0" href="../../../index.html">BMDL</a>
+      </div>
+      <nav class="navdrawer-nav">
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-components">BP Components</a>
+        <div class="collapse " id="doc_navdrawer_bp-components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/access/index.html">Access</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/calculators/index.html">Calculators</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/multimedia/index.html">Multimedia</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/popovers-tooltips/index.html">Popovers Tooltips</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/topic-tables/index.html">Topic tables</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
+        <div class="collapse " id="doc_navdrawer_bp-utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/typography-kitchen-sink/index.html">Typography kitchen sink</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_layout">Layout</a>
+        <div class="collapse " id="doc_navdrawer_layout">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/grid-system/index.html">Grid system</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/media-object/index.html">Media object</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/responsive-utilities/index.html">Responsive utilities</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_components">Components</a>
+        <div class="collapse " id="doc_navdrawer_components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/alerts/index.html">Alerts</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/badges/index.html">Badges</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/breadcrumb/index.html">Breadcrumb</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/buttons/index.html">Buttons</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/button-group/index.html">Button group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/cards/index.html">Cards</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/carousel/index.html">Carousel</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/collapse/index.html">Collapse</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/dropdowns/index.html">Dropdowns</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/forms/index.html">Forms</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/input-group/index.html">Input group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/jumbotron/index.html">Jumbotron</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/list-group/index.html">List group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/modal/index.html">Modal</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navs/index.html">Navs</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navbar/index.html">Navbar</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/pagination/index.html">Pagination</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/popovers/index.html">Popovers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/progress/index.html">Progress</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/scrollspy/index.html">Scrollspy</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/tooltips/index.html">Tooltips</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_utilities">Utilities</a>
+        <div class="collapse " id="doc_navdrawer_utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/borders/index.html">Borders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/clearfix/index.html">Clearfix</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/close-icon/index.html">Close icon</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/flexbox/index.html">Flexbox</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/display-property/index.html">Display property</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/image-replacement/index.html">Image replacement</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/invisible-content/index.html">Invisible content</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/position/index.html">Position</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/responsive-helpers/index.html">Responsive helpers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/screenreaders/index.html">Screenreaders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/sizing/index.html">Sizing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/spacing/index.html">Spacing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/typography/index.html">Typography</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/vertical-alignment/index.html">Vertical alignment</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid mb-xl doc-jumbotron" id="doc_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-10 col-xl-10 offset-sm-1 offset-md-1 offset-xl-1">
+          <h1 class="typography-display-3">Calculators</h1>
+          <p class="font-weight-light typography-title">Various calculators. Browsable accoring to specialty.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main">
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">-->
+        <div class="col-sm-12 col-md-12">
+          <div class="bd-content mb-xl">
+            <p>The Bootstrap collapse plugin allows you to toggle content on your pages with a few classes thanks to some helpful JavaScript.</p>
+            <h2 id="contents">Contents</h2>
+            <ul id="markdown-toc">
+              <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
+              <li><a href="#calculators-tabs" id="markdown-toc-calculators-tabs">Calculators Tabs</a></li>
+              <li><a href="#calculators-search" id="markdown-toc-calculators-search">Calculators Search</a></li>
+              <li><a href="#browse-calculators-by-specialty" id="markdown-toc-browse-calculators-by-specialty">Browse Calculators by Specialty</a></li>
+            </ul>
+            <h2 id="calculators-tabs">Calculators Tabs</h2>
+            <p>2 x Tabs as titled</p>
+            <div class="bd-example" data-example-id="">
+              <div class="calculators">
+                <div class="card d-inline-block mb-3">
+                  <div class="card-block p-0">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#atoz" role="tab">A - Z</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#bySpecialty" role="tab">By Specialty</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"calculators"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card d-inline-block mb-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block p-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#atoz"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>A - Z<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#bySpecialty"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>By Specialty<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="calculators-search">Calculators Search</h2>
+            <p>Included ‘A’ only for illustration. Search for a calculator begining with ‘A’ to filter the search results.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="calculators">
+                <form action="#">
+                  <div class="form-search search-only">
+                    <input id="myInput" onkeyup="searchCalc()" class="form-control search-query pl-3" placeholder="Search for calculators" type="text" />
+                    <span class="material-icons">&#xE8B6;</span>
+                  </div>
+                </form>
+              </div>
+              <div class="calculators">
+                <div class="card">
+                  <div class="card-block">
+                    <div id="atoz-list">
+                      <h2>A</h2>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AAGradient.htm">A-a Gradient</a> Calculates difference between alveolar and arterial oxygen concentration.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=ABCD2.htm">ABCD2 Score to Predict Stroke Risk after TIA</a> Estimates the risk of stroke following transient ischemic attack.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AbsEocount.htm">Absolute Eosinophil Count</a> Assesses number of eosinophils (e.g., in people with allergic or autoimmune conditions, or parasite infections).</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AbsLymphocyteCnt.htm">Absolute Lymphocyte Count</a> Estimates number of lymphocytes and predicts CD4 count.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AbsNeutrophileCnt.htm">Absolute Neutrophil Count</a> Measures number of neutrophils (used to asses neutropenia or neutrophipa).</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AbsReticCnt.htm">Absolute Reticulocyte Count</a> Measures reticulocytes (used to assess anemia).</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=ACR_EULAR.htm">ACR/EULAR Rheumatoid Arthritis Diagnostic Criteria (2010)</a> Diagnostic criteria for rheumatoid arthritis.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=CHF_BNP.htm">Acute Heart Failure Prediction Based on NT-proBNP and Cpnical Features</a> Estimates risk of acute heart failure. </p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AlcoholScreen.htm ">Alcohol Consumption Screening AUDIT Questionnaire</a> Screening tool to identify alcohol use disorders.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AmikacinDosing.htm">Amikacin Dosing q24hr (also Kanamycin and Streptomycin)</a> Calculates dose based on patient's weight and renal factors.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AminoGlycCl.htm">Aminoglycoside Clearance Estimate</a> Estimates rate of aminoglycoside clearance.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGap.htm">Anion Gap</a> Aids in identifying causes of metabopc acidosis.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaGradient.htm">Anion Gap Delta Delta Gradient Multicalc</a> Aids in identifying acid-base disorders.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapDeltaRatio.htm">Anion Gap Delta Delta Ratio Multicalc</a> Aids in identifying acid-base disorders.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AnionGapHypoAlb.htm">Anion Gap in Hypoalbumin States</a> Calculation of anion gap (to identify acid-base disorders) taking hypoalbuminemia into account. </p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=ApacheScore.htm">APACHE II scoring system</a> Estimates ICU mortapty.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=ApgarScore.htm">Apgar score</a> Assesses neonates 1 and 5 minutes after birth.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=ArterialBloodGas.htm">Arterial Blood Gas Interpretation TreeCalc</a> Analysis of arterial blood gas results.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADSVASc.htm">Atrial Fibrillation CHA(2)DS(2)-VASc Score for Stroke Risk</a> Estimates risk of stroke in patients with atrial fibrillation.</p>
+                      <p><a href="/best-practice/ebm-calculator.html?calcName=AtrialFibCHADS2.htm">Atrial fibrillation CHADS(2) score for stroke risk</a> Estimates risk of stroke in patients with atrial fibrillation.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"calculators"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-search search-only"</span><span class="nt">&gt;</span> 
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"myInput"</span> <span class="na">onkeyup=</span><span class="s">"searchCalc()"</span> <span class="na">class=</span><span class="s">"form-control search-query pl-3"</span> <span class="na">placeholder=</span><span class="s">"Search for calculators"</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span><span class="ni">&amp;#xE8B6;</span><span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"calculators"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"atoz-list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h2&gt;</span>A<span class="nt">&lt;/h2&gt;</span> 
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AAGradient.htm"</span><span class="nt">&gt;</span>A-a Gradient<span class="nt">&lt;/a&gt;</span> 
+          Calculates difference between alveolar and arterial oxygen concentration.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=ABCD2.htm"</span><span class="nt">&gt;</span>ABCD2 Score to Predict Stroke Risk after TIA<span class="nt">&lt;/a&gt;</span>
+          Estimates the risk of stroke following transient ischemic attack.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AbsEocount.htm"</span><span class="nt">&gt;</span>Absolute Eosinophil Count<span class="nt">&lt;/a&gt;</span>
+          Assesses number of eosinophils (e.g., in people with allergic or autoimmune conditions, or parasite infections).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AbsLymphocyteCnt.htm"</span><span class="nt">&gt;</span>Absolute Lymphocyte Count<span class="nt">&lt;/a&gt;</span>
+          Estimates number of lymphocytes and predicts CD4 count.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AbsNeutrophileCnt.htm"</span><span class="nt">&gt;</span>Absolute Neutrophil Count<span class="nt">&lt;/a&gt;</span> 
+          Measures number of neutrophils (used to asses neutropenia or neutrophipa).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AbsReticCnt.htm"</span><span class="nt">&gt;</span>Absolute Reticulocyte Count<span class="nt">&lt;/a&gt;</span>
+          Measures reticulocytes (used to assess anemia).<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=ACR_EULAR.htm"</span><span class="nt">&gt;</span>ACR/EULAR Rheumatoid Arthritis Diagnostic Criteria (2010)<span class="nt">&lt;/a&gt;</span>
+          Diagnostic criteria for rheumatoid arthritis.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=CHF_BNP.htm"</span><span class="nt">&gt;</span>Acute Heart Failure Prediction Based on NT-proBNP and Cpnical Features<span class="nt">&lt;/a&gt;</span>
+          Estimates risk of acute heart failure. <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AlcoholScreen.htm "</span><span class="nt">&gt;</span>Alcohol Consumption Screening AUDIT Questionnaire<span class="nt">&lt;/a&gt;</span> 
+          Screening tool to identify alcohol use disorders.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AmikacinDosing.htm"</span><span class="nt">&gt;</span>Amikacin Dosing q24hr (also Kanamycin and Streptomycin)<span class="nt">&lt;/a&gt;</span>
+          Calculates dose based on patient's weight and renal factors.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AminoGlycCl.htm"</span><span class="nt">&gt;</span>Aminoglycoside Clearance Estimate<span class="nt">&lt;/a&gt;</span>
+          Estimates rate of aminoglycoside clearance.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AnionGap.htm"</span><span class="nt">&gt;</span>Anion Gap<span class="nt">&lt;/a&gt;</span>
+          Aids in identifying causes of metabopc acidosis.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AnionGapDeltaGradient.htm"</span><span class="nt">&gt;</span>Anion Gap Delta Delta Gradient Multicalc<span class="nt">&lt;/a&gt;</span> 
+          Aids in identifying acid-base disorders.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AnionGapDeltaRatio.htm"</span><span class="nt">&gt;</span>Anion Gap Delta Delta Ratio Multicalc<span class="nt">&lt;/a&gt;</span>
+          Aids in identifying acid-base disorders.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AnionGapHypoAlb.htm"</span><span class="nt">&gt;</span>Anion Gap in Hypoalbumin States<span class="nt">&lt;/a&gt;</span>
+          Calculation of anion gap (to identify acid-base disorders) taking hypoalbuminemia into account. <span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=ApacheScore.htm"</span><span class="nt">&gt;</span>APACHE II scoring system<span class="nt">&lt;/a&gt;</span>
+          Estimates ICU mortapty.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=ApgarScore.htm"</span><span class="nt">&gt;</span>Apgar score<span class="nt">&lt;/a&gt;</span>
+          Assesses neonates 1 and 5 minutes after birth.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=ArterialBloodGas.htm"</span><span class="nt">&gt;</span>Arterial Blood Gas Interpretation TreeCalc<span class="nt">&lt;/a&gt;</span>
+          Analysis of arterial blood gas results.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AtrialFibCHADSVASc.htm"</span><span class="nt">&gt;</span>Atrial Fibrillation CHA(2)DS(2)-VASc Score for Stroke Risk<span class="nt">&lt;/a&gt;</span>
+          Estimates risk of stroke in patients with atrial fibrillation.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/best-practice/ebm-calculator.html?calcName=AtrialFibCHADS2.htm"</span><span class="nt">&gt;</span>Atrial fibrillation CHADS(2) score for stroke risk<span class="nt">&lt;/a&gt;</span>
+          Estimates risk of stroke in patients with atrial fibrillation.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="browse-calculators-by-specialty">Browse Calculators by Specialty</h2>
+            <div class="bd-example" data-example-id="">
+              <div id="accordion" class="calculators" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingOne">
+                    <h5>
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Anesthesia
+        </a>
+      </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingTwo">
+                    <h5>
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Anthropometrics
+        </a>
+      </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingThree">
+                    <h5>
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          Cardiology
+        </a>
+      </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="card-block ml-5">
+                      <p class="mt-0"><a href="#">CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk</a> Calculates stroke risk for patients with atrial fibrillation, possibly better than the CHADS2 score.</p>
+                      <p><a href="#">CHADS₂ Score for Atrial Fibrillation Stroke Risk</a> Estimates stroke risk in patients with atrial fibrillation.</p>
+                      <p><a href="#">Cardiac Anesthesia Risk Evaluation Score (CARE)</a> Predicts mortality and morbidity after cardiac surgery.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"accordion"</span> <span class="na">class=</span><span class="s">"calculators"</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">aria-multiselectable=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseOne"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
+          Anesthesia
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseOne"</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingOne"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingTwo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseTwo"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
+          Anthropometrics
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseTwo"</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingTwo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingThree"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseThree"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
+          Cardiology
+        <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseThree"</span> <span class="na">class=</span><span class="s">"collapse show"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingThree"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block ml-5"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk<span class="nt">&lt;/a&gt;</span>
+          Calculates stroke risk for patients with atrial fibrillation, possibly better than the CHADS2 score.<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>CHADS₂ Score for Atrial Fibrillation Stroke Risk<span class="nt">&lt;/a&gt;</span>
+          Estimates stroke risk in patients with atrial fibrillation.<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Cardiac Anesthesia Risk Evaluation Score (CARE)<span class="nt">&lt;/a&gt;</span>
+          Predicts mortality and morbidity after cardiac surgery.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <!-- add material js on top of bootstrap.js -->
+  <script src="../../../js/material.min.js"></script>
+  <!-- additional js for documentation -->
+  <script src="../../../js/project.min.js"></script>
+  <!-- additional js for form validation *******(Make page sepcific) -->
+  <script src="../../../js/form-validation-md.min.js"></script>
+  <!-- Calculators filter-->
+  <script src="../../../js/calc.js"></script>
+  <!-- JQUery for Multimedia grid, resize etc-->
+  <script src="../../../js/multimedia/multimedia.js"></script>
+  <script>
+  $(function()
+  {
+    Grid.init();
+  });
+  </script>
+  <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
+  <script>
+  $(document).ready(function()
+  {
+    $("button#drugDBPop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Drug database <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<ul><li><a href="#">AHFS DI Essentials<a/></li><li><a href="#">BNF</a></li> <li><a href="#">Martindale</a></li><li><a href="#">Micromedex<a/></li></ul><p class="text-right"><a href="#" class="text-uppercase">Set a default formulary</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#evidencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Evidence score <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p>Glycaemic control: there is good-quality evidence that insulin plus metformin reduces HbA1c levels at 4 to 6 months more effectively than insulin alone, but with more gastrointestinal side effects.</p><div class="evidence-level"><h4>Evidence level A</h4><p>Systematic reviews (SRs) or randomized controlled trials (RCTs) of >200 participants.</p></div><p class="text-right"><a href="#" class="text-uppercase">more from bmj clinical evidence</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#referencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Reference <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p><strong>44. </strong>Koegelenberg CF, Noor F, Bateman ED, et al. Efficacy of varenicline combined with nicotine replacement therapy vs varenicline alone for smoking cessation: a randomized clinical trial. JAMA. 2014;312:155-161.</p><p><a rel="external" class="web-link" target="_blank" href="#">Abstract <span class="material-icons material-icons-inline">open_in_new</span></a></p><p><a href="#">View all references</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#CochranePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: ' <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<img src="http://resources.bmj.com/repository/images/bp/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+  });
+  </script>
+</body>
+</html>

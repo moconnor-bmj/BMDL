@@ -13,9 +13,6 @@
 <loc>utilities/borders/</loc>
 </url>
 <url>
-<loc>bp-components/bp-calculators/</loc>
-</url>
-<url>
 <loc>components/breadcrumb/</loc>
 </url>
 <url>
@@ -26,6 +23,9 @@
 </url>
 <url>
 <loc>components/buttons/</loc>
+</url>
+<url>
+<loc>bp-components/calculators/</loc>
 </url>
 <url>
 <loc>components/cards/</loc>
