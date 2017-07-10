@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Multimedia &middot; BMDL</title>
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add material css | replace bootstrap.css -->
+  <link href="../../../css/material.min.css" rel="stylesheet">
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="../../../css/project.min.css" rel="stylesheet">
+  <!-- Javascript -->
+  <script type='text/javascript' src="../../../js/multimedia/modernizr.custom.js"></script>
+</head>
+</head>
+<body class="doc-body">
+  <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
+    <button aria-controls="doc_navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler hidden-lg-up" data-target="#doc_navdrawer" data-toggle="navdrawer" data-type="permanent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand hidden-lg-up" href="../../../index.html">BMDL</a>
+  </div>
+  <div class="navdrawer navdrawer-permanent doc-navdrawer" id="doc_navdrawer">
+    <div class="navdrawer-content">
+      <div class="navdrawer-header">
+        <a class="navbar-brand px-0" href="../../../index.html">BMDL</a>
+      </div>
+      <nav class="navdrawer-nav">
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-components">BP Components</a>
+        <div class="collapse " id="doc_navdrawer_bp-components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/access/index.html">Access</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/calculators/index.html">Calculators</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/multimedia/index.html">Multimedia</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/popovers-tooltips/index.html">Popovers Tooltips</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/topic-tables/index.html">Topic tables</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
+        <div class="collapse " id="doc_navdrawer_bp-utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/typography-kitchen-sink/index.html">Typography kitchen sink</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_layout">Layout</a>
+        <div class="collapse " id="doc_navdrawer_layout">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/grid-system/index.html">Grid system</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/media-object/index.html">Media object</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/responsive-utilities/index.html">Responsive utilities</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_components">Components</a>
+        <div class="collapse " id="doc_navdrawer_components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/alerts/index.html">Alerts</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/badges/index.html">Badges</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/breadcrumb/index.html">Breadcrumb</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/buttons/index.html">Buttons</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/button-group/index.html">Button group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/cards/index.html">Cards</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/carousel/index.html">Carousel</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/collapse/index.html">Collapse</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/dropdowns/index.html">Dropdowns</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/forms/index.html">Forms</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/input-group/index.html">Input group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/jumbotron/index.html">Jumbotron</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/list-group/index.html">List group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/modal/index.html">Modal</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navs/index.html">Navs</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navbar/index.html">Navbar</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/pagination/index.html">Pagination</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/popovers/index.html">Popovers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/progress/index.html">Progress</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/scrollspy/index.html">Scrollspy</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/tooltips/index.html">Tooltips</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_utilities">Utilities</a>
+        <div class="collapse " id="doc_navdrawer_utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/borders/index.html">Borders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/clearfix/index.html">Clearfix</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/close-icon/index.html">Close icon</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/flexbox/index.html">Flexbox</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/display-property/index.html">Display property</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/image-replacement/index.html">Image replacement</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/invisible-content/index.html">Invisible content</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/position/index.html">Position</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/responsive-helpers/index.html">Responsive helpers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/screenreaders/index.html">Screenreaders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/sizing/index.html">Sizing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/spacing/index.html">Spacing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/typography/index.html">Typography</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/vertical-alignment/index.html">Vertical alignment</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid mb-xl doc-jumbotron" id="doc_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-10 col-xl-10 offset-sm-1 offset-md-1 offset-xl-1">
+          <h1 class="typography-display-3">Multimedia</h1>
+          <p class="font-weight-light typography-title">How we handle our Multimedia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main">
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">-->
+        <div class="col-sm-12 col-md-12">
+          <div class="bd-content mb-xl">
+            <p>Image and video viewer based on Google imaages pattern. Part of our search resulkts and topic pages content.</p>
+            <h2 id="multimedia-components">Multimedia Components</h2>
+            <ul id="markdown-toc">
+              <li><a href="#multimedia-components" id="markdown-toc-multimedia-components">Multimedia Components</a></li>
+              <li><a href="#inline-images" id="markdown-toc-inline-images">Inline images</a></li>
+              <li><a href="#tabbed-nav" id="markdown-toc-tabbed-nav">Tabbed Nav</a></li>
+            </ul>
+            <h2 id="inline-images">Inline images</h2>
+            <div class="bd-example" data-example-id="">
+              <div class="inline">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <figure class="figure">
+                    <img src="../../../css/images/diff_diag_img.jpg" alt="Please put something descriptive in here" />
+                    <figcaption class="figure-caption">COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
+                      <span class="imgCredit">From the collection of Manoochehr Abadian Sharifabad, MD</span></figcaption>
+                  </figure>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  <!-- Images w/ Caption -->
+                  <div class="col-md-4 offset-md-4">
+                    <div class="thumbnail text-center">
+                      <img src="../../../css/images/2.jpg" alt="Please put something descriptive in here" />
+                      <div class="caption">
+                        <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                      </div>
+                    </div>
+                  </div>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inline"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<span class="nt">&lt;figure</span> <span class="na">class=</span><span class="s">"figure"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/diff_diag_img.jpg"</span> <span class="na">alt=</span><span class="s">"Please put something descriptive in here"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;figcaption</span> <span class="na">class=</span><span class="s">"figure-caption"</span><span class="nt">&gt;</span>COPD chest x-ray (AP view): hyperinflated lung, flattened diaphragm, increased intercostal spaces
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"imgCredit"</span><span class="nt">&gt;</span>From the collection of Manoochehr Abadian Sharifabad, MD<span class="nt">&lt;/span&gt;&lt;/figcaption&gt;</span>
+	<span class="nt">&lt;/figure&gt;</span>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+	<span class="c">&lt;!-- Images w/ Caption --&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4 offset-md-4"</span><span class="nt">&gt;</span> 
+		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'thumbnail text-center'</span><span class="nt">&gt;</span>  
+			<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/2.jpg"</span> <span class="na">alt=</span><span class="s">"Please put something descriptive in here"</span> <span class="nt">/&gt;</span>  
+			<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'caption'</span><span class="nt">&gt;</span>  
+				<span class="nt">&lt;h4&gt;</span>Lorem ipsum dolor sit amet, consectetur<span class="nt">&lt;/h4&gt;</span>  
+			<span class="nt">&lt;/div&gt;</span>    
+		<span class="nt">&lt;/div&gt;</span> 
+	<span class="nt">&lt;/div&gt;</span>
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="tabbed-nav">Tabbed Nav</h2>
+            <p>Card titles are used by adding <code class="highlighter-rouge">.card-title</code> to a <code class="highlighter-rouge">&lt;h*&gt;</code> tag. In the same way, links are added and placed next to each other by adding <code class="highlighter-rouge">.card-link</code> to a <code class="highlighter-rouge">&lt;a&gt;</code> tag.</p>
+            <p>Subtitles are used by adding a <code class="highlighter-rouge">.card-subtitle</code> to a <code class="highlighter-rouge">&lt;h*&gt;</code> tag. If the <code class="highlighter-rouge">.card-title</code> and the <code class="highlighter-rouge">.card-subtitle</code> items are placed in a <code class="highlighter-rouge">.card-block</code> item, the card title and subtitle are aligned nicely.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="container serp">
+                <!--- container -->
+                <div class="row">
+                  <div class="col-md-8">
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#all" role="tab">All</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#multimedia" role="tab">Images &amp; Video</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul id="og-grid" class="og-grid">
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii" data-citation="Eldin C, et al. Clin Microbiol Rev 2016; used with permission">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/2.jpg" data-title="COPD" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/2.jpg" alt="img02" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/3.jpg" data-title="Bartonella infection" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/3.jpg" alt="img03" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" data-largesrc="../../../css/images/multimedia/1.jpg" data-title="Monoclonal gammopathy of undetermined significance" data-description="Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii">
+                        <img src="../../../css/images/multimedia/thumbs/1.jpg" alt="img01" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--- /row -->
+              </div>
+              <!--- /container -->
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container serp"</span><span class="nt">&gt;</span> <span class="c">&lt;!--- container --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#all"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>All<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">data-toggle=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#multimedia"</span> <span class="na">role=</span><span class="s">"tab"</span><span class="nt">&gt;</span>Images <span class="ni">&amp;amp;</span> Video<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"og-grid"</span> <span class="na">class=</span><span class="s">"og-grid"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span> <span class="na">data-citation=</span><span class="s">"Eldin C, et al. Clin Microbiol Rev 2016; used with permission"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/2.jpg"</span> <span class="na">data-title=</span><span class="s">"COPD"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/2.jpg"</span> <span class="na">alt=</span><span class="s">"img02"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/3.jpg"</span> <span class="na">data-title=</span><span class="s">"Bartonella infection"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/3.jpg"</span> <span class="na">alt=</span><span class="s">"img03"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+		<span class="nt">&lt;li&gt;</span>
+			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-largesrc=</span><span class="s">"../../../css/images/multimedia/1.jpg"</span> <span class="na">data-title=</span><span class="s">"Monoclonal gammopathy of undetermined significance"</span> <span class="na">data-description=</span><span class="s">"Natural history of Coxiella burnetii and serological/PCR results. Ac+: positive for antibodies to C burnetii, Ac++: strongly positive for antibodies to C burnetii, Ac-: negative for antibodies to C burnetii, PCR+: positive PCR for C burnetii, PCR++: strongly positive PCR for C burnetii, PCR-: negative PCR for C burnetii"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"../../../css/images/multimedia/thumbs/1.jpg"</span> <span class="na">alt=</span><span class="s">"img01"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;/a&gt;</span>
+		<span class="nt">&lt;/li&gt;</span>
+	<span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--- /row --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!--- /container --&gt;</span></code></pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <!-- add material js on top of bootstrap.js -->
+  <script src="../../../js/material.min.js"></script>
+  <!-- additional js for documentation -->
+  <script src="../../../js/project.min.js"></script>
+  <!-- additional js for form validation *******(Make page sepcific) -->
+  <script src="../../../js/form-validation-md.min.js"></script>
+  <!-- Calculators filter-->
+  <script src="../../../js/calc.js"></script>
+  <!-- JQUery for Multimedia grid, resize etc-->
+  <script src="../../../js/multimedia/multimedia.js"></script>
+  <script>
+  $(function()
+  {
+    Grid.init();
+  });
+  </script>
+  <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
+  <script>
+  $(document).ready(function()
+  {
+    $("button#drugDBPop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Drug database <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<ul><li><a href="#">AHFS DI Essentials<a/></li><li><a href="#">BNF</a></li> <li><a href="#">Martindale</a></li><li><a href="#">Micromedex<a/></li></ul><p class="text-right"><a href="#" class="text-uppercase">Set a default formulary</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#evidencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Evidence score <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p>Glycaemic control: there is good-quality evidence that insulin plus metformin reduces HbA1c levels at 4 to 6 months more effectively than insulin alone, but with more gastrointestinal side effects.</p><div class="evidence-level"><h4>Evidence level A</h4><p>Systematic reviews (SRs) or randomized controlled trials (RCTs) of >200 participants.</p></div><p class="text-right"><a href="#" class="text-uppercase">more from bmj clinical evidence</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#referencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Reference <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p><strong>44. </strong>Koegelenberg CF, Noor F, Bateman ED, et al. Efficacy of varenicline combined with nicotine replacement therapy vs varenicline alone for smoking cessation: a randomized clinical trial. JAMA. 2014;312:155-161.</p><p><a rel="external" class="web-link" target="_blank" href="#">Abstract <span class="material-icons material-icons-inline">open_in_new</span></a></p><p><a href="#">View all references</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#CochranePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: ' <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<img src="http://resources.bmj.com/repository/images/bp/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+  });
+  </script>
+</body>
+</html>

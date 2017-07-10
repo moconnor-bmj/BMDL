@@ -15,7 +15,7 @@
   <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
   <link href="../../../css/project.min.css" rel="stylesheet">
   <!-- Javascript -->
-  <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+  <script type='text/javascript' src="../../../js/multimedia/modernizr.custom.js"></script>
 </head>
 </head>
 <body class="doc-body">
@@ -34,13 +34,14 @@
         <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-components">BP Components</a>
         <div class="collapse " id="doc_navdrawer_bp-components">
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/access/index.html">Access</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/calculators/index.html">Calculators</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/multimedia/index.html">Multimedia</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/popovers-tooltips/index.html">Popovers Tooltips</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
           <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/topic-tables/index.html">Topic tables</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-popovers-tooltips/index.html">BP Popovers Tooltips</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/bp-calculators/index.html">BP Calculators</a>
-          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
         </div>
         <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
         <div class="collapse " id="doc_navdrawer_bp-utilities">
@@ -1083,7 +1084,7 @@
     </div>
   </main>
   <!-- js -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
@@ -1095,6 +1096,14 @@
   <script src="../../../js/form-validation-md.min.js"></script>
   <!-- Calculators filter-->
   <script src="../../../js/calc.js"></script>
+  <!-- JQUery for Multimedia grid, resize etc-->
+  <script src="../../../js/multimedia/multimedia.js"></script>
+  <script>
+  $(function()
+  {
+    Grid.init();
+  });
+  </script>
   <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
   <script>
   $(document).ready(function()
