@@ -1178,6 +1178,23 @@ span.viewAll span.chevron.bottom::before {
   font-size: 0.875rem;
   padding: 5px 0 0 0;
 }
+.inline .card img {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+.inline .card .card-text {
+  font-size: 1.125rem;
+}
+.inline .card .vidWrapper {
+  position: relative;
+}
+.inline .card .vidWrapper .material-icons {
+  position: absolute;
+  top: 37px;
+  left: 60px;
+  color: #c50084;
+  font-size: 3rem;
+}
 
 @media (max-width: 767px) {
   .inline figure {
@@ -1198,7 +1215,7 @@ span.viewAll span.chevron.bottom::before {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
-  height: 250px;
+  height: 124px;
 }
 .og-grid li > a {
   border: none;
@@ -1220,7 +1237,7 @@ span.viewAll span.chevron.bottom::before {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #ddd;
+  border-bottom-color: #424242;
   border-width: 15px;
   left: 50%;
   margin: -20px 0 0 -15px;
