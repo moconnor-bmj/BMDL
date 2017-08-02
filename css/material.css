@@ -2158,7 +2158,7 @@ hr {
 }
 
 .alert-inverse {
-  background-color: #424242;
+  background-color: #e5eef7;
   color: white;
 }
 
@@ -3866,6 +3866,42 @@ input[type="submit"].btn-block {
   min-width: 0;
 }
 
+.btn-custom {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+  border: solid 2px #b00067;
+  background-color: #ffffff;
+  color: #2a6ebb;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  z-index: initial;
+}
+.btn-custom::before {
+  display: none;
+}
+.btn-custom:active, .btn-custom:focus, .btn-custom:hover {
+  color: #c50084;
+  text-decoration: none;
+}
+.btn-custom:active, .btn-custom.active {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: initial;
+}
+.btn-custom:focus {
+  outline: thin dotted;
+  outline: 3px auto -webkit-focus-ring-color;
+  outline-offset: 0;
+}
+.btn-custom:disabled, .btn-custom.disabled {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.26);
+  outline: 0;
+}
+
 [class*="btn-flat"],
 [class*="btn-outline"] {
   background-color: transparent;
@@ -4015,7 +4051,7 @@ input[type="submit"].btn-block {
 }
 
 .card-inverse {
-  background-color: #424242;
+  background-color: #e5eef7;
   color: white;
 }
 

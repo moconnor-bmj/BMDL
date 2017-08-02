@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Condition Landing Page &middot; BMDL</title>
+  <!-- css -->
+  <!-- add material font (roboto) and material icon as needed -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- add material css | replace bootstrap.css -->
+  <link href="../../../css/material.min.css" rel="stylesheet">
+  <!-- additional css for documentation -->
+  <link href="https://v4-alpha.getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
+  <link href="../../../css/project.min.css" rel="stylesheet">
+  <!-- Javascript -->
+  <script type='text/javascript' src="../../../js/multimedia/modernizr.custom.js"></script>
+</head>
+</head>
+<body class="doc-body">
+  <div class="navbar navbar-inverse toolbar-waterfall doc-navbar" id="doc_navbar">
+    <button aria-controls="doc_navdrawer" aria-expanded="false" aria-label="Toggle Navdrawer" class="navbar-toggler hidden-lg-up" data-target="#doc_navdrawer" data-toggle="navdrawer" data-type="permanent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand hidden-lg-up" href="../../../index.html">BMDL</a>
+  </div>
+  <div class="navdrawer navdrawer-permanent doc-navdrawer" id="doc_navdrawer">
+    <div class="navdrawer-content">
+      <div class="navdrawer-header">
+        <a class="navbar-brand px-0" href="../../../index.html">BMDL</a>
+      </div>
+      <nav class="navdrawer-nav">
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-components">BP Components</a>
+        <div class="collapse " id="doc_navdrawer_bp-components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/access/index.html">Access</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/browse-specialties/index.html">Browse Specialties</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/calculators/index.html">Calculators</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/messaging/index.html">Messaging</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/multimedia/index.html">Multimedia</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/popovers-tooltips/index.html">Popovers Tooltips</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/serp/index.html">SERP</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/treatment-table/index.html">Treatment table</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/topic-tables/index.html">Topic tables</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-components/condition-landing-page/index.html">Condition Landing Page</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_bp-utilities">BP Utilities</a>
+        <div class="collapse " id="doc_navdrawer_bp-utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/bp-utilities/typography-kitchen-sink/index.html">Typography kitchen sink</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_layout">Layout</a>
+        <div class="collapse " id="doc_navdrawer_layout">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/grid-system/index.html">Grid system</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/media-object/index.html">Media object</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/layout/responsive-utilities/index.html">Responsive utilities</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_components">Components</a>
+        <div class="collapse " id="doc_navdrawer_components">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/alerts/index.html">Alerts</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/badges/index.html">Badges</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/breadcrumb/index.html">Breadcrumb</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/buttons/index.html">Buttons</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/button-group/index.html">Button group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/cards/index.html">Cards</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/carousel/index.html">Carousel</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/collapse/index.html">Collapse</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/dropdowns/index.html">Dropdowns</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/forms/index.html">Forms</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/input-group/index.html">Input group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/jumbotron/index.html">Jumbotron</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/list-group/index.html">List group</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/modal/index.html">Modal</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navs/index.html">Navs</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/navbar/index.html">Navbar</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/pagination/index.html">Pagination</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/popovers/index.html">Popovers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/progress/index.html">Progress</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/scrollspy/index.html">Scrollspy</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/components/tooltips/index.html">Tooltips</a>
+        </div>
+        <a class="nav-item nav-link collapsed" data-toggle="collapse" href="#doc_navdrawer_utilities">Utilities</a>
+        <div class="collapse " id="doc_navdrawer_utilities">
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/borders/index.html">Borders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/clearfix/index.html">Clearfix</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/close-icon/index.html">Close icon</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/colors/index.html">Colors</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/flexbox/index.html">Flexbox</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/display-property/index.html">Display property</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/image-replacement/index.html">Image replacement</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/invisible-content/index.html">Invisible content</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/position/index.html">Position</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/responsive-helpers/index.html">Responsive helpers</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/screenreaders/index.html">Screenreaders</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/sizing/index.html">Sizing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/spacing/index.html">Spacing</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/typography/index.html">Typography</a>
+          <a class="nav-item nav-link font-weight-normal pl-lg py-sm " href="../../../gh-pages/utilities/vertical-alignment/index.html">Vertical alignment</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid mb-xl doc-jumbotron" id="doc_jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-10 col-xl-10 offset-sm-1 offset-md-1 offset-xl-1">
+          <h1 class="typography-display-3">Condition Landing Page</h1>
+          <p class="font-weight-light typography-title">Condition Landing page components</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="doc-main">
+    <div class="container">
+      <div class="row">
+        <!--<div class="col-sm-10 col-md-8 col-xl-6 offset-sm-1 offset-md-2 offset-xl-3">-->
+        <div class="col-sm-12 col-md-12">
+          <div class="bd-content mb-xl">
+            <p><strong>Notes</strong></p>
+            <ul>
+              <li>UI elements for conditions topic page - excluding nav and treatment tables (located elsewhere - tbc).</li>
+              <li>Right Hand Side content to be added soon.</li>
+              <li>Please note some of the markup is specific to Components Library (i.e. only one ‘container’ &amp; ‘col-md-8’ class required for left hand side)</li>
+            </ul>
+            <h2 id="snippets">Snippets</h2>
+            <ul id="markdown-toc">
+              <li><a href="#snippets" id="markdown-toc-snippets">Snippets</a></li>
+              <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
+              <li><a href="#history-and-exam" id="markdown-toc-history-and-exam">History and exam</a></li>
+              <li><a href="#diagnostic-investigations" id="markdown-toc-diagnostic-investigations">Diagnostic investigations</a></li>
+              <li><a href="#treatment-tables" id="markdown-toc-treatment-tables">Treatment Tables</a></li>
+              <li><a href="#contributors---authors--peer-reviewers" id="markdown-toc-contributors---authors--peer-reviewers">Contributors - Authors &amp; Peer Reviewers</a></li>
+            </ul>
+            <div class="bd-callout bd-callout-warning">
+              <h3 id="coding-standards---please-read">Coding Standards - Please read</h3>
+              <ul>
+                <li>Feel free to reuse the code snippets below</li>
+                <li>All code is WCAG 2.0 Level AA compliant, valid and semantic (as of 04/2017).</li>
+                <li>If you amend the code, please ensure that it remains thus.</li>
+              </ul>
+            </div>
+            <h2 id="summary">Summary</h2>
+            <p>Summary displays a snippet (266 characters) where appropriate. Please see project.js for javascript ‘readmore’ code that runs this (may be removed/tbc).</p>
+            <div class="bd-example" data-example-id="">
+              <div class="container topic">
+                <h2>Summary</h2>
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="card mb-4">
+                      <div class="card-block">
+                        <p class="more">Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. </p>
+                        <h3>Definition</h3>
+                        <p class="more">A disorder of the exocrine pancreas, and is associated with acinar cell injury with local and systemic inflammatory responses. [1] The severity of the disease ranges from mild pancreatic oedema with full recuperation to severe systemic inflammatory response with ancreatic peri-pancreatic necrosis. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back.</p>
+                      </div>
+                    </div>
+                    <!--/ Summary text -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container topic"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Summary<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"more"</span><span class="nt">&gt;</span>Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia.  Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. Associated with nausea and vomiting. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back. <span class="nt">&lt;/p&gt;</span> 
+          <span class="nt">&lt;h3&gt;</span>Definition<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"more"</span><span class="nt">&gt;</span>A disorder of the exocrine pancreas, and is associated with acinar cell injury with local and systemic inflammatory responses. [1] The severity of the disease ranges from mild pancreatic oedema with full recuperation to severe systemic inflammatory response with ancreatic peri-pancreatic necrosis. A history of cholelithiasis or alcohol intake is often present. Typical signs include epigastric tenderness, fever, and tachycardia. Cardinal symptom is usually steady, sudden-onset abdominal pain radiating to the back.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!--/ Summary text --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="history-and-exam">History and exam</h2>
+            <p>More details to follow.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="container topic">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h3>History and exam</h3>
+                    <div class="card-group mb-4">
+                      <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">Key diagnostic factors</h4>
+                          <ul class="mb-1">
+                            <li>serum lipase</li>
+                            <li>serum amylase</li>
+                            <li>AST/ALT</li>
+                            <li>FBC and differential</li>
+                            <li>C-reactive protein (CRP)</li>
+                            <li>haematocrit</li>
+                            <li>arterial blood gas</li>
+                          </ul>
+                          <p class="pl-3 pt-0"><a href="#">Full details</a></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">Other diagnostic factors</h4>
+                          <ul class="mb-1">
+                            <li>serum lipase</li>
+                            <li>serum amylase</li>
+                            <li>AST/ALT</li>
+                            <li>FBC and differential</li>
+                            <li>C-reactive protein (CRP)</li>
+                            <li>haematocrit</li>
+                            <li>arterial blood gas</li>
+                          </ul>
+                          <p class="pl-3 pt-0"><a href="#">Full details</a></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">Risk factors</h4>
+                          <ul class="mb-1">
+                            <li>serum lipase</li>
+                            <li>serum amylase</li>
+                            <li>AST/ALT</li>
+                            <li>FBC and differential</li>
+                            <li>C-reactive protein (CRP)</li>
+                            <li>haematocrit</li>
+                            <li>arterial blood gas</li>
+                          </ul>
+                          <p class="pl-3 pt-0"><a href="#">Full details</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container topic"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>History and exam<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-group mb-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Key diagnostic factors<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum lipase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum amylase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>AST/ALT<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>FBC and differential<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>C-reactive protein (CRP)<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>haematocrit<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>arterial blood gas<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pl-3 pt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Full details<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Other diagnostic factors<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum lipase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum amylase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>AST/ALT<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>FBC and differential<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>C-reactive protein (CRP)<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>haematocrit<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>arterial blood gas<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pl-3 pt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Full details<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Risk factors<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum lipase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum amylase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>AST/ALT<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>FBC and differential<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>C-reactive protein (CRP)<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>haematocrit<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>arterial blood gas<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pl-3 pt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Full details<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="diagnostic-investigations">Diagnostic investigations</h2>
+            <p>FYI this could be 3 column also. More details to follow.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="container topic">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h3>Diagnostic investigations</h3>
+                    <div class="card-group mb-4">
+                      <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">1st investigations to order</h4>
+                          <ul class="mb-1">
+                            <li>serum lipase</li>
+                            <li>serum amylase</li>
+                            <li>AST/ALT</li>
+                            <li>FBC and differential</li>
+                            <li>C-reactive protein (CRP)</li>
+                            <li>haematocrit</li>
+                            <li>arterial blood gas</li>
+                          </ul>
+                          <p class="pl-3 pt-0"><a href="#">Full details</a></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">Investigations to consider</h4>
+                          <ul class="mb-1">
+                            <li>serum lipase</li>
+                            <li>serum amylase</li>
+                            <li>AST/ALT</li>
+                            <li>FBC and differential</li>
+                            <li>C-reactive protein (CRP)</li>
+                            <li>haematocrit</li>
+                            <li>arterial blood gas</li>
+                          </ul>
+                          <p class="pl-3 pt-0"><a href="#">Full details</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container topic"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Diagnostic investigations<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-group mb-4"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>1st investigations to order<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum lipase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum amylase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>AST/ALT<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>FBC and differential<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>C-reactive protein (CRP)<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>haematocrit<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>arterial blood gas<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pl-3 pt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Full details<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Investigations to consider<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum lipase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>serum amylase<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>AST/ALT<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>FBC and differential<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>C-reactive protein (CRP)<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>haematocrit<span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;li&gt;</span>arterial blood gas<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"pl-3 pt-0"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Full details<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+            <h2 id="treatment-tables">Treatment Tables</h2>
+            <p>Coming soon … More details to follow.</p>
+            <h2 id="contributors---authors--peer-reviewers">Contributors - Authors &amp; Peer Reviewers</h2>
+            <p>This is identical to the Peer reviewers implementation. Please see Marcia Greenberg (2nd below) for UI design of accordion content.</p>
+            <div class="bd-example" data-example-id="">
+              <div class="container topic">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h3>Contributors</h3>
+                    <div class="card card-inverse">
+                      <div class="card-block">
+                        <h4>Authors</h4>
+                        <div id="collapse-init" class="viewAll"><a id="collapse-init">View all <span class="material-icons">&#xE313;</span></a></div>
+                      </div>
+                    </div>
+                    <div id="accordion" role="tablist" aria-multiselectable="true" class="mb-5">
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingOne">
+                          <h5><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Arti N. Shah, MS, MD
+                    </a>
+                  </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="card-block">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingTwo">
+                          <h5>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Marcia Greenberg, MS, PT
+                    </a>
+                  </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="card-block">
+                            <img src="http://via.placeholder.com/170x190" />
+                            <address>Clinical Coordinator<br />
+                   UCLA/Orthopaedic Institute for Children Center for Cerebral Palsy<br />
+                   David Geffen School of Medicine at UCLA<br />
+                   Los Angeles<br />
+                   CA</address>
+                            <h6 style="font-weight:bold;">Disclosures</h6>
+                            <p>MG received travel and accommodation expenses from a non-profit organization, UCP Wheels for Humanity, while teaching in El Salvador and Ukraine through a grant from UCP Wheels for Humanity, and the USAID. MG was paid as a private consultant to undertake teaching in Colombia; UCP Wheels for Humanity paid for her travel and accommodation.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                          <h5>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      William L. Oppenheim, MD
+                    </a>
+                  </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="card-block">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container topic"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Contributors<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-inverse"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>Authors<span class="nt">&lt;/h4&gt;&lt;div</span> <span class="na">id=</span><span class="s">"collapse-init"</span> <span class="na">class=</span><span class="s">"viewAll"</span><span class="nt">&gt;&lt;a</span> <span class="na">id=</span><span class="s">"collapse-init"</span><span class="nt">&gt;</span>View all <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"material-icons"</span><span class="nt">&gt;</span><span class="ni">&amp;#xE313;</span><span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"accordion"</span> <span class="na">role=</span><span class="s">"tablist"</span> <span class="na">aria-multiselectable=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"mb-5"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingOne"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h5&gt;&lt;a</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseOne"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
+                      Arti N. Shah, MS, MD
+                    <span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/h5&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseOne"</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingOne"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingTwo"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h5&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseTwo"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
+                      Marcia Greenberg, MS, PT
+                    <span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/h5&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseTwo"</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingTwo"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://via.placeholder.com/170x190"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;address&gt;</span>Clinical Coordinator<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+                   UCLA/Orthopaedic Institute for Children Center for Cerebral Palsy<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+                   David Geffen School of Medicine at UCLA<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+                   Los Angeles<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+                   CA<span class="nt">&lt;/address&gt;</span>
+                   <span class="nt">&lt;h6</span> <span class="na">style=</span><span class="s">"font-weight:bold;"</span><span class="nt">&gt;</span>Disclosures<span class="nt">&lt;/h6&gt;</span>
+                   <span class="nt">&lt;p&gt;</span>MG received travel and accommodation expenses from a non-profit organization, UCP Wheels for Humanity, while teaching in El Salvador and Ukraine through a grant from UCP Wheels for Humanity, and the USAID. MG was paid as a private consultant to undertake teaching in Colombia; UCP Wheels for Humanity paid for her travel and accommodation.<span class="nt">&lt;/p&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span> <span class="na">role=</span><span class="s">"tab"</span> <span class="na">id=</span><span class="s">"headingThree"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h5&gt;</span>
+                    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-parent=</span><span class="s">"#accordion"</span> <span class="na">href=</span><span class="s">"#collapseThree"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
+                      William L. Oppenheim, MD
+                    <span class="nt">&lt;/a&gt;</span>
+                  <span class="nt">&lt;/h5&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"collapseThree"</span> <span class="na">class=</span><span class="s">"collapse"</span> <span class="na">role=</span><span class="s">"tabpanel"</span> <span class="na">aria-labelledby=</span><span class="s">"headingThree"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-block"</span><span class="nt">&gt;</span>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <!-- add material js on top of bootstrap.js -->
+  <script src="../../../js/material.min.js"></script>
+  <!-- additional js for documentation -->
+  <script src="../../../js/project.min.js"></script>
+  <!-- additional js for form validation *******(Make page sepcific) -->
+  <script src="../../../js/form-validation-md.min.js"></script>
+  <!-- Calculators filter-->
+  <script src="../../../js/calc.js"></script>
+  <!-- Topic Nav-->
+  <script src="../../../js/jquery.flexnav.min.js"></script>
+  <!-- JQUery for Multimedia grid, resize etc-->
+  <script src="../../../js/multimedia/multimedia.js"></script>
+  <script>
+  $(function()
+  {
+    Grid.init();
+  });
+  </script>
+  <!-- Popover initialisation, Setting & Content - so no XSS attacks-->
+  <script>
+  $(document).ready(function()
+  {
+    $("button#drugDBPop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Drug database <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<ul><li><a href="#">AHFS DI Essentials<a/></li><li><a href="#">BNF</a></li> <li><a href="#">Martindale</a></li><li><a href="#">Micromedex<a/></li></ul><p class="text-right"><a href="#" class="text-uppercase">Set a default formulary</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#evidencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Evidence score <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p>Glycaemic control: there is good-quality evidence that insulin plus metformin reduces HbA1c levels at 4 to 6 months more effectively than insulin alone, but with more gastrointestinal side effects.</p><div class="evidence-level"><h4>Evidence level A</h4><p>Systematic reviews (SRs) or randomized controlled trials (RCTs) of >200 participants.</p></div><p class="text-right"><a href="#" class="text-uppercase">more from bmj clinical evidence</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#referencePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: 'Reference <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<p><strong>44. </strong>Koegelenberg CF, Noor F, Bateman ED, et al. Efficacy of varenicline combined with nicotine replacement therapy vs varenicline alone for smoking cessation: a randomized clinical trial. JAMA. 2014;312:155-161.</p><p><a rel="external" class="web-link" target="_blank" href="#">Abstract <span class="material-icons material-icons-inline">open_in_new</span></a></p><p><a href="#">View all references</a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+    $("button#CochranePop").popover(
+    {
+      html: true,
+      container: 'body',
+      title: ' <a href="#" class="close" data-dismiss="alert">&times;</a>',
+      content: '<img src="http://resources.bmj.com/repository/images/bp/cca-cochrane-logo-normal.png" class="cca-logo" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisinuli.</p><p class="text-right"><a href="#" class="text-uppercase">Show me the answer <span class="material-icons material-icons-inline">open_in_new</span></a></p>'
+    });
+    $(document).on("click", ".popover .close", function()
+    {
+      $(this).parents(".popover").popover('hide');
+    });
+  });
+  </script>
+</body>
+</html>
