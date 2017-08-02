@@ -20,6 +20,26 @@
           font-size: $font-size-body-1;
           padding: 5px 0 0 0;
       }
+  }
+  .card {
+    img {
+      float: left;
+      padding: 0 1rem 1rem 0;
+    }
+    .card-text {
+      font-size: $font-size-bmj;
+    }
+    .vidWrapper {
+      position: relative;
+        .material-icons {
+          position: absolute;
+          top: 37px;
+          left: 60px;
+          color: $palette-pink-500;
+          font-size: 3rem;
+
+      }
+    }
   }  
 }
 
@@ -45,7 +65,7 @@
     display: inline-block;
     margin: 10px 5px 0 5px;
     vertical-align: top;
-    height: 250px;
+    height: 124px;
     > a {
       border: none;
       outline: none;
@@ -66,7 +86,7 @@
       width: 0;
       position: absolute;
       pointer-events: none;
-      border-bottom-color: #ddd;
+      border-bottom-color: #424242;
       border-width: 15px;
       left: 50%;
       margin: -20px 0 0 -15px;

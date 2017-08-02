@@ -422,10 +422,11 @@ h1, h2, h3 {
 }
 
 .card-header a:before {
+  color: #b00067;
   /* symbol for "opening" panels */
   font-family: 'Material Icons';
   /* essential for enabling glyphicon */
-  content: "\E5CC";
+  content: "\E5CE";
   /* adjust as needed, taken from bootstrap.css */
   position: relative;
   top: 3px;
@@ -867,6 +868,133 @@ span.viewAll span.chevron.bottom::before {
   right: 1rem;
 }
 
+.topic h1 {
+  float: left;
+  font-size: 34px;
+}
+.topic .morecontent span {
+  display: none;
+}
+.topic .morelink {
+  display: block;
+  color: #c50084;
+  margin-top: 2px;
+}
+.topic .pdfLeft {
+  float: right;
+  font-size: 18px;
+  padding-top: 12px;
+}
+.topic .card {
+  border-radius: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.topic .card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.topic .card .card-title {
+  color: #c50084;
+}
+.topic .card .card-header {
+  padding: .55rem 1rem .125rem 1rem !important;
+}
+.topic .card .card-header a {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bold;
+}
+.topic .card .card-block address {
+  font-size: 1rem;
+  line-height: 2.25;
+}
+.topic .card .card-block img {
+  float: right;
+  padding-right: 1rem;
+}
+.topic .card .card-block h5, .topic .card .card-block h6, .topic .card .card-block p {
+  font-size: 1rem;
+}
+.topic .card .card-block p, .topic .card .card-block ul {
+  font-size: 1rem;
+  padding: 1rem 0 0 0;
+}
+.topic .card .card-block p + p {
+  padding: 0 0 0 1rem;
+}
+.topic .card .card-block ul {
+  list-style-type: none;
+  padding-top: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.topic .card .card-block ul li:before {
+  color: #c50084;
+  content: "\2022";
+  padding-right: .8725rem;
+  vertical-align: top;
+}
+.topic .card .card-block.lastUpdate p {
+  color: #c50084;
+}
+.topic .card .card-block.lastUpdate p span {
+  color: rgba(0, 0, 0, 0.87);
+}
+.topic .card .card-block.lastUpdate p + p {
+  padding: 0;
+}
+.topic .card-group .card {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 1px 1px 1px 1px #e0e0e0, 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 1px 1px 1px 1px #e0e0e0, 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.topic .card-group .card .card-block {
+  padding-left: 1rem;
+}
+.topic .card-primary {
+  border-bottom: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 60px;
+}
+.topic .card-primary .card-block {
+  padding-top: 6px;
+}
+.topic .card-inverse {
+  background-color: #eceff1;
+  border-bottom: 1px solid #a5b9d0;
+  border-top: 2px solid #1f5189;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.87);
+  height: 72px;
+}
+.topic .card-inverse .card-block {
+  padding: 1.25rem 0 0 1rem;
+}
+.topic .card-inverse .card-block h4 {
+  float: left;
+}
+.topic .card-inverse .viewAll {
+  float: right;
+  color: #b00067;
+  font-size: 1rem;
+  padding-top: 2px;
+  cursor: pointer;
+}
+.topic #accordion .card-block {
+  padding: 0 0 1rem 2.25rem;
+}
+.topic #accordion .card-block p {
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  .card .card-block img {
+    float: left;
+    padding-right: 1rem;
+  }
+}
+.diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
+  padding: 0;
+}
 .diffDiagnosis .rowHead, .histExam .rowHead, .diagGuidelines .rowHead {
   background-color: #01579b;
   color: #ffffff;
@@ -1007,158 +1135,6 @@ span.viewAll span.chevron.bottom::before {
     width: 100%;
   }
 }
-.diffDiagnosis .card-block, .histExam .card-block, .diagGuidelines .card-block {
-  padding: 0;
-}
-.diffDiagnosis table, .histExam table, .diagGuidelines table {
-  margin-bottom: 0;
-}
-.diffDiagnosis table thead th, .histExam table thead th, .diagGuidelines table thead th {
-  background-color: #01579b;
-  color: #fff;
-  font-size: 1rem;
-  height: 2rem;
-  padding: .5rem 0 0 1.5rem;
-  text-transform: uppercase;
-  width: 25%;
-}
-.diffDiagnosis table ul, .histExam table ul, .diagGuidelines table ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.diffDiagnosis table ul li, .histExam table ul li, .diagGuidelines table ul li {
-  padding: 0 0 1rem 0;
-}
-.diffDiagnosis table ul li:before, .histExam table ul li:before, .diagGuidelines table ul li:before {
-  color: #c50084;
-  content: "\2022";
-  padding-right: .8725rem;
-  vertical-align: top;
-}
-.diffDiagnosis table a, .diffDiagnosis table button, .histExam table a, .histExam table button, .diagGuidelines table a, .diagGuidelines table button {
-  font-size: 1rem;
-}
-.diffDiagnosis table a.refLink, .diffDiagnosis table button.refLink, .histExam table a.refLink, .histExam table button.refLink, .diagGuidelines table a.refLink, .diagGuidelines table button.refLink {
-  color: #c50084;
-}
-.diffDiagnosis table a:hover, .diffDiagnosis table button:hover, .histExam table a:hover, .histExam table button:hover, .diagGuidelines table a:hover, .diagGuidelines table button:hover {
-  color: #2a6ebb;
-}
-.diffDiagnosis table img.cochraneInline, .histExam table img.cochraneInline, .diagGuidelines table img.cochraneInline {
-  display: inline-block;
-  padding: 0 .1rem;
-  width: 5.5rem;
-}
-.diffDiagnosis figure, .histExam figure, .diagGuidelines figure {
-  display: table;
-  width: 1px;
-  /* This can be any width, so long as it's narrower than any image */
-}
-.diffDiagnosis img, .histExam img, .diagGuidelines img {
-  display: table-row;
-}
-.diffDiagnosis figcaption, .histExam figcaption, .diagGuidelines figcaption {
-  background-color: #eee;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 1rem;
-  padding: 16px;
-}
-.diffDiagnosis figcaption span, .histExam figcaption span, .diagGuidelines figcaption span {
-  display: block;
-  font-style: italic;
-  font-size: 0.875rem;
-  padding-top: 5px;
-}
-
-.diffDiagnosis table#fourCol td, .diffDiagnosis table#fourCol th, .diffDiagnosis table#twoCol td, .diffDiagnosis table#twoCol th {
-  border-top: none;
-}
-.diffDiagnosis table#fourCol tr:nth-child(even) td, .diffDiagnosis table#twoCol tr:nth-child(even) td {
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-.diffDiagnosis table#fourCol tr:nth-child(odd), .diffDiagnosis table#twoCol tr:nth-child(odd) {
-  background-color: #ecf0f5;
-}
-.diffDiagnosis table#fourCol tr:nth-child(odd) td, .diffDiagnosis table#twoCol tr:nth-child(odd) td {
-  color: #2a6ebb;
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-.diffDiagnosis table#fourCol tr:last-child td, .diffDiagnosis table#twoCol tr:last-child td {
-  border-bottom: none;
-}
-.diffDiagnosis table#threeCol {
-  font-size: 1rem;
-}
-.diffDiagnosis table#threeCol thead th:first-child {
-  width: 10%;
-}
-.diffDiagnosis table#threeCol thead th:nth-child(2) {
-  width: 45%;
-}
-.diffDiagnosis table#threeCol thead th:nth-child(3) {
-  width: 45%;
-}
-.diffDiagnosis table#threeCol td {
-  font-size: 1rem;
-}
-.diffDiagnosis table#threeCol td:first-child {
-  background-color: #ecf0f5;
-  color: #2a6ebb;
-  font-weight: bold;
-}
-
-.histExam table#oneColLeft td, .histExam table#oneColLeft th, .histExam table#oneColRight td, .histExam table#oneColRight th {
-  border-top: none;
-}
-.histExam table#oneColLeft tr:nth-child(even) td, .histExam table#oneColRight tr:nth-child(even) td {
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-.histExam table#oneColLeft tr:nth-child(odd), .histExam table#oneColRight tr:nth-child(odd) {
-  background-color: #ecf0f5;
-}
-.histExam table#oneColLeft tr:nth-child(odd) td, .histExam table#oneColRight tr:nth-child(odd) td {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-.histExam table#oneColLeft tr:last-child td, .histExam table#oneColRight tr:last-child td {
-  border-bottom: none;
-}
-.histExam table#oneColRight thead th {
-  background-color: #c50084;
-}
-.histExam table#oneColRight tr:nth-child(odd) {
-  background-color: #f8e0f0;
-}
-
-.diagGuidelines table#oneCol td, .diagGuidelines table#oneCol th {
-  border-top: none;
-}
-.diagGuidelines table#oneCol td .pubDate {
-  display: inline-block;
-  font-weight: bold;
-  line-height: 2.5;
-  margin-right: 10px;
-  width: 12%;
-}
-.diagGuidelines table#oneCol tr:nth-child(even) td {
-  border-bottom: 1px solid #ddd;
-  font-size: 1rem;
-}
-.diagGuidelines table#oneCol tr:nth-child(odd) {
-  background-color: #ecf0f5;
-}
-.diagGuidelines table#oneCol tr:nth-child(odd) td {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-.diagGuidelines table#oneCol tr:last-child td {
-  border-bottom: none;
-}
-
 .inline figure {
   display: table;
   padding-left: 1rem;
@@ -1177,6 +1153,23 @@ span.viewAll span.chevron.bottom::before {
   font-style: italic;
   font-size: 0.875rem;
   padding: 5px 0 0 0;
+}
+.inline .card img {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+.inline .card .card-text {
+  font-size: 1.125rem;
+}
+.inline .card .vidWrapper {
+  position: relative;
+}
+.inline .card .vidWrapper .material-icons {
+  position: absolute;
+  top: 37px;
+  left: 60px;
+  color: #c50084;
+  font-size: 3rem;
 }
 
 @media (max-width: 767px) {
@@ -1198,7 +1191,7 @@ span.viewAll span.chevron.bottom::before {
   display: inline-block;
   margin: 10px 5px 0 5px;
   vertical-align: top;
-  height: 250px;
+  height: 124px;
 }
 .og-grid li > a {
   border: none;
@@ -1220,7 +1213,7 @@ span.viewAll span.chevron.bottom::before {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #ddd;
+  border-bottom-color: #424242;
   border-width: 15px;
   left: 50%;
   margin: -20px 0 0 -15px;
@@ -1419,6 +1412,281 @@ span.viewAll span.chevron.bottom::before {
     width: 100%;
   }
 }
+/* Flexnav Base Styles */
+.topic-nav {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 20;
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.flexnav {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-transform-style: preserve-3d;
+  overflow: hidden;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+.flexnav.opacity {
+  opacity: 0;
+}
+.flexnav.flexnav-show {
+  max-height: 2000px;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.flexnav.one-page {
+  position: fixed;
+  top: 50px;
+  right: 5%;
+  max-width: 200px;
+}
+.flexnav li {
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.flexnav li a {
+  position: relative;
+  display: block;
+  padding: .25rem 1rem;
+  z-index: 2;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #1f5189;
+  text-transform: uppercase;
+}
+.flexnav li ul {
+  width: 100%;
+}
+.flexnav li ul li {
+  font-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.flexnav li ul.flexnav-show li {
+  overflow: visible;
+}
+.flexnav li ul li a {
+  display: block;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: none;
+  padding: 1rem;
+}
+.flexnav ul li ul li a {
+  background: #bfbfbc;
+}
+.flexnav ul li ul li ul li a {
+  background: #cbcbc9;
+}
+.flexnav .touch-button {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #acaca1;
+  background: rgba(0, 0, 0, 0.075);
+  text-align: center;
+}
+.flexnav .touch-button:hover {
+  cursor: pointer;
+}
+.flexnav .touch-button .navicon {
+  position: relative;
+  top: 1.4em;
+  font-size: 12px;
+  color: #666;
+}
+
+.menu-button {
+  position: relative;
+  display: block;
+  padding: 1em;
+  background: #1f5189;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.menu-button.one-page {
+  position: fixed;
+  top: 0;
+  right: 5%;
+  padding-right: 45px;
+}
+.menu-button .touch-button {
+  background: transparent;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+.menu-button .touch-button .navicon {
+  font-size: 16px;
+  position: relative;
+  top: 1em;
+  color: #666;
+}
+
+@media all and (min-width: 800px) {
+  body.one-page {
+    padding-top: 70px;
+  }
+
+  .flexnav {
+    overflow: visible;
+  }
+  .flexnav.opacity {
+    opacity: 1;
+  }
+  .flexnav.one-page {
+    top: 0;
+    right: auto;
+    max-width: 1080px;
+  }
+  .flexnav li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    background-color: #ffffff;
+    overflow: visible;
+    width: 16.666667%;
+  }
+  .flexnav li a {
+    border-bottom: none;
+  }
+  .flexnav li > ul {
+    top: auto;
+    left: 0;
+  }
+  .flexnav li > ul li {
+    width: 100%;
+  }
+  .flexnav li ul li > ul {
+    margin-left: 100%;
+    top: 0;
+  }
+  .flexnav li ul li a {
+    border-bottom: none;
+  }
+  .flexnav li ul.open {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+  .flexnav li ul.open li {
+    overflow: visible;
+    max-height: 100px;
+  }
+  .flexnav li ul.open ul.open {
+    margin-left: 100%;
+    top: 0;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}
+.oldie body.one-page {
+  padding-top: 70px;
+}
+.oldie .flexnav {
+  overflow: visible;
+}
+.oldie .flexnav.one-page {
+  top: 0;
+  right: auto;
+  max-width: 1080px;
+}
+.oldie .flexnav li {
+  position: relative;
+  list-style: none;
+  float: left;
+  display: block;
+  background-color: #ffffff;
+  width: 20%;
+  min-height: 50px;
+  overflow: visible;
+}
+.oldie .flexnav li:hover > ul {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.oldie .flexnav li:hover > ul li {
+  width: 100%;
+  float: none;
+}
+.oldie .flexnav li a {
+  border-left: 1px solid #acaca1;
+  border-bottom: none;
+  overflow: visible;
+}
+.oldie .flexnav li > ul {
+  background: #acaca1;
+  position: absolute;
+  top: auto;
+  left: 0;
+  display: none;
+  z-index: 1;
+  overflow: visible;
+}
+.oldie .flexnav li ul li ul {
+  top: 0;
+}
+.oldie .flexnav li ul li a {
+  border-bottom: none;
+}
+.oldie .flexnav li ul.open {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.oldie .flexnav li ul.open li {
+  width: 100%;
+}
+.oldie .flexnav li ul.open ul.open {
+  margin-left: 100%;
+  top: 0;
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.oldie .flexnav ul li:hover ul {
+  margin-left: 100%;
+  top: 0;
+}
+.oldie .menu-button {
+  display: none;
+}
+.oldie.ie7 .flexnav li {
+  width: 19.9%;
+}
+
 .doc-jumbotron {
   background-position: 50% 50%;
   background-repeat: no-repeat;

@@ -47,13 +47,16 @@ ul#markdown-toc {
   }
 
   // Default Accordion / Collapse Icons behaviour
-  .card-header a:before {
-    /* symbol for "opening" panels */
-    font-family: 'Material Icons';  /* essential for enabling glyphicon */
-    content: "\E5CC";    /* adjust as needed, taken from bootstrap.css */
-    position: relative;
-    top: 3px;
-}
+  .card-header {
+      a:before {
+        color: $palette-pink-800;
+      /* symbol for "opening" panels */
+      font-family: 'Material Icons';  /* essential for enabling glyphicon */
+      content: "\E5CE";    /* adjust as needed, taken from bootstrap.css */
+      position: relative;
+      top: 3px;
+      }
+  }
 .card-header a.collapsed:before {
     /* symbol for "collapsed" panels */
     content: "\E5CF";    /* adjust as needed, taken from bootstrap.css */

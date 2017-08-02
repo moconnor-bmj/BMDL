@@ -239,3 +239,50 @@
   .btn-fluid {
     min-width: 0;
   }
+
+
+// button custom
+.btn-custom {
+    border-radius: 3px;
+    box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+    border: solid 2px $palette-pink-800;
+    background-color: $white;
+    color: $link-color;
+    font-weight: normal;
+    text-decoration: $link-decoration;
+    text-transform: none;
+    z-index: initial;
+
+    &::before {
+      display: none;
+    }
+
+    // active, focus, hover
+      @include active-focus-hover {
+        color: $link-color-active;
+        text-decoration: $link-decoration-active;
+      }
+
+      &:active,
+      &.active {
+        background-color: transparent;
+        box-shadow: none;
+        z-index: initial;
+      }
+
+      &:focus {
+        @include tab-focus;
+      }
+
+    // disabled
+      &:disabled,
+      &.disabled {
+        background-color: transparent;
+        color: $btn-color-disabled;
+        outline: 0;
+
+        @if ($link-decoration-active != "none") {
+          text-decoration: none;
+        }
+      }
+  }
