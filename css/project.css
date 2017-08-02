@@ -1426,19 +1426,21 @@ span.viewAll span.chevron.bottom::before {
   -ms-flex-direction: column;
   flex-direction: column;
   z-index: 20;
-  overflow: hidden;
   margin-top: -1rem;
 }
 
+/* Flexnav Base Styles */
+/* Flexnav Base Styles */
 .flexnav {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
   -webkit-transform-style: preserve-3d;
   overflow: hidden;
-  padding-left: 0;
   margin: 0 auto;
   width: 100%;
+  max-height: 0;
+  padding-left: 0;
 }
 .flexnav.opacity {
   opacity: 0;
@@ -1464,11 +1466,12 @@ span.viewAll span.chevron.bottom::before {
 .flexnav li a {
   position: relative;
   display: block;
-  padding: .25rem 1rem;
+  padding: .5rem 1rem;
   z-index: 2;
   overflow: hidden;
+  background: #1f5189;
   color: #ffffff;
-  background-color: #1f5189;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-transform: uppercase;
 }
 .flexnav li ul {
@@ -1487,7 +1490,6 @@ span.viewAll span.chevron.bottom::before {
   background: #fff;
   color: rgba(0, 0, 0, 0.87);
   text-transform: none;
-  padding: 1rem;
 }
 .flexnav ul li ul li a {
   background: #bfbfbc;
@@ -1501,7 +1503,7 @@ span.viewAll span.chevron.bottom::before {
   top: 0;
   right: 0;
   width: 50px;
-  height: 50px;
+  height: 36px;
   display: inline-block;
   background: #acaca1;
   background: rgba(0, 0, 0, 0.075);
@@ -1510,11 +1512,11 @@ span.viewAll span.chevron.bottom::before {
 .flexnav .touch-button:hover {
   cursor: pointer;
 }
-.flexnav .touch-button .navicon {
+.flexnav .touch-button .material-icons {
   position: relative;
-  top: 1.4em;
-  font-size: 12px;
-  color: #666;
+  top: .5rem;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .menu-button {
@@ -1522,7 +1524,7 @@ span.viewAll span.chevron.bottom::before {
   display: block;
   padding: 1em;
   background: #1f5189;
-  color: rgba(0, 0, 0, 0.87);
+  color: #222;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -1543,11 +1545,11 @@ span.viewAll span.chevron.bottom::before {
   display: inline-block;
   text-align: center;
 }
-.menu-button .touch-button .navicon {
+.menu-button .touch-button .material-icons {
   font-size: 16px;
   position: relative;
   top: 1em;
-  color: #666;
+  color: #ffffff;
 }
 
 @media all and (min-width: 800px) {
@@ -1571,7 +1573,7 @@ span.viewAll span.chevron.bottom::before {
     list-style: none;
     float: left;
     display: block;
-    background-color: #ffffff;
+    background-color: #a6a6a2;
     overflow: visible;
     width: 16.666667%;
   }
@@ -1579,8 +1581,10 @@ span.viewAll span.chevron.bottom::before {
     border-bottom: none;
   }
   .flexnav li > ul {
+    position: absolute;
     top: auto;
     left: 0;
+    padding-left: 0;
   }
   .flexnav li > ul li {
     width: 100%;
@@ -1627,7 +1631,7 @@ span.viewAll span.chevron.bottom::before {
   list-style: none;
   float: left;
   display: block;
-  background-color: #ffffff;
+  background-color: #a6a6a2;
   width: 20%;
   min-height: 50px;
   overflow: visible;
@@ -1651,7 +1655,6 @@ span.viewAll span.chevron.bottom::before {
   position: absolute;
   top: auto;
   left: 0;
-  display: none;
   z-index: 1;
   overflow: visible;
 }

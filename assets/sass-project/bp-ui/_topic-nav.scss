@@ -9,11 +9,14 @@
     -ms-flex-direction: column;
     flex-direction: column;
     z-index: 20;
-	overflow:hidden; // added by MOC
 	margin-top: -1rem;
 }
 
-$nav_text: $black-primary;
+/* Flexnav Base Styles */
+
+/* Flexnav Base Styles */
+
+$nav_text: #222;
 $top_level: #1f5189;
 $second_level: #fff;
 $third_level: #bfbfbc;
@@ -21,27 +24,27 @@ $fourth_level: #cbcbc9;
 
 .flexnav {
 	-webkit-transition: none;
-  	-moz-transition: none;
-  	-ms-transition: none;
-  	transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	transition: none;
 	-webkit-transform-style: preserve-3d; // stop webkit flicker
   	overflow: hidden;
-	padding-left: 0;
 	margin: 0 auto;
 	width: 100%;
-  	// max-height: 0; // removed by MOC
+  	max-height: 0;
+	padding-left: 0;
   
   &.opacity {
     opacity: 0;
   }
 	
 	&.flexnav-show {
-		max-height: 2000px;
-    	opacity: 1;
-		-webkit-transition: all .5s ease-in-out;
-    	-moz-transition: all .5s ease-in-out;
-    	-ms-transition: all .5s ease-in-out;
-    	transition: all .5s ease-in-out;
+	max-height: 2000px;
+    opacity: 1;
+	-webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 	}
 	&.one-page {
 		position: fixed;
@@ -58,13 +61,13 @@ $fourth_level: #cbcbc9;
 	li a {
 		position: relative;
 		display: block;
-		padding: .25rem 1rem;;
+		padding: .5rem 1rem;
 		z-index: 2;
 		overflow: hidden;
+		background: $top_level;
 		color: $white;
-		background-color: $top-level;
+		border-bottom: 1px solid rgba(0,0,0,.15);
 		text-transform: uppercase;
-		// border-bottom: 1px solid rgba(0,0,0,.15);
 	}
 	li ul {
 		width: 100%;   
@@ -87,7 +90,6 @@ $fourth_level: #cbcbc9;
 		background: $second_level;
 		color: $black-primary;
 		text-transform: none;
-		padding: 1rem;
 	}
 	ul li ul li a {
 		background: $third_level;
@@ -101,7 +103,7 @@ $fourth_level: #cbcbc9;
 		top: 0;
 		right: 0;
 		width: 50px;
-		height: 50px;
+		height: 36px;
 		display: inline-block;
 		background: #acaca1;
 		background: rgba(0,0,0,.075);
@@ -109,11 +111,11 @@ $fourth_level: #cbcbc9;
 		&:hover {
 			cursor: pointer;
 		}
-		.navicon {
+		.material-icons {
 			position: relative;
-			top: 1.4em;
-			font-size: 12px;
-			color: #666;
+			top: .5rem;
+			font-size: 18px;
+			color: $white;
 		}
 	}
 }
@@ -144,11 +146,11 @@ $fourth_level: #cbcbc9;
 		display: inline-block;
 		text-align: center;
 				
-		.navicon {
+		.material-icons {
 			font-size: 16px;
 			position: relative;
 			top: 1em;
-			color: #666;
+			color: $white;
 		}
 	}
 }
@@ -172,7 +174,7 @@ $fourth_level: #cbcbc9;
 			list-style: none;
 			float: left;
 			display: block;	
-			background-color: $white;
+			background-color: #a6a6a2;
 			overflow: visible;
       		width: 16.666667%;
 		}
@@ -181,10 +183,10 @@ $fourth_level: #cbcbc9;
 			border-bottom: none;
 		}
 		li > ul {
-			// position: absolute; 
+			position: absolute; 
 			top: auto;
 			left: 0;
-			
+			padding-left: 0;
 			li {
 				width: 100%;
 			}
@@ -235,7 +237,7 @@ $fourth_level: #cbcbc9;
 			list-style: none;
 			float: left;
 			display: block;	
-			background-color: $white;	
+			background-color: #a6a6a2;	
       width: 20%;
 			min-height: 50px;
 			overflow: visible;
@@ -259,7 +261,7 @@ $fourth_level: #cbcbc9;
 			position: absolute; 
 			top: auto;
 			left: 0;
-			display: none;
+			//display: none;
 			z-index: 1;
 			overflow: visible;
 		}
