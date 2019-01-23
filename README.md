@@ -102,3 +102,5 @@ Currently based on __Bootstrap v4.0.0-alpha.6__.
 	- `grunt doc`
 - get the working documentation site running locally on http://localhost:9999 or http://0.0.0.0:9999 or your http://your-local-ip-address:9999
 	- `grunt connect`
+	
+### Enjoy
